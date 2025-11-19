@@ -1,0 +1,29 @@
+{
+    "$schema": "https://www.schemastore.org/tsconfig.json",
+    "display": "Bundler configuration for TypeScript projects",
+    "extends": "./tsconfig.base.json",
+
+    "compilerOptions": {
+        /* Modules */
+        // Allow importing files with any extension when using a bundler.
+        "allowArbitraryExtensions": true,
+        // Allow importing TypeScript files with .ts/.tsx extensions directly.
+        "allowImportingTsExtensions": true,
+        // Use the latest ECMAScript module format for modern bundlers.
+        "module": "esnext",
+        // Use bundler-specific module resolution for tools like Vite, Webpack, etc.
+        "moduleResolution": "bundler",
+        // Don't rewrite import extensions since bundlers handle them natively.
+        "rewriteRelativeImportExtensions": false,
+
+        /* Emit */
+        // Don't generate .d.ts declaration files since bundlers don't need them.
+        "declaration": false,
+        // Don't generate source maps for declaration files.
+        "declarationMap": false,
+        // Don't emit any files, let the bundler handle compilation and output.
+        "noEmit": true,
+        // Don't generate source maps, let the bundler create them instead.
+        "sourceMap": false
+    }
+}

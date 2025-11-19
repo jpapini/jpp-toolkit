@@ -8,7 +8,10 @@
         "build": "turbo run build"
     },
     "devDependencies": {
-        "turbo": "2.6.1"
+        "@jpp/ts-config": "workspace:*",
+        "@types/node": "24.10.1",
+        "turbo": "2.6.1",
+        "typescript": "5.9.3"
     },
     "packageManager": "pnpm@10.22.0",
     "engines": {

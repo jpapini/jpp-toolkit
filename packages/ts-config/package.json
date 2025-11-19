@@ -1,0 +1,49 @@
+{
+    "name": "@jpp/ts-config",
+    "version": "0.0.1",
+    "description": "TypeScript configurations for JS/TS projects.",
+    "keywords": [
+        "jpp",
+        "ts",
+        "config",
+        "typescript",
+        "tsconfig"
+    ],
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/ts-config#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp.git",
+        "directory": "packages/ts-config"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        "./*.json": "./*.json",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "*.json"
+    ],
+    "devDependencies": {
+        "typescript": "5.9.3"
+    },
+    "peerDependencies": {
+        "typescript": "5"
+    },
+    "packageManager": "pnpm@10.22.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "node": "24.11.1",
+        "pnpm": "10.22.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
