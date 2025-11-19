@@ -1,0 +1,14 @@
+{
+    "name": "jpp",
+    "private": true,
+    "type": "module",
+    "packageManager": "pnpm@10.22.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "node": "24.11.1",
+        "pnpm": "10.22.0"
+    }
+}
