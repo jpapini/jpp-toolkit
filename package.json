@@ -2,6 +2,14 @@
     "name": "jpp",
     "private": true,
     "type": "module",
+    "scripts": {
+        "typecheck": "turbo run typecheck",
+        "dev": "turbo run dev",
+        "build": "turbo run build"
+    },
+    "devDependencies": {
+        "turbo": "2.6.1"
+    },
     "packageManager": "pnpm@10.22.0",
     "engines": {
         "node": "24",
