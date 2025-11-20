@@ -5,18 +5,22 @@
     "scripts": {
         "lint": "run-s -c lint:*",
         "lint:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -c '**/*' '!**/pnpm-lock.yaml'",
+        "lint:eslint": "eslint --flag v10_config_lookup_from_file --cache --cache-location node_modules/.cache/eslint/.eslintcache .",
         "format": "run-s -c format:*",
         "format:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -w '**/*' '!**/pnpm-lock.yaml'",
+        "format:eslint": "eslint --flag v10_config_lookup_from_file --cache --cache-location node_modules/.cache/eslint/.eslintcache --fix .",
         "typecheck": "turbo run typecheck",
         "dev": "turbo run dev",
         "build": "turbo run build"
     },
     "prettier": "@jpp/prettier-config",
     "devDependencies": {
+        "@jpp/eslint-config": "workspace:*",
         "@jpp/internal-build-lib": "workspace:*",
         "@jpp/prettier-config": "workspace:*",
         "@jpp/ts-config": "workspace:*",
         "@types/node": "24.10.1",
+        "eslint": "9.39.1",
         "npm-run-all2": "8.0.4",
         "prettier": "3.6.2",
         "turbo": "2.6.1",

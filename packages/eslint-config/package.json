@@ -1,20 +1,20 @@
 {
-    "name": "@jpp/tsdown-config",
+    "name": "@jpp/eslint-config",
     "version": "0.0.1",
-    "description": "Tsdown configurations for JS/TS projects.",
+    "description": "ESLint configurations for JS/TS projects.",
     "keywords": [
         "jpp",
-        "tsdown",
+        "eslint",
         "config"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/tsdown-config#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/eslint-config#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/tsdown-config"
+        "directory": "packages/eslint-config"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -35,11 +35,30 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@eslint/compat": "2.0.0",
+        "@eslint/js": "9.39.1",
+        "@jpp/utils": "workspace:*",
+        "@stylistic/eslint-plugin": "5.6.1",
+        "@vitest/eslint-plugin": "1.4.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-import-resolver-typescript": "4.4.4",
+        "eslint-plugin-import-x": "4.16.1",
+        "eslint-plugin-jsx-a11y": "6.10.2",
+        "eslint-plugin-perfectionist": "4.15.1",
+        "eslint-plugin-prettier": "5.5.4",
+        "eslint-plugin-react": "7.37.5",
+        "eslint-plugin-react-hooks": "7.0.1",
+        "eslint-plugin-unicorn": "62.0.0",
+        "globals": "16.5.0",
+        "typescript-eslint": "8.47.0"
+    },
     "devDependencies": {
-        "tsdown": "0.16.6"
+        "@types/eslint-plugin-jsx-a11y": "6.10.1",
+        "eslint": "9.39.1"
     },
     "peerDependencies": {
-        "tsdown": "0.16"
+        "eslint": "9"
     },
     "packageManager": "pnpm@10.22.0",
     "engines": {
