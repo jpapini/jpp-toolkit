@@ -28,6 +28,7 @@ node_modules
 
 ### Compiled outputs ###
 dist
+oclif.manifest.json
 
 ### Tests ###
 coverage

@@ -1,6 +1,6 @@
 {
     "name": "@jpp/logger",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A simple logger for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -34,6 +34,10 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@jpp/utils": "workspace:*",
+        "colorette": "2.0.20"
+    },
     "packageManager": "pnpm@10.22.0",
     "engines": {
         "node": "24",
@@ -45,9 +49,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "dependencies": {
-        "@jpp/utils": "workspace:*",
-        "colorette": "2.0.20"
     }
 }

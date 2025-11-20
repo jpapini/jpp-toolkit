@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-clean",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Plugin that add the clean command to the jpp cli.",
     "keywords": [
         "jpp",
@@ -45,6 +45,9 @@
         "execa": "9.6.0",
         "rimraf": "6.1.2"
     },
+    "devDependencies": {
+        "oclif": "4.22.47"
+    },
     "packageManager": "pnpm@10.22.0",
     "engines": {
         "node": "24",
@@ -56,8 +59,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "devDependencies": {
-        "oclif": "4.22.47"
     }
 }
