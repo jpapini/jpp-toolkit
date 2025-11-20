@@ -1,6 +1,7 @@
-import babelParsers from 'prettier/parser-babel';
 import { sortPackageJson } from '@jpp/sort-package-json';
 import type { Plugin } from 'prettier';
+// eslint-disable-next-line import-x/default
+import babelParsers from 'prettier/parser-babel';
 
 const parser = babelParsers.parsers['json-stringify'];
 

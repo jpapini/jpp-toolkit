@@ -1,3 +1,4 @@
+/* eslint-disable */
 import sortObjectKeys from 'sort-object-keys';
 import detectIndent from 'detect-indent';
 import { detectNewlineGraceful as detectNewline } from 'detect-newline';

@@ -7,13 +7,8 @@ import { defineConfig } from 'eslint/config';
  * @see {@link https://eslint.org/docs/latest/use/configure/ignore#including-gitignore-files}
  */
 export const ignoreConfig = (rootDir?: string) => {
-    let config;
-    try {
-        const gitIgnorePath = findGitIgnore(rootDir);
-        config = includeIgnoreFile(gitIgnorePath);
-    } catch {
-        config = {};
-    }
+    const gitIgnorePath = findGitIgnore(rootDir);
+    const config = includeIgnoreFile(gitIgnorePath);
 
     return defineConfig({
         name: 'ignore-config',

@@ -1,5 +1,6 @@
-import type { Config } from 'prettier';
 import { createRequire } from 'node:module';
+
+import type { Config } from 'prettier';
 
 const require = createRequire(import.meta.url);
 

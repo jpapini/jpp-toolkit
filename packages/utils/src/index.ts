@@ -1,2 +1,2 @@
-export * from './memoize-one';
 export * from './find-closest';
+export * from './memoize-one';

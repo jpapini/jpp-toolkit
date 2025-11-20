@@ -1,4 +1,5 @@
-import { defineConfig, type Config } from 'eslint/config';
+import { defineConfig } from 'eslint/config';
+import type { Config } from 'eslint/config';
 import globals from 'globals';
 
 import { eslintConfig } from './configs/eslint-config';

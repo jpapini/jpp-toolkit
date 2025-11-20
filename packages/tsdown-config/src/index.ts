@@ -1,6 +1,7 @@
 import path from 'node:path';
 
-import { defineConfig, type UserConfig } from 'tsdown';
+import { defineConfig } from 'tsdown';
+import type { UserConfig } from 'tsdown';
 
 export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
     const cwd = overrides.cwd ?? process.cwd();
