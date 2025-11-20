@@ -28,8 +28,8 @@ export class Logger {
 
     public formatPath(path: string): string {
         const root = this._rootDir ?? process.cwd();
-        const replaceWith = this._rootDir ? '<root>' : '<cwd>';
-        return path.replace(new RegExp(`^${root}`, 'u'), gray(replaceWith));
+        const replaceWith = this._rootDir ? '<root>/' : '<cwd>/';
+        return path.replace(new RegExp(`^${root}/`, 'u'), gray(replaceWith));
     }
 
     public log(message?: string, ...args: unknown[]): void {
