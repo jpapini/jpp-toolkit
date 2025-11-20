@@ -1,27 +1,26 @@
-import path from "node:path";
+import path from 'node:path';
 
-import { defineConfig, type UserConfig } from "tsdown";
+import { defineConfig, type UserConfig } from 'tsdown';
 
 export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
     const cwd = overrides.cwd ?? process.cwd();
 
-    const ignoreWatch = Array.isArray(overrides.ignoreWatch)
-        ? overrides.ignoreWatch
-        : overrides.ignoreWatch
-        ? [overrides.ignoreWatch]
+    const ignoreWatch =
+        Array.isArray(overrides.ignoreWatch) ? overrides.ignoreWatch
+        : overrides.ignoreWatch ? [overrides.ignoreWatch]
         : [];
 
     return defineConfig({
         cwd,
 
-        target: "node24",
-        platform: "node",
+        target: 'node24',
+        platform: 'node',
 
-        entry: path.resolve(cwd, "src/index.ts"),
-        outDir: path.resolve(cwd, "dist"),
-        tsconfig: path.resolve(cwd, "tsconfig.json"),
+        entry: path.resolve(cwd, 'src/index.ts'),
+        outDir: path.resolve(cwd, 'dist'),
+        tsconfig: path.resolve(cwd, 'tsconfig.json'),
 
-        format: ["esm"],
+        format: ['esm'],
 
         dts: true,
         sourcemap: true,

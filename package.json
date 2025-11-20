@@ -3,14 +3,22 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "lint": "run-s -c lint:*",
+        "lint:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -c '**/*' '!**/pnpm-lock.yaml'",
+        "format": "run-s -c format:*",
+        "format:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -w '**/*' '!**/pnpm-lock.yaml'",
         "typecheck": "turbo run typecheck",
         "dev": "turbo run dev",
         "build": "turbo run build"
     },
+    "prettier": "@jpp/prettier-config",
     "devDependencies": {
         "@jpp/internal-build-lib": "workspace:*",
+        "@jpp/prettier-config": "workspace:*",
         "@jpp/ts-config": "workspace:*",
         "@types/node": "24.10.1",
+        "npm-run-all2": "8.0.4",
+        "prettier": "3.6.2",
         "turbo": "2.6.1",
         "typescript": "5.9.3"
     },

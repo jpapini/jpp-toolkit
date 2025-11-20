@@ -1,5 +1,5 @@
-import type { Config } from "prettier";
-import { createRequire } from "node:module";
+import type { Config } from 'prettier';
+import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 
@@ -14,7 +14,7 @@ const config: Config = {
      * When binary expressions wrap lines, print operators at the start of new lines.
      * @see {@link https://prettier.io/docs/options#experimental-operator-position}
      */
-    experimentalOperatorPosition: "start",
+    experimentalOperatorPosition: 'start',
 
     /**
      * Specify the line length that the printer will wrap on.
@@ -50,7 +50,7 @@ const config: Config = {
      * If at least one property in an object requires quotes, quote all properties.
      * @see {@link https://prettier.io/docs/options#quote-props}
      */
-    quoteProps: "consistent",
+    quoteProps: 'consistent',
 
     /**
      * Use double quotes instead of single quotes in JSX.
@@ -62,7 +62,7 @@ const config: Config = {
      * Trailing commas wherever possible.
      * @see {@link https://prettier.io/docs/options#trailing-commas}
      */
-    trailingComma: "all",
+    trailingComma: 'all',
 
     /**
      * Print spaces between brackets in object literals.
@@ -74,7 +74,7 @@ const config: Config = {
      * Keep as multi-line, if there is a newline between the opening brace and first property.
      * @see {@link https://prettier.io/docs/options#object-wrap}
      */
-    objectWrap: "preserve",
+    objectWrap: 'preserve',
 
     /**
      * Put the `>` of a multi-line JSX element alone on the next line.
@@ -86,13 +86,13 @@ const config: Config = {
      * Always include parens.
      * @see {@link https://prettier.io/docs/options#arrow-function-parentheses}
      */
-    arrowParens: "always",
+    arrowParens: 'always',
 
     /**
      * Line Feed only (\n), common on Linux and macOS as well as inside git repos.
      * @see {@link https://prettier.io/docs/options#end-of-line}
      */
-    endOfLine: "lf",
+    endOfLine: 'lf',
 
     /**
      * Do not enforce single attribute per line.
@@ -104,7 +104,7 @@ const config: Config = {
      * Plugins to use with Prettier.
      * @see {@link https://prettier.io/docs/en/plugins.html}
      */
-    plugins: [require.resolve("@jpp/prettier-plugin-packagejson")],
+    plugins: [require.resolve('@jpp/prettier-plugin-packagejson')],
 };
 
 export default config;

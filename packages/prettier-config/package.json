@@ -35,6 +35,9 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@jpp/prettier-plugin-packagejson": "workspace:*"
+    },
     "devDependencies": {
         "prettier": "3.6.2"
     },
@@ -52,8 +55,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "dependencies": {
-        "@jpp/prettier-plugin-packagejson": "workspace:*"
     }
 }

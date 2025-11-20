@@ -1,9 +1,9 @@
-import sortObjectKeys from "sort-object-keys";
-import detectIndent from "detect-indent";
-import { detectNewlineGraceful as detectNewline } from "detect-newline";
-import gitHooks from "git-hooks-list";
-import isPlainObject from "is-plain-obj";
-import semver from "semver";
+import sortObjectKeys from 'sort-object-keys';
+import detectIndent from 'detect-indent';
+import { detectNewlineGraceful as detectNewline } from 'detect-newline';
+import gitHooks from 'git-hooks-list';
+import isPlainObject from 'is-plain-obj';
+import semver from 'semver';
 
 const pipe =
     (fns) =>
@@ -11,7 +11,7 @@ const pipe =
         fns.reduce((result, fn) => fn(result, ...args), x);
 const onArray = (fn) => (x) => (Array.isArray(x) ? fn(x) : x);
 const onStringArray = (fn) => (x) =>
-    Array.isArray(x) && x.every((item) => typeof item === "string") ? fn(x) : x;
+    Array.isArray(x) && x.every((item) => typeof item === 'string') ? fn(x) : x;
 const uniq = onStringArray((xs) => [...new Set(xs)]);
 const sortArray = onStringArray((array) => array.toSorted());
 const uniqAndSortArray = pipe([uniq, sortArray]);
@@ -33,21 +33,21 @@ const sortObjectBy = (comparator, deep) => {
     return over;
 };
 const sortObject = sortObjectBy();
-const sortURLObject = sortObjectBy(["type", "url"]);
-const sortPeopleObject = sortObjectBy(["name", "email", "url"]);
-const sortDirectories = sortObjectBy(["lib", "bin", "man", "doc", "example", "test"]);
+const sortURLObject = sortObjectBy(['type', 'url']);
+const sortPeopleObject = sortObjectBy(['name', 'email', 'url']);
+const sortDirectories = sortObjectBy(['lib', 'bin', 'man', 'doc', 'example', 'test']);
 const overProperty =
     (property, over) =>
     (object, ...args) =>
-        Object.hasOwn(object, property)
-            ? { ...object, [property]: over(object[property], ...args) }
-            : object;
+        Object.hasOwn(object, property) ?
+            { ...object, [property]: over(object[property], ...args) }
+        :   object;
 const sortGitHooks = sortObjectBy(gitHooks);
 
 const parseNameAndVersionRange = (specifier) => {
     // Ignore anything after > & rely on fallback alphanumeric sorting for that
-    const [nameAndVersion] = specifier.split(">");
-    const atMatches = [...nameAndVersion.matchAll("@")];
+    const [nameAndVersion] = specifier.split('>');
+    const atMatches = [...nameAndVersion.matchAll('@')];
     if (!atMatches.length || (atMatches.length === 1 && atMatches[0].index === 0)) {
         return { name: specifier };
     }
@@ -63,7 +63,7 @@ const sortObjectBySemver = sortObjectBy((a, b) => {
     const { name: bName, range: bRange } = parseNameAndVersionRange(b);
 
     if (aName !== bName) {
-        return aName.localeCompare(bName, "en");
+        return aName.localeCompare(bName, 'en');
     }
     if (!aRange) {
         return -1;
@@ -75,7 +75,7 @@ const sortObjectBySemver = sortObjectBy((a, b) => {
 });
 
 const getPackageName = (ident) => {
-    const index = ident.indexOf("@", ident.startsWith("@") ? 1 : 0);
+    const index = ident.indexOf('@', ident.startsWith('@') ? 1 : 0);
     // This should not happen, unless user manually edit the package.json file
     return index === -1 ? ident : ident.slice(0, index);
 };
@@ -91,7 +91,7 @@ const sortObjectByIdent = (a, b) => {
 
 // sort deps like the npm CLI does (via the package @npmcli/package-json)
 // https://github.com/npm/package-json/blob/b6465f44c727d6513db6898c7cbe41dd355cebe8/lib/update-dependencies.js#L8-L21
-const sortDependenciesLikeNpm = sortObjectBy((a, b) => a.localeCompare(b, "en"));
+const sortDependenciesLikeNpm = sortObjectBy((a, b) => a.localeCompare(b, 'en'));
 
 /**
  * "workspaces" can be an array (npm or yarn classic) or an object (pnpm/bun).
@@ -119,7 +119,7 @@ const sortWorkspaces = (workspaces) => {
     }
 
     // Add any other properties in alphabetical order
-    const knownKeys = ["packages", "catalog"];
+    const knownKeys = ['packages', 'catalog'];
     const otherKeys = Object.keys(workspaces)
         .filter((key) => !knownKeys.includes(key))
         .sort();
@@ -136,43 +136,43 @@ const eslintBaseConfigProperties = [
     // `files` and `excludedFiles` are only on `overrides[]`
     // for easier sort `overrides[]`,
     // add them to here, so we don't need sort `overrides[]` twice
-    "files",
-    "excludedFiles",
+    'files',
+    'excludedFiles',
     // baseConfig
-    "env",
-    "parser",
-    "parserOptions",
-    "settings",
-    "plugins",
-    "extends",
-    "rules",
-    "overrides",
-    "globals",
-    "processor",
-    "noInlineConfig",
-    "reportUnusedDisableDirectives",
+    'env',
+    'parser',
+    'parserOptions',
+    'settings',
+    'plugins',
+    'extends',
+    'rules',
+    'overrides',
+    'globals',
+    'processor',
+    'noInlineConfig',
+    'reportUnusedDisableDirectives',
 ];
 const sortEslintConfig = onObject(
     pipe([
         sortObjectBy(eslintBaseConfigProperties),
-        overProperty("env", sortObject),
-        overProperty("globals", sortObject),
+        overProperty('env', sortObject),
+        overProperty('globals', sortObject),
         overProperty(
-            "overrides",
+            'overrides',
             onArray((overrides) => overrides.map(sortEslintConfig)),
         ),
-        overProperty("parserOptions", sortObject),
+        overProperty('parserOptions', sortObject),
         overProperty(
-            "rules",
+            'rules',
             sortObjectBy(
                 (rule1, rule2) =>
-                    rule1.split("/").length - rule2.split("/").length || rule1.localeCompare(rule2),
+                    rule1.split('/').length - rule2.split('/').length || rule1.localeCompare(rule2),
             ),
         ),
-        overProperty("settings", sortObject),
+        overProperty('settings', sortObject),
     ]),
 );
-const sortVSCodeBadgeObject = sortObjectBy(["description", "url", "href"]);
+const sortVSCodeBadgeObject = sortObjectBy(['description', 'url', 'href']);
 
 const sortPrettierConfig = onObject(
     pipe([
@@ -180,13 +180,13 @@ const sortPrettierConfig = onObject(
         (config) =>
             sortObjectKeys(config, [
                 ...Object.keys(config)
-                    .filter((key) => key !== "overrides")
+                    .filter((key) => key !== 'overrides')
                     .sort(),
-                "overrides",
+                'overrides',
             ]),
         // if `config.overrides` exists
         overProperty(
-            "overrides",
+            'overrides',
             // and `config.overrides` is an array
             onArray((overrides) =>
                 overrides.map(
@@ -194,7 +194,7 @@ const sortPrettierConfig = onObject(
                         // sort `config.overrides[]` alphabetically
                         sortObject,
                         // sort `config.overrides[].options` alphabetically
-                        overProperty("options", sortObject),
+                        overProperty('options', sortObject),
                     ]),
                 ),
             ),
@@ -202,28 +202,28 @@ const sortPrettierConfig = onObject(
     ]),
 );
 
-const sortVolta = sortObjectBy(["node", "npm", "yarn"]);
+const sortVolta = sortObjectBy(['node', 'npm', 'yarn']);
 
 const pnpmBaseConfigProperties = [
-    "peerDependencyRules",
-    "neverBuiltDependencies",
-    "onlyBuiltDependencies",
-    "onlyBuiltDependenciesFile",
-    "allowedDeprecatedVersions",
-    "allowNonAppliedPatches",
-    "updateConfig",
-    "auditConfig",
-    "requiredScripts",
-    "supportedArchitectures",
-    "overrides",
-    "patchedDependencies",
-    "packageExtensions",
+    'peerDependencyRules',
+    'neverBuiltDependencies',
+    'onlyBuiltDependencies',
+    'onlyBuiltDependenciesFile',
+    'allowedDeprecatedVersions',
+    'allowNonAppliedPatches',
+    'updateConfig',
+    'auditConfig',
+    'requiredScripts',
+    'supportedArchitectures',
+    'overrides',
+    'patchedDependencies',
+    'packageExtensions',
 ];
 
 const sortPnpmConfig = onObject(
     pipe([
         sortObjectBy(pnpmBaseConfigProperties, true),
-        overProperty("overrides", sortObjectBySemver),
+        overProperty('overrides', sortObjectBySemver),
     ]),
 );
 
@@ -237,129 +237,129 @@ const sortPnpmConfig = onObject(
 // field.key{string}: field name
 // field.over{function}: sort field subKey
 const fields = [
-    { key: "$schema" },
-    { key: "name" },
-    /* vscode */ { key: "displayName" },
-    { key: "version" },
-    /* yarn */ { key: "stableVersion" },
-    { key: "private" },
-    { key: "description" },
-    /* vscode */ { key: "categories", over: uniq },
-    { key: "keywords", over: uniq },
-    { key: "homepage" },
-    { key: "bugs", over: sortObjectBy(["url", "email"]) },
-    { key: "repository", over: sortURLObject },
-    { key: "funding", over: sortURLObject },
-    { key: "license", over: sortURLObject },
-    /* vscode */ { key: "qna" },
-    { key: "author", over: sortPeopleObject },
+    { key: '$schema' },
+    { key: 'name' },
+    /* vscode */ { key: 'displayName' },
+    { key: 'version' },
+    /* yarn */ { key: 'stableVersion' },
+    { key: 'private' },
+    { key: 'description' },
+    /* vscode */ { key: 'categories', over: uniq },
+    { key: 'keywords', over: uniq },
+    { key: 'homepage' },
+    { key: 'bugs', over: sortObjectBy(['url', 'email']) },
+    { key: 'repository', over: sortURLObject },
+    { key: 'funding', over: sortURLObject },
+    { key: 'license', over: sortURLObject },
+    /* vscode */ { key: 'qna' },
+    { key: 'author', over: sortPeopleObject },
     {
-        key: "maintainers",
+        key: 'maintainers',
         over: onArray((maintainers) => maintainers.map(sortPeopleObject)),
     },
     {
-        key: "contributors",
+        key: 'contributors',
         over: onArray((contributors) => contributors.map(sortPeopleObject)),
     },
-    /* vscode */ { key: "publisher" },
-    { key: "sideEffects" },
-    { key: "type" },
-    { key: "imports" },
-    { key: "exports" },
-    { key: "main" },
-    { key: "svelte" },
-    { key: "umd:main" },
-    { key: "jsdelivr" },
-    { key: "unpkg" },
-    { key: "module" },
-    { key: "source" },
-    { key: "jsnext:main" },
-    { key: "browser" },
-    { key: "react-native" },
-    { key: "types" },
-    { key: "typesVersions" },
-    { key: "typings" },
-    { key: "style" },
-    { key: "example" },
-    { key: "examplestyle" },
-    { key: "assets" },
-    { key: "bin", over: sortObject },
-    { key: "man" },
-    { key: "directories", over: sortDirectories },
-    { key: "files", over: uniq },
-    { key: "workspaces", over: sortWorkspaces },
+    /* vscode */ { key: 'publisher' },
+    { key: 'sideEffects' },
+    { key: 'type' },
+    { key: 'imports' },
+    { key: 'exports' },
+    { key: 'main' },
+    { key: 'svelte' },
+    { key: 'umd:main' },
+    { key: 'jsdelivr' },
+    { key: 'unpkg' },
+    { key: 'module' },
+    { key: 'source' },
+    { key: 'jsnext:main' },
+    { key: 'browser' },
+    { key: 'react-native' },
+    { key: 'types' },
+    { key: 'typesVersions' },
+    { key: 'typings' },
+    { key: 'style' },
+    { key: 'example' },
+    { key: 'examplestyle' },
+    { key: 'assets' },
+    { key: 'bin', over: sortObject },
+    { key: 'man' },
+    { key: 'directories', over: sortDirectories },
+    { key: 'files', over: uniq },
+    { key: 'workspaces', over: sortWorkspaces },
     // node-pre-gyp https://www.npmjs.com/package/node-pre-gyp#1-add-new-entries-to-your-packagejson
     {
-        key: "binary",
-        over: sortObjectBy(["module_name", "module_path", "remote_path", "package_name", "host"]),
+        key: 'binary',
+        over: sortObjectBy(['module_name', 'module_path', 'remote_path', 'package_name', 'host']),
     },
-    { key: "scripts" },
-    { key: "betterScripts" },
-    /* vscode */ { key: "l10n" },
-    /* vscode */ { key: "contributes", over: sortObject },
-    /* vscode */ { key: "activationEvents", over: uniq },
-    { key: "husky", over: overProperty("hooks", sortGitHooks) },
-    { key: "simple-git-hooks", over: sortGitHooks },
-    { key: "pre-commit" },
-    { key: "commitlint", over: sortObject },
-    { key: "lint-staged" },
-    { key: "nano-staged" },
-    { key: "config", over: sortObject },
-    { key: "nodemonConfig", over: sortObject },
-    { key: "browserify", over: sortObject },
-    { key: "babel", over: sortObject },
-    { key: "browserslist" },
-    { key: "xo", over: sortObject },
-    { key: "prettier", over: sortPrettierConfig },
-    { key: "eslintConfig", over: sortEslintConfig },
-    { key: "eslintIgnore" },
-    { key: "npmpkgjsonlint", over: sortObject },
-    { key: "npmPackageJsonLintConfig", over: sortObject },
-    { key: "npmpackagejsonlint", over: sortObject },
-    { key: "release", over: sortObject },
-    { key: "remarkConfig", over: sortObject },
-    { key: "stylelint" },
-    { key: "ava", over: sortObject },
-    { key: "jest", over: sortObject },
-    { key: "jest-junit", over: sortObject },
-    { key: "jest-stare", over: sortObject },
-    { key: "mocha", over: sortObject },
-    { key: "nyc", over: sortObject },
-    { key: "c8", over: sortObject },
-    { key: "tap", over: sortObject },
-    { key: "oclif", over: sortObjectBy(undefined, true) },
-    { key: "resolutions", over: sortObject },
-    { key: "overrides", over: sortDependenciesLikeNpm },
-    { key: "dependencies", over: sortDependenciesLikeNpm },
-    { key: "devDependencies", over: sortDependenciesLikeNpm },
-    { key: "dependenciesMeta", over: sortObjectBy(sortObjectByIdent, true) },
-    { key: "peerDependencies", over: sortDependenciesLikeNpm },
+    { key: 'scripts' },
+    { key: 'betterScripts' },
+    /* vscode */ { key: 'l10n' },
+    /* vscode */ { key: 'contributes', over: sortObject },
+    /* vscode */ { key: 'activationEvents', over: uniq },
+    { key: 'husky', over: overProperty('hooks', sortGitHooks) },
+    { key: 'simple-git-hooks', over: sortGitHooks },
+    { key: 'pre-commit' },
+    { key: 'commitlint', over: sortObject },
+    { key: 'lint-staged' },
+    { key: 'nano-staged' },
+    { key: 'config', over: sortObject },
+    { key: 'nodemonConfig', over: sortObject },
+    { key: 'browserify', over: sortObject },
+    { key: 'babel', over: sortObject },
+    { key: 'browserslist' },
+    { key: 'xo', over: sortObject },
+    { key: 'prettier', over: sortPrettierConfig },
+    { key: 'eslintConfig', over: sortEslintConfig },
+    { key: 'eslintIgnore' },
+    { key: 'npmpkgjsonlint', over: sortObject },
+    { key: 'npmPackageJsonLintConfig', over: sortObject },
+    { key: 'npmpackagejsonlint', over: sortObject },
+    { key: 'release', over: sortObject },
+    { key: 'remarkConfig', over: sortObject },
+    { key: 'stylelint' },
+    { key: 'ava', over: sortObject },
+    { key: 'jest', over: sortObject },
+    { key: 'jest-junit', over: sortObject },
+    { key: 'jest-stare', over: sortObject },
+    { key: 'mocha', over: sortObject },
+    { key: 'nyc', over: sortObject },
+    { key: 'c8', over: sortObject },
+    { key: 'tap', over: sortObject },
+    { key: 'oclif', over: sortObjectBy(undefined, true) },
+    { key: 'resolutions', over: sortObject },
+    { key: 'overrides', over: sortDependenciesLikeNpm },
+    { key: 'dependencies', over: sortDependenciesLikeNpm },
+    { key: 'devDependencies', over: sortDependenciesLikeNpm },
+    { key: 'dependenciesMeta', over: sortObjectBy(sortObjectByIdent, true) },
+    { key: 'peerDependencies', over: sortDependenciesLikeNpm },
     // TODO: only sort depth = 2
-    { key: "peerDependenciesMeta", over: sortObjectBy(undefined, true) },
-    { key: "optionalDependencies", over: sortDependenciesLikeNpm },
-    { key: "bundledDependencies", over: uniqAndSortArray },
-    { key: "bundleDependencies", over: uniqAndSortArray },
-    /* vscode */ { key: "extensionPack", over: uniqAndSortArray },
-    /* vscode */ { key: "extensionDependencies", over: uniqAndSortArray },
-    { key: "flat" },
-    { key: "packageManager" },
-    { key: "engines", over: sortObject },
-    { key: "engineStrict", over: sortObject },
-    { key: "volta", over: sortVolta },
-    { key: "languageName" },
-    { key: "os" },
-    { key: "cpu" },
-    { key: "preferGlobal", over: sortObject },
-    { key: "publishConfig", over: sortObject },
-    /* vscode */ { key: "icon" },
+    { key: 'peerDependenciesMeta', over: sortObjectBy(undefined, true) },
+    { key: 'optionalDependencies', over: sortDependenciesLikeNpm },
+    { key: 'bundledDependencies', over: uniqAndSortArray },
+    { key: 'bundleDependencies', over: uniqAndSortArray },
+    /* vscode */ { key: 'extensionPack', over: uniqAndSortArray },
+    /* vscode */ { key: 'extensionDependencies', over: uniqAndSortArray },
+    { key: 'flat' },
+    { key: 'packageManager' },
+    { key: 'engines', over: sortObject },
+    { key: 'engineStrict', over: sortObject },
+    { key: 'volta', over: sortVolta },
+    { key: 'languageName' },
+    { key: 'os' },
+    { key: 'cpu' },
+    { key: 'preferGlobal', over: sortObject },
+    { key: 'publishConfig', over: sortObject },
+    /* vscode */ { key: 'icon' },
     /* vscode */ {
-        key: "badges",
+        key: 'badges',
         over: onArray((badge) => badge.map(sortVSCodeBadgeObject)),
     },
-    /* vscode */ { key: "galleryBanner", over: sortObject },
-    /* vscode */ { key: "preview" },
-    /* vscode */ { key: "markdown" },
-    { key: "pnpm", over: sortPnpmConfig },
+    /* vscode */ { key: 'galleryBanner', over: sortObject },
+    /* vscode */ { key: 'preview' },
+    /* vscode */ { key: 'markdown' },
+    { key: 'pnpm', over: sortPnpmConfig },
 ];
 
 const defaultSortOrder = fields.map(({ key }) => key);
@@ -368,15 +368,15 @@ const overFields = pipe(
 );
 
 function editStringJSON(json, over) {
-    if (typeof json === "string") {
+    if (typeof json === 'string') {
         const { indent, type } = detectIndent(json);
-        const endCharacters = json.slice(-1) === "\n" ? "\n" : "";
+        const endCharacters = json.slice(-1) === '\n' ? '\n' : '';
         const newline = detectNewline(json);
         json = JSON.parse(json);
 
         let result =
-            JSON.stringify(over(json), null, type === "tab" ? "\t" : indent) + endCharacters;
-        if (newline === "\r\n") {
+            JSON.stringify(over(json), null, type === 'tab' ? '\t' : indent) + endCharacters;
+        if (newline === '\r\n') {
             result = result.replace(/\n/g, newline);
         }
         return result;
@@ -385,7 +385,7 @@ function editStringJSON(json, over) {
     return over(json);
 }
 
-const isPrivateKey = (key) => key[0] === "_";
+const isPrivateKey = (key) => key[0] === '_';
 const partition = (array, predicate) =>
     array.reduce(
         (result, value) => {
