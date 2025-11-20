@@ -30,6 +30,12 @@ importers:
         specifier: 0.16.5
         version: 0.16.5(typescript@5.9.3)
 
+  packages/prettier-config:
+    devDependencies:
+      prettier:
+        specifier: 3.6.2
+        version: 3.6.2
+
   packages/ts-config:
     devDependencies:
       typescript:
@@ -265,6 +271,11 @@ packages:
   picomatch@4.0.3:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
+
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
@@ -565,6 +576,8 @@ snapshots:
   pathe@2.0.3: {}
 
   picomatch@4.0.3: {}
+
+  prettier@3.6.2: {}
 
   quansync@0.2.11: {}
 
