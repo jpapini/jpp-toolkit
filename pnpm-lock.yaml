@@ -31,10 +31,45 @@ importers:
         version: 0.16.5(typescript@5.9.3)
 
   packages/prettier-config:
+    dependencies:
+      '@jpp/prettier-plugin-packagejson':
+        specifier: workspace:*
+        version: link:../prettier-plugin-packagejson
     devDependencies:
       prettier:
         specifier: 3.6.2
         version: 3.6.2
+
+  packages/prettier-plugin-packagejson:
+    dependencies:
+      '@jpp/sort-package-json':
+        specifier: workspace:*
+        version: link:../sort-package-json
+    devDependencies:
+      prettier:
+        specifier: 3.6.2
+        version: 3.6.2
+
+  packages/sort-package-json:
+    dependencies:
+      detect-indent:
+        specifier: 7.0.2
+        version: 7.0.2
+      detect-newline:
+        specifier: 4.0.1
+        version: 4.0.1
+      git-hooks-list:
+        specifier: 4.1.1
+        version: 4.1.1
+      is-plain-obj:
+        specifier: 4.1.0
+        version: 4.1.0
+      semver:
+        specifier: 7.7.3
+        version: 7.7.3
+      sort-object-keys:
+        specifier: 2.0.1
+        version: 2.0.1
 
   packages/ts-config:
     devDependencies:
@@ -217,6 +252,14 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
+  detect-indent@7.0.2:
+    resolution: {integrity: sha512-y+8xyqdGLL+6sh0tVeHcfP/QDd8gUgbasolJJpY7NgeQGSZ739bDtSiaiDgtoicy+mtYB81dKLxO9xRhCyIB3A==}
+    engines: {node: '>=12.20'}
+
+  detect-newline@4.0.1:
+    resolution: {integrity: sha512-qE3Veg1YXzGHQhlA6jzebZN2qVf6NX+A7m7qlhCGG30dJixrAQhYOsJjsnBjJkCSmuOPpCk30145fr8FV0bzog==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   diff@8.0.2:
     resolution: {integrity: sha512-sSuxWU5j5SR9QQji/o2qMvqRNYRDOcBTgsJ/DeCf4iSN4gW+gNMXM7wFIP+fdXZxoNiAnHUTGjCr+TSWXdRDKg==}
     engines: {node: '>=0.3.1'}
@@ -246,8 +289,15 @@ packages:
   get-tsconfig@4.13.0:
     resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
 
+  git-hooks-list@4.1.1:
+    resolution: {integrity: sha512-cmP497iLq54AZnv4YRAEMnEyQ1eIn4tGKbmswqwmFV4GBnAqE8NLtWxxdXa++AalfgL5EBH4IxTPyquEuGY/jA==}
+
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
+
+  is-plain-obj@4.1.0:
+    resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
+    engines: {node: '>=12'}
 
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
@@ -315,6 +365,9 @@ packages:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
+
+  sort-object-keys@2.0.1:
+    resolution: {integrity: sha512-R89fO+z3x7hiKPXX5P0qim+ge6Y60AjtlW+QQpRozrrNcR1lw9Pkpm5MLB56HoNvdcLHL4wbpq16OcvGpEDJIg==}
 
   tinyexec@1.0.2:
     resolution: {integrity: sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==}
@@ -549,6 +602,10 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
+  detect-indent@7.0.2: {}
+
+  detect-newline@4.0.1: {}
+
   diff@8.0.2: {}
 
   dts-resolver@2.1.3: {}
@@ -563,7 +620,11 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  git-hooks-list@4.1.1: {}
+
   hookable@5.5.3: {}
+
+  is-plain-obj@4.1.0: {}
 
   jsesc@3.1.0: {}
 
@@ -624,6 +685,8 @@ snapshots:
       '@rolldown/binding-win32-x64-msvc': 1.0.0-beta.50
 
   semver@7.7.3: {}
+
+  sort-object-keys@2.0.1: {}
 
   tinyexec@1.0.2: {}
 

@@ -1,4 +1,7 @@
 import type { Config } from "prettier";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
 
 const config: Config = {
     /**
@@ -96,6 +99,12 @@ const config: Config = {
      * @see {@link https://prettier.io/docs/options#single-attribute-per-line}
      */
     singleAttributePerLine: false,
+
+    /**
+     * Plugins to use with Prettier.
+     * @see {@link https://prettier.io/docs/en/plugins.html}
+     */
+    plugins: [require.resolve("@jpp/prettier-plugin-packagejson")],
 };
 
 export default config;

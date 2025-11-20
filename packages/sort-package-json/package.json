@@ -1,45 +1,42 @@
 {
-    "name": "@jpp/prettier-config",
+    "name": "@jpp/sort-package-json",
     "version": "0.0.1",
-    "description": "Prettier configurations for JS/TS projects.",
+    "description": "Sort an Object or package.json based on the well-known package.json keys.",
     "keywords": [
         "jpp",
-        "prettier",
-        "config"
+        "sort",
+        "package-json"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-config#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/sort-package-json#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/prettier-config"
+        "directory": "packages/sort-package-json"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
     "type": "module",
     "exports": {
         ".": {
-            "types": "./dist/index.d.mts",
-            "default": "./dist/index.mjs"
+            "types": "./index.d.mts",
+            "default": "./index.mjs"
         },
         "./package.json": "./package.json"
     },
     "files": [
-        "dist",
-        "src"
+        "index.d.mts",
+        "index.mjs"
     ],
-    "scripts": {
-        "typecheck": "tsc --noEmit --pretty",
-        "dev": "build-lib --watch",
-        "build": "build-lib"
-    },
-    "devDependencies": {
-        "prettier": "3.6.2"
-    },
-    "peerDependencies": {
-        "prettier": "3"
+    "dependencies": {
+        "detect-indent": "7.0.2",
+        "detect-newline": "4.0.1",
+        "git-hooks-list": "4.1.1",
+        "is-plain-obj": "4.1.0",
+        "semver": "7.7.3",
+        "sort-object-keys": "2.0.1"
     },
     "packageManager": "pnpm@10.22.0",
     "engines": {
@@ -52,8 +49,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "dependencies": {
-        "@jpp/prettier-plugin-packagejson": "workspace:*"
     }
 }

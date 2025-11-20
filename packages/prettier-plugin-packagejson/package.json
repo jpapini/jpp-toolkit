@@ -1,20 +1,21 @@
 {
-    "name": "@jpp/prettier-config",
+    "name": "@jpp/prettier-plugin-packagejson",
     "version": "0.0.1",
-    "description": "Prettier configurations for JS/TS projects.",
+    "description": "Prettier plugin for formatting package.json files.",
     "keywords": [
         "jpp",
         "prettier",
-        "config"
+        "plugin",
+        "packagejson"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-config#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-plugin-packagejson#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/prettier-config"
+        "directory": "packages/prettier-plugin-packagejson"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -35,6 +36,9 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@jpp/sort-package-json": "workspace:*"
+    },
     "devDependencies": {
         "prettier": "3.6.2"
     },
@@ -52,8 +56,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "dependencies": {
-        "@jpp/prettier-plugin-packagejson": "workspace:*"
     }
 }
