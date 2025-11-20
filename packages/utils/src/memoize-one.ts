@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Func = (this: any, ...args: any[]) => any;
+type Func = (this: unknown, ...args: any[]) => unknown;
 
 type Cache<TFunc extends Func> = {
     this: ThisParameterType<TFunc>;
@@ -21,13 +20,10 @@ export function memoizeOne<TFunc extends Func>(func: TFunc): TFunc {
         ...args: Parameters<TFunc>
     ): ReturnType<TFunc> {
         if (cache !== null && cache.this === this && isArrayShallowEqual(cache.args, args)) {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-return
             return cache.result;
         }
         const result = func.apply(this, args) as ReturnType<TFunc>;
         cache = { this: this, args, result };
-
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return result;
     }
 

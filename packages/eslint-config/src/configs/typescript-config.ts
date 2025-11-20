@@ -665,7 +665,7 @@ export const typescriptConfig = defineConfig([
              * @fixable
              * @see {@link https://typescript-eslint.io/rules/no-explicit-any}
              */
-            // '@typescript-eslint/no-explicit-any': 'off',
+            '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
 
             /**
              * Disallow extra non-null assertions.

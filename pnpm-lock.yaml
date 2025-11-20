@@ -103,6 +103,15 @@ importers:
         specifier: 9.39.1
         version: 9.39.1
 
+  packages/logger:
+    dependencies:
+      '@jpp/utils':
+        specifier: workspace:*
+        version: link:../utils
+      colorette:
+        specifier: 2.0.20
+        version: 2.0.20
+
   packages/prettier-config:
     dependencies:
       '@jpp/prettier-plugin-packagejson':
@@ -793,6 +802,9 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  colorette@2.0.20:
+    resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
 
   comment-parser@1.4.1:
     resolution: {integrity: sha512-buhp5kePrmda3vhc5B9t7pUQXAb2Tnd0qgpkIhPhkHXxJpiPJ11H0ZEU0oBpJ2QztSbzG/ZxMj/CHsYJqRHmyg==}
@@ -2628,6 +2640,8 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  colorette@2.0.20: {}
 
   comment-parser@1.4.1: {}
 
