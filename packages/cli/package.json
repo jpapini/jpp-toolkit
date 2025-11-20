@@ -23,6 +23,7 @@
             "types": "./dist/index.d.mts",
             "default": "./dist/index.mjs"
         },
+        "./bin": "./bin/run.js",
         "./package.json": "./package.json"
     },
     "bin": {

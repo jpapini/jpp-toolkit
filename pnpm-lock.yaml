@@ -226,6 +226,28 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
 
+  packages/toolkit:
+    dependencies:
+      '@jpp/cli':
+        specifier: workspace:*
+        version: link:../cli
+      '@jpp/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@jpp/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
+      '@jpp/ts-config':
+        specifier: workspace:*
+        version: link:../ts-config
+    devDependencies:
+      eslint:
+        specifier: 9.39.1
+        version: 9.39.1
+      prettier:
+        specifier: 3.6.2
+        version: 3.6.2
+
   packages/ts-config:
     devDependencies:
       typescript:

@@ -1,0 +1,65 @@
+{
+    "name": "@jpp/toolkit",
+    "version": "0.0.1",
+    "description": "A set of tools for JS/TS projects.",
+    "keywords": [
+        "jpp",
+        "toolkit"
+    ],
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/toolkit#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp.git",
+        "directory": "packages/toolkit"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        "./eslint": "./eslint/index.js",
+        "./prettier": "./prettier/index.js",
+        "./ts-config/*.json": "./ts-config/*.json",
+        "./package.json": "./package.json"
+    },
+    "bin": {
+        "jpp": "bin/jpp.js"
+    },
+    "files": [
+        "bin/jpp.js",
+        "eslint/index.js",
+        "prettier/index.js",
+        "ts-config/*.json"
+    ],
+    "scripts": {
+        "prepack": "node scripts/generate.js"
+    },
+    "dependencies": {
+        "@jpp/cli": "workspace:*",
+        "@jpp/eslint-config": "workspace:*",
+        "@jpp/prettier-config": "workspace:*",
+        "@jpp/ts-config": "workspace:*"
+    },
+    "devDependencies": {
+        "eslint": "9.39.1",
+        "prettier": "3.6.2"
+    },
+    "peerDependencies": {
+        "eslint": "9",
+        "prettier": "3"
+    },
+    "packageManager": "pnpm@10.22.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "node": "24.11.1",
+        "pnpm": "10.22.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

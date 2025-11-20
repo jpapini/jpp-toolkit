@@ -34,11 +34,14 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@jpp/logger": "workspace:*"
+    },
     "devDependencies": {
         "@oclif/core": "4.8.0"
     },
     "peerDependencies": {
-        "@oclif/core": "4.8.0"
+        "@oclif/core": "4"
     },
     "packageManager": "pnpm@10.22.0",
     "engines": {
@@ -51,8 +54,5 @@
     },
     "publishConfig": {
         "access": "public"
-    },
-    "dependencies": {
-        "@jpp/logger": "workspace:*"
     }
 }
