@@ -1,0 +1,13 @@
+{
+    "$schema": "https://www.schemastore.org/tsconfig.json",
+    "extends": "@jpp/ts-config/tsconfig.bundler.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
