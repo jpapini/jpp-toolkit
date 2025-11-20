@@ -1,0 +1,58 @@
+{
+    "name": "@jpp/core",
+    "version": "0.0.1",
+    "description": "Core utilities for jpp cli and plugins.",
+    "keywords": [
+        "jpp",
+        "core"
+    ],
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/core#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp.git",
+        "directory": "packages/core"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "typecheck": "tsc --noEmit --pretty",
+        "dev": "build-lib --watch",
+        "build": "build-lib"
+    },
+    "devDependencies": {
+        "@oclif/core": "4.8.0"
+    },
+    "peerDependencies": {
+        "@oclif/core": "4.8.0"
+    },
+    "packageManager": "pnpm@10.22.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "node": "24.11.1",
+        "pnpm": "10.22.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@jpp/logger": "workspace:*"
+    }
+}
