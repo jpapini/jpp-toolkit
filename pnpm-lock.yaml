@@ -144,6 +144,25 @@ importers:
         specifier: 4.22.47
         version: 4.22.47(@types/node@24.10.1)
 
+  packages/plugin-lint:
+    dependencies:
+      '@jpp/core':
+        specifier: workspace:*
+        version: link:../core
+      '@jpp/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@oclif/core':
+        specifier: 4.8.0
+        version: 4.8.0
+      execa:
+        specifier: 9.6.0
+        version: 9.6.0
+    devDependencies:
+      oclif:
+        specifier: 4.22.47
+        version: 4.22.47(@types/node@24.10.1)
+
   packages/prettier-config:
     dependencies:
       '@jpp/prettier-plugin-packagejson':
