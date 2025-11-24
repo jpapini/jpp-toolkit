@@ -1,7 +1,8 @@
 {
     "color": true,
     "interactive": true,
-    "packageFile": "**/package.json",
     "upgrade": true,
-    "target": "minor"
+    "workspaces": true,
+    "format": ["group"],
+    "dep": ["prod", "dev", "peer", "optional", "packageManager"]
 }
