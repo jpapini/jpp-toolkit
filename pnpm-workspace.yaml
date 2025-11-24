@@ -1,3 +1,6 @@
 packages:
     - internals/*
     - packages/*
+
+onlyBuiltDependencies:
+    - esbuild
