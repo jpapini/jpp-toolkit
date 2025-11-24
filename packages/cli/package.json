@@ -58,8 +58,7 @@
         "pnpm": "10"
     },
     "volta": {
-        "node": "24.11.1",
-        "pnpm": "10.22.0"
+        "extends": "../../package.json"
     },
     "publishConfig": {
         "access": "public"
