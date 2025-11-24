@@ -1,21 +1,20 @@
 {
-    "name": "@jpp/prettier-plugin-packagejson",
+    "name": "@jpp/plugin-check-updates",
     "version": "0.0.5",
-    "description": "Prettier plugin for formatting package.json files.",
+    "description": "Plugin that add the check-updates command to the jpp cli.",
     "keywords": [
         "jpp",
-        "prettier",
         "plugin",
-        "packagejson"
+        "check-updates"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-plugin-packagejson#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/plugin-check-updates#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/prettier-plugin-packagejson"
+        "directory": "packages/plugin-check-updates"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -29,21 +28,24 @@
     },
     "files": [
         "dist",
-        "src"
+        "src",
+        "oclif.config.js",
+        "oclif.manifest.json"
     ],
     "scripts": {
         "typecheck": "tsc --noEmit --pretty",
         "dev": "build-lib --watch",
-        "build": "build-lib"
+        "build": "build-lib",
+        "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@jpp/sort-package-json": "workspace:*"
+        "@jpp/core": "workspace:*",
+        "@jpp/utils": "workspace:*",
+        "@oclif/core": "4.8.0",
+        "npm-check-updates": "19.1.2"
     },
     "devDependencies": {
-        "prettier": "3.6.2"
-    },
-    "peerDependencies": {
-        "prettier": "3"
+        "oclif": "4.22.50"
     },
     "packageManager": "pnpm@10.23.0",
     "engines": {

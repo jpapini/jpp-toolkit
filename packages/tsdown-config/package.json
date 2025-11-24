@@ -1,6 +1,6 @@
 {
     "name": "@jpp/tsdown-config",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Tsdown configurations for JS/TS projects.",
     "keywords": [
         "jpp",
