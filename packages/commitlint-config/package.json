@@ -1,6 +1,6 @@
 {
     "name": "@jpp/commitlint-config",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Commitlint configurations for JS/TS projects.",
     "keywords": [
         "jpp",

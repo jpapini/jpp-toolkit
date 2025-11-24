@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-build",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Plugin that add the build command to the jpp cli.",
     "keywords": [
         "jpp",

@@ -1,6 +1,6 @@
 import { Command } from '@jpp/core';
 import { createTsdownConfig } from '@jpp/tsdown-config';
-import { Args } from '@oclif/core';
+import { Args, Flags } from '@oclif/core';
 import { build as tsdownBuild } from 'tsdown';
 
 const Preset = {
@@ -22,6 +22,14 @@ export class BuildCommand extends Command {
         }),
     };
 
+    static override flags = {
+        watch: Flags.boolean({
+            char: 'w',
+            description: 'Watch files for changes and rebuild automatically.',
+            default: false,
+        }),
+    };
+
     static override examples = [
         {
             description: 'Build the code using the lib-esm preset.',
@@ -38,20 +46,21 @@ export class BuildCommand extends Command {
     ];
 
     public async run(): Promise<void> {
-        const { args } = await this.parse(BuildCommand);
+        const { args, flags } = await this.parse(BuildCommand);
         const preset = args.preset as Preset;
+        const { watch } = flags;
 
         this.logger.info(`Building using the '${preset}' preset...`);
 
         switch (preset) {
             case Preset.LIB_ESM:
-                await tsdownBuild(createTsdownConfig({ format: ['esm'] }));
+                await tsdownBuild(createTsdownConfig({ format: ['esm'], watch }));
                 break;
             case Preset.LIB_CJS:
-                await tsdownBuild(createTsdownConfig({ format: ['cjs'] }));
+                await tsdownBuild(createTsdownConfig({ format: ['cjs'], watch }));
                 break;
             case Preset.LIB_HYBRID:
-                await tsdownBuild(createTsdownConfig({ format: ['esm', 'cjs'] }));
+                await tsdownBuild(createTsdownConfig({ format: ['esm', 'cjs'], watch }));
                 break;
             default:
                 this.logger.error(`Unknown preset: ${preset}`);
