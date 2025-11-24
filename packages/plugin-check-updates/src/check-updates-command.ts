@@ -7,6 +7,11 @@ export class CheckUpdatesCommand extends Command {
     static override description = 'Check updates for project dependencies.';
 
     static override flags = {
+        workspace: Flags.boolean({
+            char: 'w',
+            description: 'Check updates for all workspaces in a monorepo.',
+            default: false,
+        }),
         root: Flags.boolean({
             char: 'R',
             description: 'Check updates from the project root directory.',
@@ -18,6 +23,10 @@ export class CheckUpdatesCommand extends Command {
         {
             description: 'Run the check-updates command.',
             command: '<%= config.bin %> <%= command.id %>',
+        },
+        {
+            description: 'Run the check-updates command for all workspaces in a monorepo.',
+            command: '<%= config.bin %> <%= command.id %> --workspace',
         },
         {
             description: 'Run the check-updates command from the project root directory.',
@@ -36,11 +45,16 @@ export class CheckUpdatesCommand extends Command {
                 color: true,
                 interactive: true,
                 upgrade: true,
-                root: true,
-                workspaces: true,
                 format: ['group'],
                 install: 'never',
                 dep: ['prod', 'dev', 'peer', 'optional', 'packageManager'],
+
+                ...(flags.workspace ?
+                    {
+                        root: true,
+                        workspaces: true,
+                    }
+                :   {}),
             },
             { cli: true },
         );

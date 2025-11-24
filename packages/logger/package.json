@@ -1,6 +1,6 @@
 {
     "name": "@jpp/logger",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A simple logger for JS/TS projects.",
     "keywords": [
         "jpp",
