@@ -1,0 +1,58 @@
+{
+    "name": "@jpp/lint-staged-config",
+    "version": "0.0.2",
+    "description": "Lint-staged configuration for linting and formatting staged files.",
+    "keywords": [
+        "jpp",
+        "lint-staged",
+        "config"
+    ],
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/lint-staged-config#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp.git",
+        "directory": "packages/lint-staged-config"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "typecheck": "tsc --noEmit --pretty",
+        "dev": "build-lib --watch",
+        "build": "build-lib"
+    },
+    "dependencies": {
+        "@jpp/utils": "workspace:*"
+    },
+    "devDependencies": {
+        "lint-staged": "16.2.7"
+    },
+    "peerDependencies": {
+        "lint-staged": "16"
+    },
+    "packageManager": "pnpm@10.23.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "extends": "../../package.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
