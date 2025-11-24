@@ -1,6 +1,6 @@
 {
     "name": "@jpp/cli",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "CLI tool for JS/TS project development workflows.",
     "keywords": [
         "jpp",
@@ -43,6 +43,7 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
+        "@jpp/plugin-build": "workspace:*",
         "@jpp/plugin-check-updates": "workspace:*",
         "@jpp/plugin-clean": "workspace:*",
         "@jpp/plugin-lint": "workspace:*",

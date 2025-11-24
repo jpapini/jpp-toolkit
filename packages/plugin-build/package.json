@@ -1,19 +1,20 @@
 {
-    "name": "@jpp/core",
+    "name": "@jpp/plugin-build",
     "version": "0.0.7",
-    "description": "Core utilities for jpp cli and plugins.",
+    "description": "Plugin that add the build command to the jpp cli.",
     "keywords": [
         "jpp",
-        "core"
+        "plugin",
+        "build"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/core#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/plugin-build#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/core"
+        "directory": "packages/plugin-build"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -27,21 +28,25 @@
     },
     "files": [
         "dist",
-        "src"
+        "src",
+        "oclif.config.js",
+        "oclif.manifest.json"
     ],
     "scripts": {
         "typecheck": "tsc --noEmit --pretty",
         "dev": "build-lib --watch",
-        "build": "build-lib"
+        "build": "build-lib",
+        "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@jpp/logger": "workspace:*"
+        "@jpp/core": "workspace:*",
+        "@jpp/tsdown-config": "workspace:*",
+        "@jpp/utils": "workspace:*",
+        "@oclif/core": "4.8.0",
+        "tsdown": "0.16.6"
     },
     "devDependencies": {
-        "@oclif/core": "4.8.0"
-    },
-    "peerDependencies": {
-        "@oclif/core": "4"
+        "oclif": "4.22.50"
     },
     "packageManager": "pnpm@10.23.0",
     "engines": {

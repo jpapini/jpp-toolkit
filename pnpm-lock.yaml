@@ -47,6 +47,9 @@ importers:
 
   packages/cli:
     dependencies:
+      '@jpp/plugin-build':
+        specifier: workspace:*
+        version: link:../plugin-build
       '@jpp/plugin-check-updates':
         specifier: workspace:*
         version: link:../plugin-check-updates
@@ -193,6 +196,28 @@ importers:
       colorette:
         specifier: 2.0.20
         version: 2.0.20
+
+  packages/plugin-build:
+    dependencies:
+      '@jpp/core':
+        specifier: workspace:*
+        version: link:../core
+      '@jpp/tsdown-config':
+        specifier: workspace:*
+        version: link:../tsdown-config
+      '@jpp/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@oclif/core':
+        specifier: 4.8.0
+        version: 4.8.0
+      tsdown:
+        specifier: 0.16.6
+        version: 0.16.6(synckit@0.11.11)(typescript@5.9.3)
+    devDependencies:
+      oclif:
+        specifier: 4.22.50
+        version: 4.22.50(@types/node@24.10.1)
 
   packages/plugin-check-updates:
     dependencies:
