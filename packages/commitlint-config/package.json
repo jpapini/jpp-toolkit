@@ -1,0 +1,59 @@
+{
+    "name": "@jpp/commitlint-config",
+    "version": "0.0.2",
+    "description": "Commitlint configurations for JS/TS projects.",
+    "keywords": [
+        "jpp",
+        "commitlint",
+        "config"
+    ],
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/commitlint-config#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp.git",
+        "directory": "packages/commitlint-config"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "typecheck": "tsc --noEmit --pretty",
+        "dev": "build-lib --watch",
+        "build": "build-lib"
+    },
+    "dependencies": {
+        "@commitlint/config-conventional": "20.0.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "20.1.0",
+        "@commitlint/types": "20.0.0"
+    },
+    "peerDependencies": {
+        "@commitlint/cli": "20"
+    },
+    "packageManager": "pnpm@10.23.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "extends": "../../package.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
