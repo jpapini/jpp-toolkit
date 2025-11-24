@@ -148,6 +148,30 @@ importers:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
 
+  packages/git-hooks:
+    dependencies:
+      '@commitlint/cli':
+        specifier: 20.1.0
+        version: 20.1.0(@types/node@24.10.1)(typescript@5.9.3)
+      '@jpp/commitlint-config':
+        specifier: workspace:*
+        version: link:../commitlint-config
+      '@jpp/lint-staged-config':
+        specifier: workspace:*
+        version: link:../lint-staged-config
+      '@jpp/utils':
+        specifier: workspace:*
+        version: link:../utils
+      execa:
+        specifier: 9.6.0
+        version: 9.6.0
+      husky:
+        specifier: 9.1.7
+        version: 9.1.7
+      lint-staged:
+        specifier: 16.2.7
+        version: 16.2.7
+
   packages/lint-staged-config:
     dependencies:
       '@jpp/utils':
@@ -257,6 +281,9 @@ importers:
       '@jpp/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@jpp/git-hooks':
+        specifier: workspace:*
+        version: link:../git-hooks
       '@jpp/prettier-config':
         specifier: workspace:*
         version: link:../prettier-config
@@ -2462,6 +2489,11 @@ packages:
   human-signals@8.0.1:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   iconv-lite@0.7.0:
     resolution: {integrity: sha512-cf6L2Ds3h57VVmkZe+Pn+5APsT7FpqJtEhhieDCvrE2MK5Qk9MyffgQyuxQTm6BChfeZNtcOLHp9IcWRVcIcBQ==}
@@ -6565,6 +6597,8 @@ snapshots:
       resolve-alpn: 1.2.1
 
   human-signals@8.0.1: {}
+
+  husky@9.1.7: {}
 
   iconv-lite@0.7.0:
     dependencies:

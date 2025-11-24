@@ -1,38 +1,39 @@
 {
-    "name": "@jpp/ts-config",
+    "name": "@jpp/git-hooks",
     "version": "0.0.3",
-    "description": "TypeScript configurations for JS/TS projects.",
+    "description": "Git hooks configuration for JS/TS projects.",
     "keywords": [
         "jpp",
-        "ts",
-        "config",
-        "typescript",
-        "tsconfig"
+        "git",
+        "hooks"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/ts-config#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/git-hooks#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/ts-config"
+        "directory": "packages/git-hooks"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
     "type": "module",
-    "exports": {
-        "./*.json": "./*.json",
-        "./package.json": "./package.json"
-    },
     "files": [
-        "*.json"
+        "hooks",
+        "scripts"
     ],
-    "devDependencies": {
-        "typescript": "5.9.3"
+    "scripts": {
+        "postinstall": "node scripts/install.js"
     },
-    "peerDependencies": {
-        "typescript": "5"
+    "dependencies": {
+        "@commitlint/cli": "20.1.0",
+        "@jpp/commitlint-config": "workspace:*",
+        "@jpp/lint-staged-config": "workspace:*",
+        "@jpp/utils": "workspace:*",
+        "execa": "9.6.0",
+        "husky": "9.1.7",
+        "lint-staged": "16.2.7"
     },
     "packageManager": "pnpm@10.23.0",
     "engines": {

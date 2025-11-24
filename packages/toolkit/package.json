@@ -1,6 +1,6 @@
 {
     "name": "@jpp/toolkit",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A set of tools for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -39,6 +39,7 @@
     "dependencies": {
         "@jpp/cli": "workspace:*",
         "@jpp/eslint-config": "workspace:*",
+        "@jpp/git-hooks": "workspace:*",
         "@jpp/prettier-config": "workspace:*",
         "@jpp/ts-config": "workspace:*"
     },
