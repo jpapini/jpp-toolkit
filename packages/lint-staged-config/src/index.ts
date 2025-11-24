@@ -9,19 +9,19 @@ const config: Configuration = {
         const filteredFiles = files.filter(filterFile);
         if (!filteredFiles.length) return [];
         return [
-            `prettier ${buildPrettierArgs({ format: true }, filteredFiles)}`,
-            `eslint ${buildEslintArgs({ format: true }, filteredFiles)}`,
+            `prettier ${buildPrettierArgs({ format: true }, filteredFiles).join(' ')}`,
+            `eslint ${buildEslintArgs({ format: true }, filteredFiles).join(' ')}`,
         ];
     },
     '**/*.css': (files: readonly string[]): string[] => {
         const filteredFiles = files.filter(filterFile);
         if (!filteredFiles.length) return [];
-        return [`prettier ${buildPrettierArgs({ format: true }, filteredFiles)}`];
+        return [`prettier ${buildPrettierArgs({ format: true }, filteredFiles).join(' ')}`];
     },
     '**/*.{html,json,yml,yaml,md,mdx,gql,prisma}': (files: readonly string[]): string[] => {
         const filteredFiles = files.filter(filterFile);
         if (!filteredFiles.length) return [];
-        return [`prettier ${buildPrettierArgs({ format: true }, filteredFiles)}`];
+        return [`prettier ${buildPrettierArgs({ format: true }, filteredFiles).join(' ')}`];
     },
 };
 
