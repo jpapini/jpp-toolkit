@@ -1,6 +1,6 @@
 {
     "name": "@jpp/tsdown-config",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Tsdown configurations for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -41,7 +41,7 @@
     "peerDependencies": {
         "tsdown": "0.16"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"

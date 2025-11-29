@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-lint",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Plugin that add the lint command to the jpp cli.",
     "keywords": [
         "jpp",
@@ -47,7 +47,7 @@
     "devDependencies": {
         "oclif": "4.22.50"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"

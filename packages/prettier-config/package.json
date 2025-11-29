@@ -1,6 +1,6 @@
 {
     "name": "@jpp/prettier-config",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Prettier configurations for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -44,7 +44,7 @@
     "peerDependencies": {
         "prettier": "3"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"

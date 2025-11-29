@@ -22,17 +22,17 @@
         "@types/node": "24.10.1",
         "eslint": "9.39.1",
         "npm-run-all2": "8.0.4",
-        "prettier": "3.6.2",
+        "prettier": "3.7.2",
         "turbo": "2.6.1",
         "typescript": "5.9.3"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"
     },
     "volta": {
         "node": "24.11.1",
-        "pnpm": "10.23.0"
+        "pnpm": "10.24.0"
     }
 }

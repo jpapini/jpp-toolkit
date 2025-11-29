@@ -1,6 +1,6 @@
 {
     "name": "@jpp/git-hooks",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Git hooks configuration for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -35,7 +35,7 @@
         "husky": "9.1.7",
         "lint-staged": "16.2.7"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"

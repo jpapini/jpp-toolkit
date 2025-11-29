@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-build",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Plugin that add the build command to the jpp cli.",
     "keywords": [
         "jpp",
@@ -43,12 +43,12 @@
         "@jpp/tsdown-config": "workspace:*",
         "@jpp/utils": "workspace:*",
         "@oclif/core": "4.8.0",
-        "tsdown": "0.16.6"
+        "tsdown": "0.16.8"
     },
     "devDependencies": {
         "oclif": "4.22.50"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"

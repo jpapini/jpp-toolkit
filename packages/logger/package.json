@@ -1,6 +1,6 @@
 {
     "name": "@jpp/logger",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "A simple logger for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -38,7 +38,7 @@
         "@jpp/utils": "workspace:*",
         "colorette": "2.0.20"
     },
-    "packageManager": "pnpm@10.23.0",
+    "packageManager": "pnpm@10.24.0",
     "engines": {
         "node": "24",
         "pnpm": "10"
