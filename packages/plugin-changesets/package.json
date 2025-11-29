@@ -1,19 +1,20 @@
 {
-    "name": "@jpp/cli",
+    "name": "@jpp/plugin-changesets",
     "version": "0.0.9",
-    "description": "CLI tool for JS/TS project development workflows.",
+    "description": "Plugin that add the changeset command to the jpp cli.",
     "keywords": [
         "jpp",
-        "cli"
+        "plugin",
+        "changesets"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/cli#readme",
+    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/plugin-changesets#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp.git",
-        "directory": "packages/cli"
+        "directory": "packages/plugin-changesets"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -23,14 +24,9 @@
             "types": "./dist/index.d.mts",
             "default": "./dist/index.mjs"
         },
-        "./bin": "./bin/run.js",
         "./package.json": "./package.json"
     },
-    "bin": {
-        "jpp": "./bin/run.js"
-    },
     "files": [
-        "bin/run.js",
         "dist",
         "src",
         "oclif.config.js",
@@ -43,17 +39,12 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@jpp/plugin-build": "workspace:*",
-        "@jpp/plugin-changesets": "workspace:*",
-        "@jpp/plugin-check-updates": "workspace:*",
-        "@jpp/plugin-clean": "workspace:*",
-        "@jpp/plugin-lint": "workspace:*",
-        "@oclif/core": "4.8.0",
-        "@oclif/plugin-help": "6.2.36"
+        "@jpp/core": "workspace:*",
+        "@jpp/utils": "workspace:*",
+        "@oclif/core": "4.8.0"
     },
     "devDependencies": {
-        "oclif": "4.22.50",
-        "tsx": "4.20.6"
+        "oclif": "4.22.50"
     },
     "packageManager": "pnpm@10.24.0",
     "engines": {

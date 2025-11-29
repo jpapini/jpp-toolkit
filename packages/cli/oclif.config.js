@@ -10,6 +10,7 @@ export default {
         '@jpp/plugin-lint',
         '@jpp/plugin-check-updates',
         '@jpp/plugin-build',
+        '@jpp/plugin-changesets',
     ],
     commands: {
         strategy: 'explicit',

@@ -50,6 +50,9 @@ importers:
       '@jpp/plugin-build':
         specifier: workspace:*
         version: link:../plugin-build
+      '@jpp/plugin-changesets':
+        specifier: workspace:*
+        version: link:../plugin-changesets
       '@jpp/plugin-check-updates':
         specifier: workspace:*
         version: link:../plugin-check-updates
@@ -214,6 +217,22 @@ importers:
       tsdown:
         specifier: 0.16.8
         version: 0.16.8(synckit@0.11.11)(typescript@5.9.3)
+    devDependencies:
+      oclif:
+        specifier: 4.22.50
+        version: 4.22.50(@types/node@24.10.1)
+
+  packages/plugin-changesets:
+    dependencies:
+      '@jpp/core':
+        specifier: workspace:*
+        version: link:../core
+      '@jpp/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@oclif/core':
+        specifier: 4.8.0
+        version: 4.8.0
     devDependencies:
       oclif:
         specifier: 4.22.50
