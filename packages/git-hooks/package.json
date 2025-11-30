@@ -1,6 +1,6 @@
 {
     "name": "@jpp/git-hooks",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "Git hooks configuration for JS/TS projects.",
     "keywords": [
         "jpp",
@@ -31,7 +31,7 @@
         "@jpp/commitlint-config": "workspace:*",
         "@jpp/lint-staged-config": "workspace:*",
         "@jpp/utils": "workspace:*",
-        "execa": "9.6.0",
+        "execa": "9.6.1",
         "husky": "9.1.7",
         "lint-staged": "16.2.7"
     },

@@ -1,6 +1,6 @@
 {
     "name": "@jpp/prettier-plugin-packagejson",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "Prettier plugin for formatting package.json files.",
     "keywords": [
         "jpp",
@@ -40,7 +40,7 @@
         "@jpp/sort-package-json": "workspace:*"
     },
     "devDependencies": {
-        "prettier": "3.6.2"
+        "prettier": "3.7.3"
     },
     "peerDependencies": {
         "prettier": "3"

@@ -4,5 +4,5 @@
     "upgrade": true,
     "workspaces": true,
     "format": ["group"],
-    "dep": ["prod", "dev", "peer", "optional", "packageManager"]
+    "dep": ["prod", "dev", "optional", "packageManager"]
 }

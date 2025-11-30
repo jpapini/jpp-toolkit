@@ -47,7 +47,7 @@ export class CheckUpdatesCommand extends Command {
                 upgrade: true,
                 format: ['group'],
                 install: 'never',
-                dep: ['prod', 'dev', 'peer', 'optional', 'packageManager'],
+                dep: ['prod', 'dev', 'optional', 'packageManager'],
 
                 ...(flags.workspace ?
                     {

@@ -1,6 +1,6 @@
 {
     "name": "@jpp/cli",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "CLI tool for JS/TS project development workflows.",
     "keywords": [
         "jpp",
@@ -52,7 +52,7 @@
         "@oclif/plugin-help": "6.2.36"
     },
     "devDependencies": {
-        "oclif": "4.22.50",
+        "oclif": "4.22.52",
         "tsx": "4.20.6"
     },
     "packageManager": "pnpm@10.24.0",

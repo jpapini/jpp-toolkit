@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-check-updates",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "Plugin that add the check-updates command to the jpp cli.",
     "keywords": [
         "jpp",
@@ -45,7 +45,7 @@
         "npm-check-updates": "19.1.2"
     },
     "devDependencies": {
-        "oclif": "4.22.50"
+        "oclif": "4.22.52"
     },
     "packageManager": "pnpm@10.24.0",
     "engines": {
