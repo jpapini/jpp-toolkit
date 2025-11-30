@@ -5,4 +5,9 @@ export default {
         target: './dist/index.mjs',
         identifier: 'commands',
     },
+    topics: {
+        changeset: {
+            description: 'Commands for managing changesets.',
+        },
+    },
 };

@@ -17,4 +17,5 @@ export default {
         target: './dist/index.mjs',
         identifier: 'commands',
     },
+    topicSeparator: ' ',
 };
