@@ -10,9 +10,9 @@ export const testPath = (path: string): boolean => /(?:^|\\|\/)package\.json$/u.
 export const parsers: Plugin['parsers'] = {
     'json-stringify': {
         ...parser,
-        preprocess: (text, options) => {
+        preprocess: async (text, options) => {
             const packageSortOrder = options['packageSortOrder'] as string[] | undefined;
-            const preprocessedText = parser.preprocess?.(text, options) ?? text;
+            const preprocessedText = (await parser.preprocess?.(text, options)) ?? text;
             const sortPackageJsonOptions =
                 Array.isArray(packageSortOrder) && packageSortOrder.length !== 0 ?
                     { sortOrder: packageSortOrder }
