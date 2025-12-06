@@ -14,7 +14,7 @@
 '@jpp-toolkit/prettier-config': patch
 '@jpp-toolkit/prettier-plugin-packagejson': patch
 '@jpp-toolkit/sort-package-json': patch
-'@jpp-toolkit/toolkit': patch
+'jpp-toolkit': patch
 '@jpp-toolkit/ts-config': patch
 '@jpp-toolkit/tsdown-config': patch
 '@jpp-toolkit/utils': patch
