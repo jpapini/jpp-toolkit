@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/git-hooks",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "Git hooks configuration for JS/TS projects.",
     "keywords": [
         "jpp",
