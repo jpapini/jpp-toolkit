@@ -1,5 +1,5 @@
-import { Command } from '@jpp/core';
-import { findProjectRoot } from '@jpp/utils';
+import { Command } from '@jpp-toolkit/core';
+import { findProjectRoot } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
 import { run as ncu } from 'npm-check-updates';
 

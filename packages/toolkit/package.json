@@ -1,18 +1,18 @@
 {
-    "name": "@jpp/toolkit",
+    "name": "jpp-toolkit",
     "version": "0.0.11",
     "description": "A set of tools for JS/TS projects.",
     "keywords": [
         "jpp",
         "toolkit"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/toolkit#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/toolkit#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/toolkit"
     },
     "license": "MIT",
@@ -37,11 +37,11 @@
         "prepack": "node scripts/generate.js"
     },
     "dependencies": {
-        "@jpp/cli": "workspace:*",
-        "@jpp/eslint-config": "workspace:*",
-        "@jpp/git-hooks": "workspace:*",
-        "@jpp/prettier-config": "workspace:*",
-        "@jpp/ts-config": "workspace:*"
+        "@jpp-toolkit/cli": "workspace:*",
+        "@jpp-toolkit/eslint-config": "workspace:*",
+        "@jpp-toolkit/git-hooks": "workspace:*",
+        "@jpp-toolkit/prettier-config": "workspace:*",
+        "@jpp-toolkit/ts-config": "workspace:*"
     },
     "devDependencies": {
         "eslint": "9.39.1",

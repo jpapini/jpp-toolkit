@@ -1,4 +1,4 @@
-import { buildEslintArgs, buildPrettierArgs } from '@jpp/utils';
+import { buildEslintArgs, buildPrettierArgs } from '@jpp-toolkit/utils';
 import type { Configuration } from 'lint-staged';
 
 const filterFile = (file: string): boolean =>

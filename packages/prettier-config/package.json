@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/prettier-config",
+    "name": "@jpp-toolkit/prettier-config",
     "version": "0.0.11",
     "description": "Prettier configurations for JS/TS projects.",
     "keywords": [
@@ -7,13 +7,13 @@
         "prettier",
         "config"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-config#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/prettier-config#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/prettier-config"
     },
     "license": "MIT",
@@ -36,7 +36,7 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp/prettier-plugin-packagejson": "workspace:*"
+        "@jpp-toolkit/prettier-plugin-packagejson": "workspace:*"
     },
     "devDependencies": {
         "prettier": "3.7.4"

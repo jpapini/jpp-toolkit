@@ -1,5 +1,5 @@
-import { Command } from '@jpp/core';
-import { buildEslintArgs, buildPrettierArgs, findProjectRoot } from '@jpp/utils';
+import { Command } from '@jpp-toolkit/core';
+import { buildEslintArgs, buildPrettierArgs, findProjectRoot } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
 import { execa } from 'execa';
 

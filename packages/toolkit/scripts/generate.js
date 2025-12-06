@@ -18,7 +18,7 @@ async function generateTsConfig() {
         // Directory doesn't exist yet, ignore
     }
 
-    const tsconfigDir = path.dirname(require.resolve('@jpp/ts-config/package.json'));
+    const tsconfigDir = path.dirname(require.resolve('@jpp-toolkit/ts-config/package.json'));
     const files = await fs.readdir(tsconfigDir);
     const tsconfigFiles = files.filter((f) => f.startsWith('tsconfig.') && f.endsWith('.json'));
 

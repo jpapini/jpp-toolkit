@@ -1,4 +1,4 @@
-import { sortPackageJson } from '@jpp/sort-package-json';
+import { sortPackageJson } from '@jpp-toolkit/sort-package-json';
 import type { Plugin } from 'prettier';
 // eslint-disable-next-line import-x/default
 import babelParsers from 'prettier/parser-babel';

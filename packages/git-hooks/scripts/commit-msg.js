@@ -6,7 +6,7 @@ import { execa } from 'execa';
 
 const require = createRequire(import.meta.url);
 const bin = path.resolve(require.resolve('@commitlint/cli/package.json'), '../cli.js');
-const configPath = require.resolve('@jpp/commitlint-config');
+const configPath = require.resolve('@jpp-toolkit/commitlint-config');
 
 const result = await execa(bin, ['--edit', process.argv[2], '--config', configPath], {
     stdio: 'inherit',

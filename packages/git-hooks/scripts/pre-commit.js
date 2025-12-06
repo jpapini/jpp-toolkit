@@ -6,7 +6,7 @@ import { execa } from 'execa';
 
 const require = createRequire(import.meta.url);
 const bin = path.resolve(require.resolve('lint-staged/package.json'), '../bin/lint-staged.js');
-const configPath = require.resolve('@jpp/lint-staged-config');
+const configPath = require.resolve('@jpp-toolkit/lint-staged-config');
 
 const result = await execa(bin, ['--config', configPath], {
     stdio: 'inherit',

@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/commitlint-config",
+    "name": "@jpp-toolkit/commitlint-config",
     "version": "0.0.11",
     "description": "Commitlint configurations for JS/TS projects.",
     "keywords": [
@@ -7,13 +7,13 @@
         "commitlint",
         "config"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/commitlint-config#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/commitlint-config#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/commitlint-config"
     },
     "license": "MIT",

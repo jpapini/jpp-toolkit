@@ -1,5 +1,5 @@
 import { includeIgnoreFile } from '@eslint/compat';
-import { findGitIgnore } from '@jpp/utils';
+import { findGitIgnore } from '@jpp-toolkit/utils';
 import { defineConfig } from 'eslint/config';
 
 /**

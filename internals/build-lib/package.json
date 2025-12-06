@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/internal-build-lib",
+    "name": "@jpp-toolkit/internal-build-lib",
     "private": true,
     "type": "module",
     "bin": {

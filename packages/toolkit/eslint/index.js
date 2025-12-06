@@ -1,1 +1,1 @@
-export * from '@jpp/eslint-config';
+export * from '@jpp-toolkit/eslint-config';

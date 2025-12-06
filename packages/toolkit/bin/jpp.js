@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-import '@jpp/cli/bin';
+import '@jpp-toolkit/cli/bin';

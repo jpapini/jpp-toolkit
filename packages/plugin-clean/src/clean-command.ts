@@ -1,7 +1,7 @@
 import path from 'node:path';
 
-import { Command } from '@jpp/core';
-import { findProjectRoot } from '@jpp/utils';
+import { Command } from '@jpp-toolkit/core';
+import { findProjectRoot } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
 import { execa } from 'execa';
 import { rimraf } from 'rimraf';

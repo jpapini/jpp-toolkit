@@ -1,1 +1,1 @@
-export { default } from '@jpp/prettier-config';
+export { default } from '@jpp-toolkit/prettier-config';

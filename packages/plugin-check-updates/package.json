@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/plugin-check-updates",
+    "name": "@jpp-toolkit/plugin-check-updates",
     "version": "0.0.11",
     "description": "Plugin that add the check-updates command to the jpp cli.",
     "keywords": [
@@ -7,13 +7,13 @@
         "plugin",
         "check-updates"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/plugin-check-updates#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/plugin-check-updates#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/plugin-check-updates"
     },
     "license": "MIT",
@@ -39,8 +39,8 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@jpp/core": "workspace:*",
-        "@jpp/utils": "workspace:*",
+        "@jpp-toolkit/core": "workspace:*",
+        "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
         "npm-check-updates": "19.1.2"
     },

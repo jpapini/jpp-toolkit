@@ -1,18 +1,18 @@
 {
-    "name": "@jpp/core",
+    "name": "@jpp-toolkit/core",
     "version": "0.0.11",
     "description": "Core utilities for jpp cli and plugins.",
     "keywords": [
         "jpp",
         "core"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/core#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/core#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/core"
     },
     "license": "MIT",
@@ -35,7 +35,7 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp/logger": "workspace:*"
+        "@jpp-toolkit/logger": "workspace:*"
     },
     "devDependencies": {
         "@oclif/core": "4.8.0"

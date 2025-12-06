@@ -1,4 +1,4 @@
-import { Logger } from '@jpp/logger';
+import { Logger } from '@jpp-toolkit/logger';
 import type { Config } from '@oclif/core';
 import { Command as OclifCommand } from '@oclif/core';
 

@@ -1,5 +1,5 @@
-import { Command } from '@jpp/core';
-import { createTsdownConfig } from '@jpp/tsdown-config';
+import { Command } from '@jpp-toolkit/core';
+import { createTsdownConfig } from '@jpp-toolkit/tsdown-config';
 import { Args, Flags } from '@oclif/core';
 import { build as tsdownBuild } from 'tsdown';
 

@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/eslint-config",
+    "name": "@jpp-toolkit/eslint-config",
     "version": "0.0.11",
     "description": "ESLint configurations for JS/TS projects.",
     "keywords": [
@@ -7,13 +7,13 @@
         "eslint",
         "config"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/eslint-config#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/eslint-config#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/eslint-config"
     },
     "license": "MIT",
@@ -38,7 +38,7 @@
     "dependencies": {
         "@eslint/compat": "2.0.0",
         "@eslint/js": "9.39.1",
-        "@jpp/utils": "workspace:*",
+        "@jpp-toolkit/utils": "workspace:*",
         "@stylistic/eslint-plugin": "5.6.1",
         "@vitest/eslint-plugin": "1.5.1",
         "eslint-config-prettier": "10.1.8",

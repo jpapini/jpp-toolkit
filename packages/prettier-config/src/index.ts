@@ -105,7 +105,7 @@ const config: Config = {
      * Plugins to use with Prettier.
      * @see {@link https://prettier.io/docs/en/plugins.html}
      */
-    plugins: [require.resolve('@jpp/prettier-plugin-packagejson')],
+    plugins: [require.resolve('@jpp-toolkit/prettier-plugin-packagejson')],
 };
 
 export default config;

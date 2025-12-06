@@ -1,3 +1,3 @@
-import { createBaseEslintConfig } from '@jpp/eslint-config';
+import { createBaseEslintConfig } from '@jpp-toolkit/eslint-config';
 
 export default createBaseEslintConfig();

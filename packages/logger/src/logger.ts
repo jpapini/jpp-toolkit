@@ -1,4 +1,4 @@
-import { findPackageRoot, findProjectRoot } from '@jpp/utils';
+import { findPackageRoot, findProjectRoot } from '@jpp-toolkit/utils';
 import { green, blue, yellow, red, gray } from 'colorette';
 
 export type LogFunc = (message?: string, ...args: unknown[]) => void;

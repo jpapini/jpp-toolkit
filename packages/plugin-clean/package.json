@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/plugin-clean",
+    "name": "@jpp-toolkit/plugin-clean",
     "version": "0.0.11",
     "description": "Plugin that add the clean command to the jpp cli.",
     "keywords": [
@@ -7,13 +7,13 @@
         "plugin",
         "clean"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/plugin-clean#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/plugin-clean#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/plugin-clean"
     },
     "license": "MIT",
@@ -39,8 +39,8 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@jpp/core": "workspace:*",
-        "@jpp/utils": "workspace:*",
+        "@jpp-toolkit/core": "workspace:*",
+        "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
         "execa": "9.6.1",
         "rimraf": "6.1.2"

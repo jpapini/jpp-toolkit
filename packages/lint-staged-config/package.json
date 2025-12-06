@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/lint-staged-config",
+    "name": "@jpp-toolkit/lint-staged-config",
     "version": "0.0.11",
     "description": "Lint-staged configuration for linting and formatting staged files.",
     "keywords": [
@@ -7,13 +7,13 @@
         "lint-staged",
         "config"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/lint-staged-config#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/lint-staged-config#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/lint-staged-config"
     },
     "license": "MIT",
@@ -36,7 +36,7 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp/utils": "workspace:*"
+        "@jpp-toolkit/utils": "workspace:*"
     },
     "devDependencies": {
         "lint-staged": "16.2.7"

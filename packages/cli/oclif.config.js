@@ -1,16 +1,16 @@
 export default {
     bin: 'jpp',
     dirname: 'jpp',
-    scope: 'jpp',
+    scope: 'jpp-toolkit',
     pluginPrefix: 'plugin',
     description: 'CLI tool for JS/TS project development workflows.',
     plugins: [
         '@oclif/plugin-help',
-        '@jpp/plugin-clean',
-        '@jpp/plugin-lint',
-        '@jpp/plugin-check-updates',
-        '@jpp/plugin-build-lib',
-        '@jpp/plugin-changesets',
+        '@jpp-toolkit/plugin-clean',
+        '@jpp-toolkit/plugin-lint',
+        '@jpp-toolkit/plugin-check-updates',
+        '@jpp-toolkit/plugin-build-lib',
+        '@jpp-toolkit/plugin-changesets',
     ],
     commands: {
         strategy: 'explicit',

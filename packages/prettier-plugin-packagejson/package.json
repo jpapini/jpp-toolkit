@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/prettier-plugin-packagejson",
+    "name": "@jpp-toolkit/prettier-plugin-packagejson",
     "version": "0.0.11",
     "description": "Prettier plugin for formatting package.json files.",
     "keywords": [
@@ -8,13 +8,13 @@
         "plugin",
         "packagejson"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/prettier-plugin-packagejson#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/prettier-plugin-packagejson#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/prettier-plugin-packagejson"
     },
     "license": "MIT",
@@ -37,7 +37,7 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp/sort-package-json": "workspace:*"
+        "@jpp-toolkit/sort-package-json": "workspace:*"
     },
     "devDependencies": {
         "prettier": "3.7.4"

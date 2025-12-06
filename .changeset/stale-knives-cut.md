@@ -1,23 +1,23 @@
 ---
-'@jpp/cli': patch
-'@jpp/commitlint-config': patch
-'@jpp/core': patch
-'@jpp/eslint-config': patch
-'@jpp/git-hooks': patch
-'@jpp/lint-staged-config': patch
-'@jpp/logger': patch
-'@jpp/plugin-build-lib': patch
-'@jpp/plugin-changesets': patch
-'@jpp/plugin-check-updates': patch
-'@jpp/plugin-clean': patch
-'@jpp/plugin-lint': patch
-'@jpp/prettier-config': patch
-'@jpp/prettier-plugin-packagejson': patch
-'@jpp/sort-package-json': patch
-'@jpp/toolkit': patch
-'@jpp/ts-config': patch
-'@jpp/tsdown-config': patch
-'@jpp/utils': patch
+'@jpp-toolkit/cli': patch
+'@jpp-toolkit/commitlint-config': patch
+'@jpp-toolkit/core': patch
+'@jpp-toolkit/eslint-config': patch
+'@jpp-toolkit/git-hooks': patch
+'@jpp-toolkit/lint-staged-config': patch
+'@jpp-toolkit/logger': patch
+'@jpp-toolkit/plugin-build-lib': patch
+'@jpp-toolkit/plugin-changesets': patch
+'@jpp-toolkit/plugin-check-updates': patch
+'@jpp-toolkit/plugin-clean': patch
+'@jpp-toolkit/plugin-lint': patch
+'@jpp-toolkit/prettier-config': patch
+'@jpp-toolkit/prettier-plugin-packagejson': patch
+'@jpp-toolkit/sort-package-json': patch
+'@jpp-toolkit/toolkit': patch
+'@jpp-toolkit/ts-config': patch
+'@jpp-toolkit/tsdown-config': patch
+'@jpp-toolkit/utils': patch
 ---
 
 Adding changeset configuration.

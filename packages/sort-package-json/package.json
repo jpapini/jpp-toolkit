@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/sort-package-json",
+    "name": "@jpp-toolkit/sort-package-json",
     "version": "0.0.11",
     "description": "Sort an Object or package.json based on the well-known package.json keys.",
     "keywords": [
@@ -7,13 +7,13 @@
         "sort",
         "package-json"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/sort-package-json#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/sort-package-json#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/sort-package-json"
     },
     "license": "MIT",

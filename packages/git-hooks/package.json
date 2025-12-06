@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/git-hooks",
+    "name": "@jpp-toolkit/git-hooks",
     "version": "0.0.11",
     "description": "Git hooks configuration for JS/TS projects.",
     "keywords": [
@@ -7,13 +7,13 @@
         "git",
         "hooks"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/git-hooks#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/git-hooks#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/git-hooks"
     },
     "license": "MIT",
@@ -28,9 +28,9 @@
     },
     "dependencies": {
         "@commitlint/cli": "20.2.0",
-        "@jpp/commitlint-config": "workspace:*",
-        "@jpp/lint-staged-config": "workspace:*",
-        "@jpp/utils": "workspace:*",
+        "@jpp-toolkit/commitlint-config": "workspace:*",
+        "@jpp-toolkit/lint-staged-config": "workspace:*",
+        "@jpp-toolkit/utils": "workspace:*",
         "execa": "9.6.1",
         "husky": "9.1.7",
         "lint-staged": "16.2.7"

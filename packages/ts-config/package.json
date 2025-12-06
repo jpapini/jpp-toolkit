@@ -1,5 +1,5 @@
 {
-    "name": "@jpp/ts-config",
+    "name": "@jpp-toolkit/ts-config",
     "version": "0.0.11",
     "description": "TypeScript configurations for JS/TS projects.",
     "keywords": [
@@ -9,13 +9,13 @@
         "typescript",
         "tsconfig"
     ],
-    "homepage": "https://github.com/jpapini/jpp/tree/main/packages/ts-config#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/ts-config#readme",
     "bugs": {
-        "url": "https://github.com/jpapini/jpp/issues"
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jpapini/jpp.git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
         "directory": "packages/ts-config"
     },
     "license": "MIT",
