@@ -1,0 +1,40 @@
+{
+    "name": "@jpp-toolkit/renovate-config",
+    "version": "0.0.12",
+    "description": "Renovate configurations for JS/TS projects.",
+    "keywords": [
+        "jpp",
+        "renovate",
+        "config"
+    ],
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/renovate-config#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
+        "directory": "packages/renovate-config"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        "./*.json": "./*.json",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "*.json"
+    ],
+    "packageManager": "pnpm@10.24.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "extends": "../../package.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
