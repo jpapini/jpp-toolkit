@@ -15,10 +15,6 @@
             "automerge": true
         },
         {
-            "matchManagers": ["github-actions"],
-            "automerge": true
-        },
-        {
             "matchPackageNames": ["node"],
             "allowedVersions": "24"
         }
