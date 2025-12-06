@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/logger",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "A simple logger for JS/TS projects.",
     "keywords": [
         "jpp",
