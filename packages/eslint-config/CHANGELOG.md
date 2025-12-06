@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.13
+
+### Patch Changes
+
+- [#9](https://github.com/jpapini/jpp-toolkit/pull/9) [`7e65011`](https://github.com/jpapini/jpp-toolkit/commit/7e6501112172fa21d55e409c2a57293990444319) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-react` to `7.37.5`.
+
 ## 0.0.12
 
 ### Patch Changes
