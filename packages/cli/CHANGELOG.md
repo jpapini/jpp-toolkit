@@ -1,5 +1,18 @@
 # @jpp-toolkit/cli
 
+## 0.0.13
+
+### Patch Changes
+
+- [#10](https://github.com/jpapini/jpp-toolkit/pull/10) [`35b8a14`](https://github.com/jpapini/jpp-toolkit/commit/35b8a14b8fc75facbcbff679004a18c8472ab539) Thanks [@jpapini](https://github.com/jpapini)! - Fix updates.
+
+- Updated dependencies [[`35b8a14`](https://github.com/jpapini/jpp-toolkit/commit/35b8a14b8fc75facbcbff679004a18c8472ab539)]:
+    - @jpp-toolkit/plugin-build-lib@0.0.13
+    - @jpp-toolkit/plugin-changesets@0.0.13
+    - @jpp-toolkit/plugin-check-updates@0.0.13
+    - @jpp-toolkit/plugin-clean@0.0.13
+    - @jpp-toolkit/plugin-lint@0.0.13
+
 ## 0.0.12
 
 ### Patch Changes

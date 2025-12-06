@@ -1,5 +1,11 @@
 # @jpp-toolkit/commitlint-config
 
+## 0.0.13
+
+### Patch Changes
+
+- [#10](https://github.com/jpapini/jpp-toolkit/pull/10) [`35b8a14`](https://github.com/jpapini/jpp-toolkit/commit/35b8a14b8fc75facbcbff679004a18c8472ab539) Thanks [@jpapini](https://github.com/jpapini)! - Fix updates.
+
 ## 0.0.12
 
 ### Patch Changes
