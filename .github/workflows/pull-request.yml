@@ -41,7 +41,7 @@ jobs:
                   git config --global tag.gpgSign true
 
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               with:
                   ssh-key: ${{ env.SSH_PRIVATE_KEY }}
                   fetch-depth: 0
@@ -93,7 +93,7 @@ jobs:
                   git config --global tag.gpgSign true
 
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               with:
                   ssh-key: ${{ env.SSH_PRIVATE_KEY }}
 
@@ -144,7 +144,7 @@ jobs:
                   git config --global tag.gpgSign true
 
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               with:
                   ssh-key: ${{ env.SSH_PRIVATE_KEY }}
 
