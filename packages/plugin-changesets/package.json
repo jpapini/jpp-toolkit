@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-changesets",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Plugin that add the changeset command to the jpp cli.",
     "keywords": [
         "jpp",

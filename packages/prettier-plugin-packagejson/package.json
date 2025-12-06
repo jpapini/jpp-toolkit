@@ -1,6 +1,6 @@
 {
     "name": "@jpp/prettier-plugin-packagejson",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Prettier plugin for formatting package.json files.",
     "keywords": [
         "jpp",

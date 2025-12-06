@@ -9,7 +9,7 @@ export default {
         '@jpp/plugin-clean',
         '@jpp/plugin-lint',
         '@jpp/plugin-check-updates',
-        '@jpp/plugin-build',
+        '@jpp/plugin-build-lib',
         '@jpp/plugin-changesets',
     ],
     commands: {

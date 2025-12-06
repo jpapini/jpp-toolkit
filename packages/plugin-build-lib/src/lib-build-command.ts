@@ -4,14 +4,14 @@ import { Args, Flags } from '@oclif/core';
 import { build as tsdownBuild } from 'tsdown';
 
 const Preset = {
-    LIB_ESM: 'lib-esm',
-    LIB_CJS: 'lib-cjs',
-    LIB_HYBRID: 'lib-hybrid',
+    ESM: 'esm',
+    CJS: 'cjs',
+    HYBRID: 'hybrid',
 } as const;
 type Preset = (typeof Preset)[keyof typeof Preset];
 
-export class BuildCommand extends Command {
-    static override summary = 'Build the code using predefined presets.';
+export class LibBuildCommand extends Command {
+    static override summary = 'Build the project using predefined library build presets.';
 
     static override args = {
         preset: Args.string({
@@ -32,34 +32,34 @@ export class BuildCommand extends Command {
 
     static override examples = [
         {
-            description: 'Build the code using the lib-esm preset.',
-            command: '<%= config.bin %> <%= command.id %> lib-esm',
+            description: 'Build the library using the esm preset.',
+            command: '<%= config.bin %> <%= command.id %> esm',
         },
         {
-            description: 'Build the code using the lib-cjs preset.',
-            command: '<%= config.bin %> <%= command.id %> lib-cjs',
+            description: 'Build the library using the cjs preset.',
+            command: '<%= config.bin %> <%= command.id %> cjs',
         },
         {
-            description: 'Build the code using the lib-hybrid preset.',
-            command: '<%= config.bin %> <%= command.id %> lib-hybrid',
+            description: 'Build the library using the hybrid preset.',
+            command: '<%= config.bin %> <%= command.id %> hybrid',
         },
     ];
 
     public async run(): Promise<void> {
-        const { args, flags } = await this.parse(BuildCommand);
+        const { args, flags } = await this.parse(LibBuildCommand);
         const preset = args.preset as Preset;
         const { watch } = flags;
 
-        this.logger.info(`Building using the '${preset}' preset...`);
+        this.logger.info(`Building library using the '${preset}' preset...`);
 
         switch (preset) {
-            case Preset.LIB_ESM:
+            case Preset.ESM:
                 await tsdownBuild(createTsdownConfig({ format: ['esm'], watch }));
                 break;
-            case Preset.LIB_CJS:
+            case Preset.CJS:
                 await tsdownBuild(createTsdownConfig({ format: ['cjs'], watch }));
                 break;
-            case Preset.LIB_HYBRID:
+            case Preset.HYBRID:
                 await tsdownBuild(createTsdownConfig({ format: ['esm', 'cjs'], watch }));
                 break;
             default:
