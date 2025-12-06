@@ -18,7 +18,7 @@ const CLEAN_PATTERNS = [
 ];
 
 export class CleanCommand extends Command {
-    static override description = 'Remove build artifacts and temporary files from the project.';
+    static override summary = 'Remove build artifacts and temporary files from the project.';
 
     static override flags = {
         'dry-run': Flags.boolean({

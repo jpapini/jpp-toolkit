@@ -4,7 +4,7 @@ import { Flags } from '@oclif/core';
 import { execa } from 'execa';
 
 export class LintCommand extends Command {
-    static override description = 'Run code linting on the project source code.';
+    static override summary = 'Run code linting on the project source code.';
 
     static override flags = {
         format: Flags.boolean({

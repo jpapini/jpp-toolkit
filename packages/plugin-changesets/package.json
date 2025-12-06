@@ -1,6 +1,6 @@
 {
     "name": "@jpp/plugin-changesets",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "Plugin that add the changeset command to the jpp cli.",
     "keywords": [
         "jpp",
@@ -39,12 +39,14 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
+        "@changesets/cli": "2.29.8",
         "@jpp/core": "workspace:*",
         "@jpp/utils": "workspace:*",
-        "@oclif/core": "4.8.0"
+        "@oclif/core": "4.8.0",
+        "execa": "9.6.1"
     },
     "devDependencies": {
-        "oclif": "4.22.50"
+        "oclif": "4.22.52"
     },
     "packageManager": "pnpm@10.24.0",
     "engines": {

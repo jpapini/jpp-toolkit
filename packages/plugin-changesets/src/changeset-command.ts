@@ -1,11 +1,19 @@
+import { createRequire } from 'node:module';
+import path from 'node:path';
+
 import { Command } from '@jpp/core';
+import { findProjectRoot } from '@jpp/utils';
+import { execa } from 'execa';
 
-export class ChangesetCommand extends Command {
-    static override description = '';
+const require = createRequire(import.meta.url);
 
-    static override flags = {};
+const CHANGESET_BIN = path.resolve(require.resolve('@changesets/cli/package.json'), '../bin.js');
 
-    static override examples = [];
+export abstract class ChangesetCommand extends Command {
+    protected async _execChangeset(args: string[] = []): Promise<void> {
+        const cwd = findProjectRoot();
+        const result = await execa(CHANGESET_BIN, args, { cwd, stdio: 'inherit', reject: false });
 
-    public async run(): Promise<void> {}
+        if (result.failed) process.exit(1);
+    }
 }

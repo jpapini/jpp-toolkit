@@ -11,7 +11,7 @@ const Preset = {
 type Preset = (typeof Preset)[keyof typeof Preset];
 
 export class BuildCommand extends Command {
-    static override description = 'Build the code using predefined presets.';
+    static override summary = 'Build the code using predefined presets.';
 
     static override args = {
         preset: Args.string({

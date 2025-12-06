@@ -4,7 +4,7 @@ import { Flags } from '@oclif/core';
 import { run as ncu } from 'npm-check-updates';
 
 export class CheckUpdatesCommand extends Command {
-    static override description = 'Check updates for project dependencies.';
+    static override summary = 'Check updates for project dependencies.';
 
     static override flags = {
         workspace: Flags.boolean({
