@@ -11,7 +11,9 @@
         "format:eslint": "eslint --flag v10_config_lookup_from_file --cache --cache-location node_modules/.cache/eslint/.eslintcache --fix .",
         "typecheck": "turbo run typecheck",
         "dev": "turbo run dev",
-        "build": "turbo run build"
+        "build": "turbo run build",
+        "changeset:add": "changeset add",
+        "changeset:publish": "changeset publish"
     },
     "prettier": "@jpp/prettier-config",
     "devDependencies": {
