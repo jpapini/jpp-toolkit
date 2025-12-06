@@ -65,13 +65,14 @@ jobs:
               run: pnpm install --frozen-lockfile
 
             - name: Build packages
-              run: pnpm build
+              run: pnpm run build
 
             - name: Create release Pull Request
               id: changesets
               uses: changesets/action@v1
               with:
                   setupGitUser: false
-                  title: 'Release package(s)'
-                  commit: 'chore(version): bump package(s) version'
-                  publish: pnpm changeset:publish
+                  title: 'chore(release): release'
+                  commit: 'chore(version): bump version'
+                  version: pnpm run changeset:version
+                  publish: pnpm run changeset:publish

@@ -13,6 +13,7 @@
         "dev": "turbo run dev",
         "build": "turbo run build",
         "changeset:add": "changeset add",
+        "changeset:version": "changeset version",
         "changeset:publish": "changeset publish"
     },
     "prettier": "@jpp-toolkit/prettier-config",
