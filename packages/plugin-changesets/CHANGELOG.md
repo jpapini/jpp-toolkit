@@ -1,5 +1,20 @@
 # @jpp-toolkit/plugin-changesets
 
+## 0.0.14
+
+### Patch Changes
+
+- [#14](https://github.com/jpapini/jpp-toolkit/pull/14) [`a903e93`](https://github.com/jpapini/jpp-toolkit/commit/a903e931a6163279b35c383e85a3930c4ff4c131) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.54`.
+
+- [#18](https://github.com/jpapini/jpp-toolkit/pull/18) [`cc6c585`](https://github.com/jpapini/jpp-toolkit/commit/cc6c585ac08ae9fdbf79cb6d85074415199c9727) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.25.0`.
+  Updated dependency `pnpm` to `10.25.0`.
+
+- [#12](https://github.com/jpapini/jpp-toolkit/pull/12) [`49954bc`](https://github.com/jpapini/jpp-toolkit/commit/49954bcf1893473b387f214291efbc67ade09198) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.53`.
+
+- Updated dependencies [[`cc6c585`](https://github.com/jpapini/jpp-toolkit/commit/cc6c585ac08ae9fdbf79cb6d85074415199c9727)]:
+    - @jpp-toolkit/core@0.0.14
+    - @jpp-toolkit/utils@0.0.14
+
 ## 0.0.13
 
 ### Patch Changes
