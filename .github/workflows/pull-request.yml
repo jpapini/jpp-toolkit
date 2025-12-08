@@ -13,33 +13,14 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v6
 
-            - name: Debug git
+            - name: Create a file
+              run: echo "This is a test file." > testfile.txt
+
+            - name: Commit file
               run: |
-                  set +e
+                  git add testfile.txt
+                  git commit -m "Add test file"
 
-                  echo "cat ~/.gitconfig"
-                  cat ~/.gitconfig
-
-                  echo "git config --get gpg.format"
-                  git config --get gpg.format
-
-                  echo "git config --get user.signingkey"
-                  git config --get user.signingkey
-
-                  echo "git config --get gpg.ssh.allowedSignersFile"
-                  git config --get gpg.ssh.allowedSignersFile
-
-                  echo "git config --get commit.gpgSign"
-                  git config --get commit.gpgSign
-
-                  echo "git config --get tag.gpgSign"
-                  git config --get tag.gpgSign
-
-                  echo "git log -1 --show-signature"
+            - name: Check if commit is signed
+              run: |
                   git log -1 --show-signature
-
-                  echo "git config --get user.name"
-                  git config --get user.name
-
-                  echo "git config --get user.email"
-                  git config --get user.email
