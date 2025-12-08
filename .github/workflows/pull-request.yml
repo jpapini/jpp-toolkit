@@ -12,6 +12,7 @@ jobs:
         steps:
             - name: Debug git
               run: |
+                  cat ~/.gitconfig
                   git config --get gpg.format
                   git config --get user.signingkey
                   git config --get gpg.ssh.allowedSignersFile
