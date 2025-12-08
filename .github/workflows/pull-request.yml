@@ -13,6 +13,11 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v6
 
+            - name: Setup git
+              run: |
+                  git config --global user.name "Julien Papini [bot]"
+                  git config --global user.email "julien.papini+github-bot@gmail.com"
+
             - name: Create a file
               run: echo "This is a test file." > testfile.txt
 
