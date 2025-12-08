@@ -1,0 +1,102 @@
+name: Changesets for Renovate
+description: Generates Changesets for Renovate updates.
+
+branding:
+    icon: repeat
+    color: blue
+
+inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
+    build:
+        description: Run build step.
+        required: false
+        default: 'false'
+    command:
+        description: Command to run for generating Changesets for Renovate.
+        required: false
+        default: 'pnpm dlx @scaleway/changesets-renovate'
+    ssh-public-key:
+        description: The SSH public key used for signing commits.
+        required: true
+    ssh-private-key:
+        description: The SSH private key used for signing commits.
+        required: true
+    git-committer-name:
+        description: The name to use for the Git committer.
+        required: true
+    git-committer-email:
+        description: The email to use for the Git committer.
+        required: true
+
+runs:
+    using: composite
+    steps:
+        - name: Checkout repository
+          if: inputs.checkout == 'true'
+          uses: actions/checkout@v6
+          with:
+              fetch-depth: 2
+              ref: ${{ github.head_ref }}
+
+        - name: Setup Git with SSH signing
+          shell: bash
+          env:
+              SSH_PUBLIC_KEY: ${{ inputs.ssh-public-key }}
+              SSH_PRIVATE_KEY: ${{ inputs.ssh-private-key }}
+              GIT_COMMITTER_NAME: ${{ inputs.git-committer-name }}
+              GIT_COMMITTER_EMAIL: ${{ inputs.git-committer-email }}
+          run: |
+              set -e
+
+              # Setup SSH keys
+              mkdir -p ~/.ssh
+              echo "$SSH_PRIVATE_KEY" > ~/.ssh/signing_key
+              chmod 600 ~/.ssh/signing_key
+              echo "$SSH_PUBLIC_KEY" > ~/.ssh/signing_key.pub
+              chmod 644 ~/.ssh/signing_key.pub
+
+              # Setup allowed signers for verification
+              echo "$GIT_COMMITTER_EMAIL namespaces=\"git\" $SSH_PUBLIC_KEY" > ~/.ssh/allowed_signers
+
+              # Configure Git
+              git config user.name "$GIT_COMMITTER_NAME"
+              git config user.email "$GIT_COMMITTER_EMAIL"
+
+              # Configure SSH signing
+              git config gpg.format ssh
+              git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+              git config user.signingkey ~/.ssh/signing_key.pub
+              git config commit.gpgsign true
+              git config tag.gpgsign true
+              echo "Git configured with SSH signing enabled"
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version-file: package.json
+              cache: pnpm
+
+        - name: Install dependencies
+          shell: bash
+          run: |
+              set -e
+              pnpm install --frozen-lockfile
+
+        - name: Build packages
+          if: inputs.build == 'true'
+          shell: bash
+          run: |
+              set -e
+              pnpm run build
+
+        - name: Generate Changesets for Renovate
+          shell: bash
+          run: |
+              set -e
+              ${{ inputs.command }}

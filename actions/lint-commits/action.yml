@@ -1,0 +1,68 @@
+name: Lint commits
+description: Lints commit messages using commitlint.
+
+branding:
+    icon: check-circle
+    color: yellow
+
+inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
+    build:
+        description: Run build step.
+        required: false
+        default: 'false'
+    command:
+        description: Command to run for linting commits.
+        required: false
+        default: 'pnpm commitlint'
+    from:
+        description: Starting commit SHA for linting range.
+        required: false
+        default: ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }}
+    to:
+        description: Ending commit SHA for linting range.
+        required: false
+        default: ${{ github.event.pull_request.head.sha }}
+
+runs:
+    using: composite
+    steps:
+        - name: Checkout repository
+          if: inputs.checkout == 'true'
+          uses: actions/checkout@v6
+          with:
+              fetch-depth: 0
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version-file: package.json
+              cache: pnpm
+
+        - name: Install dependencies
+          shell: bash
+          run: |
+              set -e
+              pnpm install --frozen-lockfile
+
+        - name: Build packages
+          if: inputs.build == 'true'
+          shell: bash
+          run: |
+              set -e
+              pnpm run build
+
+        - name: Linting commits
+          shell: bash
+          run: |
+              set -e
+              ${{ inputs.command }} \
+                --from ${{ inputs.from }} \
+                --to ${{ inputs.to }} \
+                --verbose

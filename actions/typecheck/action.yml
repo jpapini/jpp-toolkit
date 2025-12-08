@@ -1,0 +1,55 @@
+name: Typecheck
+description: Typechecks the codebase using TypeScript.
+
+branding:
+    icon: check-square
+    color: purple
+
+inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
+    build:
+        description: Run build step.
+        required: false
+        default: 'true'
+    command:
+        description: Command to run for typechecking.
+        required: false
+        default: 'pnpm run typecheck'
+
+runs:
+    using: composite
+    steps:
+        - name: Checkout repository
+          if: inputs.checkout == 'true'
+          uses: actions/checkout@v6
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version-file: package.json
+              cache: pnpm
+
+        - name: Install dependencies
+          shell: bash
+          run: |
+              set -e
+              pnpm install --frozen-lockfile
+
+        - name: Build packages
+          if: inputs.build == 'true'
+          shell: bash
+          run: |
+              set -e
+              pnpm run build
+
+        - name: Typechecking codebase
+          shell: bash
+          run: |
+              set -e
+              ${{ inputs.command }}
