@@ -40,6 +40,7 @@ runs:
           with:
               fetch-depth: 2
               ref: ${{ github.head_ref }}
+              ssh-key: ${{ inputs.ssh-private-key }}
 
         - name: Setup Git with SSH signing
           shell: bash

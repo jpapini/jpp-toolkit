@@ -56,6 +56,8 @@ runs:
         - name: Checkout repository
           if: inputs.checkout == 'true'
           uses: actions/checkout@v6
+          with:
+              ssh-key: ${{ inputs.ssh-private-key }}
 
         - name: Setup Git with SSH signing
           shell: bash
