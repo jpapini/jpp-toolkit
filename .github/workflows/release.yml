@@ -18,6 +18,8 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v6
+              with:
+                  token: ${{ secrets.BOT_PAT_TOKEN }}
 
             - name: Run Changesets
               uses: ./actions/changesets

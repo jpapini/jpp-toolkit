@@ -20,11 +20,13 @@ jobs:
               with:
                   fetch-depth: 2
                   ref: ${{ github.head_ref }}
+                  token: ${{ secrets.BOT_PAT_TOKEN }}
 
             - name: Run Changesets for Renovate
               uses: ./actions/changesets-renovate
               with:
                   checkout: false
+                  token: ${{ secrets.BOT_PAT_TOKEN }}
                   ssh-public-key: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
                   ssh-private-key: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
                   git-committer-name: 'Julien Papini [bot]'

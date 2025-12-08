@@ -14,6 +14,9 @@ inputs:
         description: Run build step.
         required: false
         default: 'false'
+    token:
+        description: GitHub token.
+        required: true
     command:
         description: Command to run for generating Changesets for Renovate.
         required: false
@@ -40,7 +43,7 @@ runs:
           with:
               fetch-depth: 2
               ref: ${{ github.head_ref }}
-              ssh-key: ${{ inputs.ssh-private-key }}
+              token: ${{ inputs.token }}
 
         - name: Setup Git with SSH signing
           shell: bash
