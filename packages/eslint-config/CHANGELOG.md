@@ -1,5 +1,19 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.15
+
+### Patch Changes
+
+- [#19](https://github.com/jpapini/jpp-toolkit/pull/19) [`81ac660`](https://github.com/jpapini/jpp-toolkit/commit/81ac660a5e13b90d3bb457b1ee3d9aeb113d64de) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `typescript-eslint` to `8.49.0`.
+
+- [#18](https://github.com/jpapini/jpp-toolkit/pull/18) [`cc6c585`](https://github.com/jpapini/jpp-toolkit/commit/cc6c585ac08ae9fdbf79cb6d85074415199c9727) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.25.0`.
+  Updated dependency `pnpm` to `10.25.0`.
+
+- [#15](https://github.com/jpapini/jpp-toolkit/pull/15) [`a7141f8`](https://github.com/jpapini/jpp-toolkit/commit/a7141f81033a8dd7a07ea894b29c9abf965f3310) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vitest/eslint-plugin` to `1.5.2`.
+
+- Updated dependencies [[`cc6c585`](https://github.com/jpapini/jpp-toolkit/commit/cc6c585ac08ae9fdbf79cb6d85074415199c9727)]:
+    - @jpp-toolkit/utils@0.0.14
+
 ## 0.0.14
 
 ### Patch Changes

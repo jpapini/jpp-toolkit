@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/utils",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "Useful utilities and helpers for JS/TS projects.",
     "keywords": [
         "jpp",
