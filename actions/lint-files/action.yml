@@ -1,0 +1,46 @@
+name: Lint files
+description: Lints files in the repository using defined linting scripts.
+
+branding:
+    icon: check-square
+    color: green
+
+inputs:
+    build:
+        description: Run build step before linting.
+        required: false
+        default: 'false'
+
+runs:
+    using: composite
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v6
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version-file: package.json
+              cache: pnpm
+
+        - name: Install dependencies
+          shell: bash
+          run: |
+              set -e
+              pnpm install --frozen-lockfile
+
+        - name: Build packages
+          if: inputs.build == 'true'
+          shell: bash
+          run: |
+              set -e
+              pnpm run build
+
+        - name: Linting files
+          shell: bash
+          run: |
+              set -e
+              pnpm run lint

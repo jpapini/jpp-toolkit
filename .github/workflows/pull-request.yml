@@ -5,30 +5,29 @@ on:
         types: [opened, synchronize, reopened]
 
 jobs:
-    test:
-        name: Test
+    lint-commits:
+        name: Lint / Commits
         runs-on: ubuntu-latest
         timeout-minutes: 5
         steps:
-            - name: Checkout repository
-              uses: actions/checkout@v6
-
-            - name: Setup Git
-              uses: ./actions/setup-git
+            - uses: ./actions/lint-commits
               with:
-                  ssh-public-key: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
-                  ssh-private-key: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
-                  git-committer-name: 'Julien Papini [bot]'
-                  git-committer-email: 'julien.papini+github-bot@gmail.com'
+                  build: true
 
-            - name: Create a file
-              run: echo "This is a test file." > testfile.txt
+    lint-files:
+        name: Lint / Files
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+        steps:
+            - uses: ./actions/lint-files
+              with:
+                  build: true
 
-            - name: Commit file
-              run: |
-                  git add testfile.txt
-                  git commit -m "Add test file"
-
-            - name: Check if commit is signed
-              run: |
-                  git log -1 --show-signature
+    typecheck:
+        name: Typecheck
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+        steps:
+            - uses: ./actions/typecheck
+              with:
+                  build: true
