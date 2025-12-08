@@ -54,8 +54,8 @@ importers:
   internals/build-lib:
     dependencies:
       tsdown:
-        specifier: 0.17.0
-        version: 0.17.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.17.1
+        version: 0.17.1(synckit@0.11.11)(typescript@5.9.3)
 
   packages/cli:
     dependencies:
@@ -227,8 +227,8 @@ importers:
         specifier: 4.8.0
         version: 4.8.0
       tsdown:
-        specifier: 0.17.0
-        version: 0.17.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.17.1
+        version: 0.17.1(synckit@0.11.11)(typescript@5.9.3)
     devDependencies:
       oclif:
         specifier: 4.22.54
@@ -393,8 +393,8 @@ importers:
   packages/tsdown-config:
     devDependencies:
       tsdown:
-        specifier: 0.17.0
-        version: 0.17.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.17.1
+        version: 0.17.1(synckit@0.11.11)(typescript@5.9.3)
 
   packages/utils: {}
 
@@ -3794,13 +3794,13 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
-  tsdown@0.17.0:
-    resolution: {integrity: sha512-NPZRrlC51X9Bb55ZTDwrWges8Dm1niCvNA5AYw7aix6pfnDnB4WR0neG5RPq75xIodg3hqlQUzzyrX7n4dmnJg==}
+  tsdown@0.17.1:
+    resolution: {integrity: sha512-SqRyd/wliY0CgOhxbE3gJVUQioHVWMibeiswOruBa9XxJuFTy7xEuC9vqCCkuJ6Owqt2/F7S3vG9tXCQWQN+Fg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@vitejs/devtools': ^0.0.0-alpha.18
+      '@vitejs/devtools': ^0.0.0-alpha.19
       publint: ^0.3.0
       typescript: ^5.0.0
       unplugin-lightningcss: ^0.4.0
@@ -8211,7 +8211,7 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  tsdown@0.17.0(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.17.1(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
