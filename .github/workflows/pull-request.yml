@@ -4,9 +4,6 @@ on:
     pull_request:
         types: [opened, synchronize, reopened]
 
-env:
-    GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
-
 jobs:
     lint-commits:
         name: Lint / Commits

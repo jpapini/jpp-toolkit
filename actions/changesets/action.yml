@@ -42,6 +42,14 @@ inputs:
     git-committer-email:
         description: The email to use for the Git committer.
         required: true
+    token:
+        description: GitHub token.
+        required: false
+        default: ${{ secrets.GITHUB_TOKEN }}
+    auto-merge:
+        description: Enable auto-merge for the release Pull Request.
+        required: false
+        default: 'false'
 
 runs:
     using: composite
@@ -107,9 +115,20 @@ runs:
         - name: Run Changesets
           id: changesets
           uses: changesets/action@v1
+          env:
+              GITHUB_TOKEN: ${{ inputs.token }}
           with:
               setupGitUser: false
               title: ${{ inputs.pr-title }}
               commit: ${{ inputs.commit-message }}
               version: ${{ inputs.version-command }}
               publish: ${{ inputs.publish-command }}
+
+        - name: Enable auto-merge
+          if: steps.changesets.outputs.pullRequestNumber != '' && inputs.auto-merge == 'true'
+          shell: bash
+          env:
+              GITHUB_TOKEN: ${{ inputs.token }}
+          run: |
+              set -e
+              gh pr merge --auto --merge "${{ steps.changesets.outputs.pullRequestNumber }}"

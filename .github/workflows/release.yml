@@ -11,9 +11,6 @@ permissions:
     id-token: write
     contents: read
 
-env:
-    GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
-
 jobs:
     release:
         name: Release
@@ -26,6 +23,8 @@ jobs:
               uses: ./actions/changesets
               with:
                   checkout: false
+                  auto-merge: true
+                  token: ${{ secrets.BOT_PAT_TOKEN }}
                   ssh-public-key: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
                   ssh-private-key: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
                   git-committer-name: 'Julien Papini [bot]'

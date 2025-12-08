@@ -8,9 +8,6 @@ on:
             - '**/pnpm-lock.yaml'
             - '**/package.json'
 
-env:
-    GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
-
 jobs:
     generate-changesets:
         name: Generate changesets
