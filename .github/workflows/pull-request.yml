@@ -10,5 +10,13 @@ jobs:
         runs-on: ubuntu-latest
         timeout-minutes: 5
         steps:
-            - name: Test
-              run: echo "Hello world"
+            - name: Debug git
+              run: |
+                  git config --get gpg.format
+                  git config --get user.signingkey
+                  git config --get gpg.ssh.allowedSignersFile
+                  git config --get commit.gpgSign
+                  git config --get tag.gpgSign
+                  git log -1 --show-signature
+                  git config --get user.name
+                  git config --get user.email
