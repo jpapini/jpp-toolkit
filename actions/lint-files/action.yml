@@ -6,15 +6,24 @@ branding:
     color: green
 
 inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
     build:
-        description: Run build step before linting.
+        description: Run build step.
         required: false
         default: 'false'
+    command:
+        description: Command to run for linting files.
+        required: false
+        default: 'pnpm run lint'
 
 runs:
     using: composite
     steps:
         - name: Checkout repository
+          if: inputs.checkout == 'true'
           uses: actions/checkout@v6
 
         - name: Setup PNPM
@@ -43,4 +52,4 @@ runs:
           shell: bash
           run: |
               set -e
-              pnpm run lint
+              ${{ inputs.command }}

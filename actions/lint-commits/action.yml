@@ -6,6 +6,18 @@ branding:
     color: yellow
 
 inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
+    build:
+        description: Run build step.
+        required: false
+        default: 'false'
+    command:
+        description: Command to run for linting commits.
+        required: false
+        default: 'pnpm commitlint'
     from:
         description: Starting commit SHA for linting range.
         required: false
@@ -14,15 +26,12 @@ inputs:
         description: Ending commit SHA for linting range.
         required: false
         default: ${{ github.event.pull_request.head.sha }}
-    build:
-        description: Run build step before linting.
-        required: false
-        default: 'false'
 
 runs:
     using: composite
     steps:
         - name: Checkout repository
+          if: inputs.checkout == 'true'
           uses: actions/checkout@v6
           with:
               fetch-depth: 0
@@ -53,7 +62,7 @@ runs:
           shell: bash
           run: |
               set -e
-              pnpm commitlint \
+              ${{ inputs.command }} \
                 --from ${{ inputs.from }} \
                 --to ${{ inputs.to }} \
                 --verbose
