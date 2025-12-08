@@ -15,6 +15,7 @@ jobs:
 
             - name: Debug git
               run: |
+                  set +e
                   cat ~/.gitconfig
                   git config --get gpg.format
                   git config --get user.signingkey
