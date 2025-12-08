@@ -1,0 +1,32 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+    id-token: write
+    contents: read
+
+env:
+    GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+
+jobs:
+    release:
+        name: Release
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Run Changesets
+              uses: ./actions/changesets
+              with:
+                  checkout: false
+                  ssh-public-key: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
+                  ssh-private-key: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
+                  git-committer-name: 'Julien Papini [bot]'
+                  git-committer-email: 'julien.papini+github-bot@gmail.com'

@@ -1,0 +1,34 @@
+name: Add changeset to Renovate updates
+
+on:
+    merge_group:
+    pull_request_target:
+        paths:
+            - '.github/workflows/changesets-renovate.yml'
+            - '**/pnpm-lock.yaml'
+            - '**/package.json'
+
+env:
+    GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+
+jobs:
+    generate-changesets:
+        name: Generate changesets
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+        if: github.actor == 'renovate[bot]'
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+              with:
+                  fetch-depth: 2
+                  ref: ${{ github.head_ref }}
+
+            - name: Run Changesets for Renovate
+              uses: ./actions/changesets-renovate
+              with:
+                  checkout: false
+                  ssh-public-key: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
+                  ssh-private-key: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
+                  git-committer-name: 'Julien Papini [bot]'
+                  git-committer-email: 'julien.papini+github-bot@gmail.com'

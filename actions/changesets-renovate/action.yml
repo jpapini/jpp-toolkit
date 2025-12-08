@@ -1,11 +1,23 @@
-name: Setup Git
-description: Sets up Git with SSH commit signing using provided SSH keys.
+name: Changesets for Renovate
+description: Generates Changesets for Renovate updates.
 
 branding:
-    icon: git-commit
+    icon: repeat
     color: blue
 
 inputs:
+    checkout:
+        description: Should checkout the repository.
+        required: false
+        default: 'true'
+    build:
+        description: Run build step.
+        required: false
+        default: 'false'
+    command:
+        description: Command to run for generating Changesets for Renovate.
+        required: false
+        default: 'pnpm dlx @scaleway/changesets-renovate'
     ssh-public-key:
         description: The SSH public key used for signing commits.
         required: true
@@ -22,6 +34,13 @@ inputs:
 runs:
     using: composite
     steps:
+        - name: Checkout repository
+          if: inputs.checkout == 'true'
+          uses: actions/checkout@v6
+          with:
+              fetch-depth: 2
+              ref: ${{ github.head_ref }}
+
         - name: Setup Git with SSH signing
           shell: bash
           env:
@@ -53,3 +72,31 @@ runs:
               git config commit.gpgsign true
               git config tag.gpgsign true
               echo "Git configured with SSH signing enabled"
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version-file: package.json
+              cache: pnpm
+
+        - name: Install dependencies
+          shell: bash
+          run: |
+              set -e
+              pnpm install --frozen-lockfile
+
+        - name: Build packages
+          if: inputs.build == 'true'
+          shell: bash
+          run: |
+              set -e
+              pnpm run build
+
+        - name: Generate Changesets for Renovate
+          shell: bash
+          run: |
+              set -e
+              ${{ inputs.command }}
