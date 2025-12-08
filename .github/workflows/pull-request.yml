@@ -4,6 +4,12 @@ on:
     pull_request:
         types: [opened, synchronize, reopened]
 
+env:
+    SSH_PUBLIC_KEY: ${{ secrets.BOT_SSH_PUBLIC_KEY }}
+    SSH_PRIVATE_KEY: ${{ secrets.BOT_SSH_PRIVATE_KEY }}
+    GIT_COMMITTER_NAME: 'Julien Papini [bot]'
+    GIT_COMMITTER_EMAIL: 'julien.papini+github-bot@gmail.com'
+
 jobs:
     test:
         name: Test
@@ -13,10 +19,24 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v6
 
-            - name: Setup git
+            - name: Setup SSH signing
               run: |
-                  git config --global user.name "Julien Papini [bot]"
-                  git config --global user.email "julien.papini+github-bot@gmail.com"
+                  mkdir -p ~/.ssh
+                  echo "$SSH_PRIVATE_KEY" > ~/.ssh/signing_key
+                  chmod 600 ~/.ssh/signing_key
+                  echo "$SSH_PUBLIC_KEY" > ~/.ssh/signing_key.pub
+                  chmod 644 ~/.ssh/signing_key.pub
+                  echo "$GIT_COMMITTER_EMAIL namespaces=\"git\" $SSH_PUBLIC_KEY" > ~/.ssh/allowed_signers
+
+            - name: Configure Git for SSH signing
+              run: |
+                  git config user.name "$GIT_COMMITTER_NAME"
+                  git config user.email "$GIT_COMMITTER_EMAIL"
+                  git config gpg.format ssh
+                  git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+                  git config user.signingkey ~/.ssh/signing_key.pub
+                  git config commit.gpgsign true
+                  git config tag.gpgsign true
 
             - name: Create a file
               run: echo "This is a test file." > testfile.txt
