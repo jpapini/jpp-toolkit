@@ -16,12 +16,30 @@ jobs:
             - name: Debug git
               run: |
                   set +e
+
+                  echo "cat ~/.gitconfig"
                   cat ~/.gitconfig
+
+                  echo "git config --get gpg.format"
                   git config --get gpg.format
+
+                  echo "git config --get user.signingkey"
                   git config --get user.signingkey
+
+                  echo "git config --get gpg.ssh.allowedSignersFile"
                   git config --get gpg.ssh.allowedSignersFile
+
+                  echo "git config --get commit.gpgSign"
                   git config --get commit.gpgSign
+
+                  echo "git config --get tag.gpgSign"
                   git config --get tag.gpgSign
+
+                  echo "git log -1 --show-signature"
                   git log -1 --show-signature
+
+                  echo "git config --get user.name"
                   git config --get user.name
+
+                  echo "git config --get user.email"
                   git config --get user.email
