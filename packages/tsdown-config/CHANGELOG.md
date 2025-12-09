@@ -1,5 +1,11 @@
 # @jpp-toolkit/tsdown-config
 
+## 0.0.15
+
+### Patch Changes
+
+- [#23](https://github.com/jpapini/jpp-toolkit/pull/23) [`fc08cc8`](https://github.com/jpapini/jpp-toolkit/commit/fc08cc8793a12969f16be63447e57232bc378add) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tsdown` to `0.17.2`.
+
 ## 0.0.14
 
 ### Patch Changes
