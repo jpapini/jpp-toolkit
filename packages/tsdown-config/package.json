@@ -36,7 +36,7 @@
         "build": "build-lib"
     },
     "devDependencies": {
-        "tsdown": "0.17.1"
+        "tsdown": "0.17.2"
     },
     "peerDependencies": {
         "tsdown": "0.17"
