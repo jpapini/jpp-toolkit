@@ -14,6 +14,6 @@ export abstract class ChangesetCommand extends Command {
         const cwd = findProjectRoot();
         const result = await execa(CHANGESET_BIN, args, { cwd, stdio: 'inherit', reject: false });
 
-        if (result.failed) process.exit(1);
+        if (result.failed) this.exit(1);
     }
 }
