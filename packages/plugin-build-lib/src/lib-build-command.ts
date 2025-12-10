@@ -10,6 +10,12 @@ const Preset = {
 } as const;
 type Preset = (typeof Preset)[keyof typeof Preset];
 
+const presetFormatMap = {
+    [Preset.ESM]: ['esm' as const],
+    [Preset.CJS]: ['cjs' as const],
+    [Preset.HYBRID]: ['esm' as const, 'cjs' as const],
+};
+
 export class LibBuildCommand extends Command {
     static override summary = 'Build the project using predefined library build presets.';
 
@@ -52,19 +58,8 @@ export class LibBuildCommand extends Command {
 
         this.logger.info(`Building library using the '${preset}' preset...`);
 
-        switch (preset) {
-            case Preset.ESM:
-                await tsdownBuild(createTsdownConfig({ format: ['esm'], watch }));
-                break;
-            case Preset.CJS:
-                await tsdownBuild(createTsdownConfig({ format: ['cjs'], watch }));
-                break;
-            case Preset.HYBRID:
-                await tsdownBuild(createTsdownConfig({ format: ['esm', 'cjs'], watch }));
-                break;
-            default:
-                this.logger.error(`Unknown preset: ${preset}`);
-                process.exit(1);
-        }
+        const format = presetFormatMap[preset];
+        const config = createTsdownConfig({ format, watch });
+        await tsdownBuild(config);
     }
 }

@@ -1,6 +1,5 @@
 import path from 'node:path';
 
-import { defineConfig } from 'tsdown';
 import type { UserConfig } from 'tsdown';
 
 export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
@@ -11,7 +10,7 @@ export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
         : overrides.ignoreWatch ? [overrides.ignoreWatch]
         : [];
 
-    return defineConfig({
+    return {
         cwd,
 
         target: 'node24',
@@ -31,6 +30,7 @@ export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
         ...overrides,
 
         ignoreWatch: [
+            /\/\.git\//u,
             /\/\.turbo\//u,
             /\/coverage\//u,
             /\/dist\//u,
@@ -39,5 +39,5 @@ export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
             /\/tmp\//u,
             ...ignoreWatch,
         ],
-    });
+    };
 }

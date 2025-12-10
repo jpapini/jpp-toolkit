@@ -70,7 +70,7 @@ export class LintCommand extends Command {
             this.logger.success(`Linting process completed successfully.`);
         } else {
             this.logger.error(`Linting process encountered issues.`);
-            process.exit(1);
+            this.exit(1);
         }
     }
 }
