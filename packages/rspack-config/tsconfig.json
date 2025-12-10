@@ -8,6 +8,6 @@
             "~/*": ["src/*"]
         }
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "dts/**/*"],
     "exclude": ["node_modules", "dist"]
 }
