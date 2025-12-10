@@ -29,7 +29,7 @@
         "@jpp-toolkit/internal-build-lib": "workspace:*",
         "@jpp-toolkit/prettier-config": "workspace:*",
         "@jpp-toolkit/ts-config": "workspace:*",
-        "@types/node": "24.10.2",
+        "@types/node": "24.10.3",
         "eslint": "9.39.1",
         "npm-run-all2": "8.0.4",
         "prettier": "3.7.4",
@@ -42,7 +42,7 @@
         "pnpm": "10"
     },
     "volta": {
-        "node": "24.11.1",
+        "node": "24.12.0",
         "pnpm": "10.25.0"
     }
 }
