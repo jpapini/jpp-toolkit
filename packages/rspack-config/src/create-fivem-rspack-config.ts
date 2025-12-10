@@ -6,7 +6,9 @@ import { mergeConfig } from './utils/merge-config';
 
 export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOptions {
     const cwd = overrides.context ?? process.cwd();
-    const isProduction = process.env.NODE_ENV === 'production';
+    const mode =
+        overrides.mode ?? (process.env.NODE_ENV === 'production' ? 'production' : 'development');
+    const isProduction = mode === 'production';
 
     const config: RspackOptions = {
         name: 'fivem',
@@ -14,7 +16,8 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         context: cwd,
 
         target: 'node16',
-        mode: isProduction ? 'production' : 'development',
+        devtool: false,
+        mode,
 
         entry: path.resolve(cwd, 'src/index.ts'),
 
@@ -24,7 +27,7 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         },
 
         optimization: {
-            minimize: false,
+            minimize: isProduction,
         },
 
         resolve: {
@@ -55,7 +58,7 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
                     exclude: [/dist\//u, /node_modules\//u],
                     loader: 'builtin:swc-loader',
                     options: {
-                        minify: false,
+                        minify: isProduction,
                         module: {
                             type: 'nodenext',
                         },
@@ -72,6 +75,19 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
                         },
                     },
                 },
+            ],
+        },
+
+        watchOptions: {
+            aggregateTimeout: 200,
+            ignored: [
+                '**/.git',
+                '**/.turbo',
+                '**/coverage',
+                '**/dist',
+                '**/generated',
+                '**/old',
+                '**/tmp',
             ],
         },
     };

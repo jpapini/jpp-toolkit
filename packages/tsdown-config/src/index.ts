@@ -30,6 +30,7 @@ export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
         ...overrides,
 
         ignoreWatch: [
+            /\/\.git\//u,
             /\/\.turbo\//u,
             /\/coverage\//u,
             /\/dist\//u,

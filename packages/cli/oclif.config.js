@@ -10,6 +10,7 @@ export default {
         '@jpp-toolkit/plugin-lint',
         '@jpp-toolkit/plugin-check-updates',
         '@jpp-toolkit/plugin-build-lib',
+        '@jpp-toolkit/plugin-build-fivem',
         '@jpp-toolkit/plugin-changesets',
     ],
     commands: {

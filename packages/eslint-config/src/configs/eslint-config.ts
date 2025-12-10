@@ -13,7 +13,7 @@ export const eslintConfig = defineConfig({
          * Enforce return statements in callbacks of array methods.
          * @see {@link https://eslint.org/docs/latest/rules/array-callback-return}
          */
-        'array-callback-return': ['error', { checkForEach: true, allowVoid: true }],
+        'array-callback-return': 'error',
 
         /**
          * Disallow await inside of loops.

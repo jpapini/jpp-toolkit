@@ -59,6 +59,9 @@ importers:
 
   packages/cli:
     dependencies:
+      '@jpp-toolkit/plugin-build-fivem':
+        specifier: workspace:*
+        version: link:../plugin-build-fivem
       '@jpp-toolkit/plugin-build-lib':
         specifier: workspace:*
         version: link:../plugin-build-lib
@@ -211,6 +214,28 @@ importers:
       colorette:
         specifier: 2.0.20
         version: 2.0.20
+
+  packages/plugin-build-fivem:
+    dependencies:
+      '@jpp-toolkit/core':
+        specifier: workspace:*
+        version: link:../core
+      '@jpp-toolkit/rspack-config':
+        specifier: workspace:*
+        version: link:../rspack-config
+      '@jpp-toolkit/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@oclif/core':
+        specifier: 4.8.0
+        version: 4.8.0
+      '@rspack/core':
+        specifier: 1.6.7
+        version: 1.6.7
+    devDependencies:
+      oclif:
+        specifier: 4.22.54
+        version: 4.22.54(@types/node@24.10.2)
 
   packages/plugin-build-lib:
     dependencies:
