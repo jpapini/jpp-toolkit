@@ -69,8 +69,7 @@ export class LintCommand extends Command {
         if (!prettierResult.failed && !eslintResult.failed) {
             this.logger.success(`Linting process completed successfully.`);
         } else {
-            this.logger.error(`Linting process encountered issues.`);
-            this.exit(1);
+            this.fatalError(`Linting process encountered issues.`);
         }
     }
 }

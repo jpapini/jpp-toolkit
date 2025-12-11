@@ -18,4 +18,9 @@ export abstract class Command extends OclifCommand {
     public get logger(): Logger {
         return this._logger;
     }
+
+    public fatalError(message: string, exitCode = 1): never {
+        this._logger.error(message);
+        this.exit(exitCode);
+    }
 }

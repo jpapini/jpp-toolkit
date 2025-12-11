@@ -6,7 +6,7 @@ import { getErrMsg } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
 import type { Compiler, Stats } from '@rspack/core';
 import { rspack } from '@rspack/core';
-import { Rcon } from 'rcon-client';
+import Rcon from 'rcon';
 
 type Mode = 'development' | 'production';
 type ServerAddress = { readonly host: string; readonly port: number };
@@ -96,14 +96,12 @@ export class FivemBuildCommand extends Command {
 
         if (autoReload) {
             if (!password) {
-                this.logger.error(
+                this.fatalError(
                     'RCON password is required for auto-reload. Please provide it using the --password flag.',
                 );
-                this.exit(1);
             }
 
-            const rcon = new Rcon({ host, port, password });
-            await this._enableAutoReload(compiler, rcon, resourceName);
+            await this._enableAutoReload(compiler, resourceName, host, port, password);
         }
 
         if (flags.watch) {
@@ -139,19 +137,33 @@ export class FivemBuildCommand extends Command {
         if (stats) this.logger.log(stats.toString(), '\n');
     }
 
+    private async _connectRcon(host: string, port: number, password: string): Promise<Rcon> {
+        return new Promise((resolve, reject) => {
+            const rcon = new Rcon(host, port, password, { tcp: false, challenge: false });
+
+            rcon.on('auth', () => resolve(rcon));
+            rcon.on('error', reject);
+            rcon.on('end', () => reject(new Error('RCON connection ended unexpectedly.')));
+
+            rcon.connect();
+        });
+    }
+
     private async _enableAutoReload(
         compiler: Compiler,
-        rcon: Rcon,
         resourceName: string,
+        host: string,
+        port: number,
+        password: string,
     ): Promise<void> {
-        try {
-            await rcon.connect();
-        } catch (error) {
-            this.logger.error(`Failed to connect to FiveM server via RCON: ${getErrMsg(error)}`);
-            this.exit(1);
-        }
+        const rcon = await this._connectRcon(host, port, password);
 
-        compiler.hooks.done.tapPromise('FivemAutoReloadPlugin', async (stats) => {
+        rcon.on('response', (res: string) => {
+            if (res.includes("Couldn't find resource")) this.fatalError("Couldn't find resource");
+            if (res === 'rint Invalid password') this.fatalError('Invalid password');
+        });
+
+        compiler.hooks.done.tap('FivemAutoReloadPlugin', (stats) => {
             if (stats.hasErrors()) {
                 this.logger.warning('Build failed. Skipping FiveM resource reload.\n');
                 return;
@@ -159,7 +171,7 @@ export class FivemBuildCommand extends Command {
 
             this.logger.info(`Reloading FiveM resource "${resourceName}"...`);
             try {
-                await rcon.send(`refresh; ensure ${resourceName}`);
+                rcon.send(`refresh; ensure ${resourceName}`);
                 this.logger.success(`FiveM resource reloaded successfully.\n`);
             } catch (error) {
                 this.logger.error(`Failed to reload FiveM resource: ${getErrMsg(error)}\n`);

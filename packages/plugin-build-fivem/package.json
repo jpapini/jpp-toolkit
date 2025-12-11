@@ -45,7 +45,7 @@
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
         "@rspack/core": "1.6.7",
-        "rcon-client": "4.2.5"
+        "rcon": "1.1.0"
     },
     "devDependencies": {
         "oclif": "4.22.54"
