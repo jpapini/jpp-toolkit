@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.3
+
+### Patch Changes
+
+- [`d312b75`](https://github.com/jpapini/jpp-toolkit/commit/d312b752d17af23ebfa02d9395d0cd14f2a69971) Thanks [@jpapini](https://github.com/jpapini)! - Add examples.
+
 ## 0.0.2
 
 ### Patch Changes
