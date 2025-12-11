@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-lint
 
+## 0.0.16
+
+### Patch Changes
+
+- [`4f175ae`](https://github.com/jpapini/jpp-toolkit/commit/4f175ae1db2347bc5f1fd5eb070eb6d87de0d7d3) Thanks [@jpapini](https://github.com/jpapini)! - Fix rcon connection.
+
+- Updated dependencies [[`4f175ae`](https://github.com/jpapini/jpp-toolkit/commit/4f175ae1db2347bc5f1fd5eb070eb6d87de0d7d3)]:
+    - @jpp-toolkit/core@0.0.15
+
 ## 0.0.15
 
 ### Patch Changes
