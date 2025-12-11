@@ -50,7 +50,38 @@ export class FivemBuildCommand extends Command {
         }),
     };
 
-    static override examples = [];
+    static override examples = [
+        {
+            description: 'Build the FiveM resource.',
+            command: '<%= config.bin %> <%= command.id %>',
+        },
+        {
+            description: 'Build the FiveM resource in watch mode.',
+            command: '<%= config.bin %> <%= command.id %> --watch',
+        },
+        {
+            description: 'Build the FiveM resource in production mode.',
+            command: '<%= config.bin %> <%= command.id %> --mode=production',
+        },
+        {
+            description:
+                'Build the FiveM resource and automatically reload it on the server after build.',
+            command:
+                '<%= config.bin %> <%= command.id %> --auto-reload --password your_rcon_password',
+        },
+        {
+            description:
+                'Build the FiveM resource in watch mode and automatically reload it on the server after each build.',
+            command:
+                '<%= config.bin %> <%= command.id %> --watch --auto-reload --password your_rcon_password',
+        },
+        {
+            description:
+                'Build the FiveM resource and connect to a specific server for auto-reload.',
+            command:
+                '<%= config.bin %> <%= command.id %> --auto-reload --server=127.0.0.1:30120 --password your_rcon_password',
+        },
+    ];
 
     public async run(): Promise<void> {
         const { flags } = await this.parse(FivemBuildCommand);
