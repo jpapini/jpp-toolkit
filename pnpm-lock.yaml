@@ -85,8 +85,8 @@ importers:
         version: 6.2.36
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
       tsx:
         specifier: 4.21.0
         version: 4.21.0
@@ -237,8 +237,8 @@ importers:
         version: 1.1.0
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/plugin-build-lib:
     dependencies:
@@ -259,8 +259,8 @@ importers:
         version: 0.17.3(synckit@0.11.11)(typescript@5.9.3)
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/plugin-changesets:
     dependencies:
@@ -281,8 +281,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/plugin-check-updates:
     dependencies:
@@ -300,8 +300,8 @@ importers:
         version: 19.2.0
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/plugin-clean:
     dependencies:
@@ -322,8 +322,8 @@ importers:
         version: 6.1.2
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/plugin-lint:
     dependencies:
@@ -341,8 +341,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.54
-        version: 4.22.54(@types/node@24.10.3)
+        specifier: 4.22.55
+        version: 4.22.55(@types/node@24.10.3)
 
   packages/prettier-config:
     dependencies:
@@ -3422,8 +3422,8 @@ packages:
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
-  oclif@4.22.54:
-    resolution: {integrity: sha512-+LWHTxh8Xi7BVp/eyrsOOutunwBOYpzq6HQ+vu3xEZgST/aqrvHqGFgLOwglEobf5oUqkbuH2LmVzweXCUBu8Q==}
+  oclif@4.22.55:
+    resolution: {integrity: sha512-yBObiRYe0taTJ7apBop0YkAZ7Ruul/TkgXhJ2Pc2srEtvIfg1CuNXB8RP9TlMkR6CjbYqdHuji4befZzrUoXNw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -7960,7 +7960,7 @@ snapshots:
 
   obug@2.1.1: {}
 
-  oclif@4.22.54(@types/node@24.10.3):
+  oclif@4.22.55(@types/node@24.10.3):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.946.0
       '@aws-sdk/client-s3': 3.946.0

@@ -46,7 +46,7 @@
         "rimraf": "6.1.2"
     },
     "devDependencies": {
-        "oclif": "4.22.54"
+        "oclif": "4.22.55"
     },
     "packageManager": "pnpm@10.25.0",
     "engines": {
