@@ -1,5 +1,19 @@
 # @jpp-toolkit/cli
 
+## 0.0.22
+
+### Patch Changes
+
+- [#35](https://github.com/jpapini/jpp-toolkit/pull/35) [`e0691cb`](https://github.com/jpapini/jpp-toolkit/commit/e0691cb8aaf06fdd26fc9a1e90b024e36c7a8759) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.55`.
+
+- Updated dependencies [[`e0691cb`](https://github.com/jpapini/jpp-toolkit/commit/e0691cb8aaf06fdd26fc9a1e90b024e36c7a8759)]:
+    - @jpp-toolkit/plugin-build-fivem@0.0.6
+    - @jpp-toolkit/plugin-build-lib@0.0.19
+    - @jpp-toolkit/plugin-changesets@0.0.17
+    - @jpp-toolkit/plugin-check-updates@0.0.17
+    - @jpp-toolkit/plugin-clean@0.0.16
+    - @jpp-toolkit/plugin-lint@0.0.17
+
 ## 0.0.21
 
 ### Patch Changes
