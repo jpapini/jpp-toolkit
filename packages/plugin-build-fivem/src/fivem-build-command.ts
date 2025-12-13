@@ -106,10 +106,10 @@ export class FivemBuildCommand extends Command {
 
         if (flags.watch) {
             this.logger.info(`Building FiveM resource in watch mode...\n`);
-            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats));
+            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats, true));
         } else {
             this.logger.info(`Building FiveM resource...\n`);
-            compiler.run((err, stats) => this._compilerCallback(err, stats, 0));
+            compiler.run((err, stats) => this._compilerCallback(err, stats));
         }
     }
 
@@ -129,18 +129,19 @@ export class FivemBuildCommand extends Command {
     private _compilerCallback(
         err: Error | null,
         stats: Stats | undefined,
-        exitCode?: number,
+        isWatchMode = false,
     ): void {
         if (err) {
             this.logger.error(getErrMsg(err));
             if ('details' in err) this.logger.error(err.details as string);
             if ('stack' in err) this.logger.error(err.stack);
+            if (!isWatchMode) this.exit(1);
             return;
         }
 
         if (stats) this.logger.log(stats.toString(), '\n');
 
-        if (exitCode !== undefined) this.exit(exitCode);
+        if (!isWatchMode) this.exit(0);
     }
 
     private async _enableAutoReload(
