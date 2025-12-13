@@ -106,10 +106,10 @@ export class FivemBuildCommand extends Command {
 
         if (flags.watch) {
             this.logger.info(`Building FiveM resource in watch mode...\n`);
-            compiler.watch({}, this._compilerCallback.bind(this));
+            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats));
         } else {
             this.logger.info(`Building FiveM resource...\n`);
-            compiler.run(this._compilerCallback.bind(this));
+            compiler.run((err, stats) => this._compilerCallback(err, stats, 0));
         }
     }
 
@@ -126,7 +126,11 @@ export class FivemBuildCommand extends Command {
         return { host, port: parseInt(port) };
     }
 
-    private _compilerCallback(err: Error | null, stats: Stats | undefined): void {
+    private _compilerCallback(
+        err: Error | null,
+        stats: Stats | undefined,
+        exitCode?: number,
+    ): void {
         if (err) {
             this.logger.error(getErrMsg(err));
             if ('details' in err) this.logger.error(err.details as string);
@@ -135,6 +139,8 @@ export class FivemBuildCommand extends Command {
         }
 
         if (stats) this.logger.log(stats.toString(), '\n');
+
+        if (exitCode !== undefined) this.exit(exitCode);
     }
 
     private async _enableAutoReload(
