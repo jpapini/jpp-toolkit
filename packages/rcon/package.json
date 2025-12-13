@@ -34,6 +34,9 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
+    "dependencies": {
+        "@jpp-toolkit/utils": "workspace:*"
+    },
     "packageManager": "pnpm@10.25.0",
     "engines": {
         "node": "24",

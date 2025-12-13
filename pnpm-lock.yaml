@@ -220,6 +220,9 @@ importers:
       '@jpp-toolkit/core':
         specifier: workspace:*
         version: link:../core
+      '@jpp-toolkit/rcon':
+        specifier: workspace:*
+        version: link:../rcon
       '@jpp-toolkit/rspack-config':
         specifier: workspace:*
         version: link:../rspack-config
@@ -232,9 +235,6 @@ importers:
       '@rspack/core':
         specifier: 1.6.7
         version: 1.6.7
-      rcon:
-        specifier: 1.1.0
-        version: 1.1.0
     devDependencies:
       oclif:
         specifier: 4.22.55
@@ -364,7 +364,11 @@ importers:
         specifier: 3.7.4
         version: 3.7.4
 
-  packages/rcon: {}
+  packages/rcon:
+    dependencies:
+      '@jpp-toolkit/utils':
+        specifier: workspace:*
+        version: link:../utils
 
   packages/renovate-config: {}
 
@@ -3617,9 +3621,6 @@ packages:
   quick-lru@5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
-
-  rcon@1.1.0:
-    resolution: {integrity: sha512-eotwcApOBjfadTjqQlrZVR4jzlwGCMNxmHhnFZx+g4kouwwRstRHkk1ON7DzkqrHNIjADSh0cU3gThSsDolUpg==}
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -8151,8 +8152,6 @@ snapshots:
   queue-microtask@1.2.3: {}
 
   quick-lru@5.1.1: {}
-
-  rcon@1.1.0: {}
 
   react-is@16.13.1: {}
 

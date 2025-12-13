@@ -1,12 +1,12 @@
 import path from 'node:path';
 
 import { Command } from '@jpp-toolkit/core';
+import { FivemRcon } from '@jpp-toolkit/rcon';
 import { createFivemRspackConfig } from '@jpp-toolkit/rspack-config';
 import { getErrMsg } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
 import type { Compiler, Stats } from '@rspack/core';
 import { rspack } from '@rspack/core';
-import Rcon from 'rcon';
 
 type Mode = 'development' | 'production';
 type ServerAddress = { readonly host: string; readonly port: number };
@@ -138,18 +138,6 @@ export class FivemBuildCommand extends Command {
         if (stats) this.logger.log(stats.toString(), '\n');
     }
 
-    private async _connectRcon(host: string, port: number, password: string): Promise<Rcon> {
-        return new Promise((resolve, reject) => {
-            const rcon = new Rcon(host, port, password, { tcp: false, challenge: false });
-
-            rcon.on('auth', () => resolve(rcon));
-            rcon.on('error', reject);
-            rcon.on('end', () => reject(new Error('RCON connection ended unexpectedly.')));
-
-            rcon.connect();
-        });
-    }
-
     private async _enableAutoReload(
         compiler: Compiler,
         resourceName: string,
@@ -157,14 +145,10 @@ export class FivemBuildCommand extends Command {
         port: number,
         password: string,
     ): Promise<void> {
-        const rcon = await this._connectRcon(host, port, password);
+        const rcon = new FivemRcon({ host, port, password });
+        await rcon.connect();
 
-        rcon.on('response', (res: string) => {
-            if (res.includes("Couldn't find resource")) this.fatalError("Couldn't find resource");
-            if (res === 'rint Invalid password') this.fatalError('Invalid password');
-        });
-
-        compiler.hooks.done.tap('FivemAutoReloadPlugin', (stats) => {
+        compiler.hooks.done.tapPromise('FivemAutoReloadPlugin', async (stats) => {
             if (stats.hasErrors()) {
                 this.logger.warning('Build failed. Skipping FiveM resource reload.\n');
                 return;
@@ -172,7 +156,7 @@ export class FivemBuildCommand extends Command {
 
             this.logger.info(`Reloading FiveM resource "${resourceName}"...`);
             try {
-                rcon.send(`refresh; ensure ${resourceName}`);
+                await rcon.refreshAndEnsureResource(resourceName);
                 this.logger.success(`FiveM resource reloaded successfully.\n`);
             } catch (error) {
                 this.logger.error(`Failed to reload FiveM resource: ${getErrMsg(error)}\n`);

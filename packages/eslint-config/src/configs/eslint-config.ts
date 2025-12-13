@@ -141,7 +141,7 @@ export const eslintConfig = defineConfig({
          * Require return statements to either always or never specify values.
          * @see {@link https://eslint.org/docs/latest/rules/consistent-return}
          */
-        'consistent-return': 'error',
+        'consistent-return': ['error', { treatUndefinedAsUnspecified: true }],
 
         /**
          * Enforce consistent naming when capturing the current execution context.
@@ -721,7 +721,7 @@ export const eslintConfig = defineConfig({
          * @fixable
          * @see {@link https://eslint.org/docs/latest/rules/prefer-const}
          */
-        'prefer-const': 'error',
+        'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
 
         /**
          * Require destructuring from arrays and/or objects.
