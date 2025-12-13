@@ -1,0 +1,48 @@
+{
+    "name": "@jpp-toolkit/rcon",
+    "version": "0.0.1",
+    "description": "Quake 3 RCON client library.",
+    "keywords": [
+        "jpp",
+        "rcon"
+    ],
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/rcon#readme",
+    "bugs": {
+        "url": "https://github.com/jpapini/jpp-toolkit/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jpapini/jpp-toolkit.git",
+        "directory": "packages/rcon"
+    },
+    "license": "MIT",
+    "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "typecheck": "tsc --noEmit --pretty",
+        "dev": "build-lib --watch",
+        "build": "build-lib"
+    },
+    "packageManager": "pnpm@10.25.0",
+    "engines": {
+        "node": "24",
+        "pnpm": "10"
+    },
+    "volta": {
+        "extends": "../../package.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
