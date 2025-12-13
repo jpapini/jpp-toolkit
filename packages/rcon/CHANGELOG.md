@@ -1,5 +1,11 @@
 # @jpp-toolkit/rcon
 
+## 0.0.3
+
+### Patch Changes
+
+- [`46a37f7`](https://github.com/jpapini/jpp-toolkit/commit/46a37f7dfbf5662e35b652e77c647824c354b46e) Thanks [@jpapini](https://github.com/jpapini)! - Fix npm release.
+
 ## 0.0.2
 
 ### Patch Changes
