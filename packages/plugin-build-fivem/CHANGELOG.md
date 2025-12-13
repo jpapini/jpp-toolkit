@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.9
+
+### Patch Changes
+
+- [`f468f4e`](https://github.com/jpapini/jpp-toolkit/commit/f468f4e560b596e016008bb9ac95fd983bf8ec6c) Thanks [@jpapini](https://github.com/jpapini)! - Fix exit 0.
+
 ## 0.0.8
 
 ### Patch Changes
