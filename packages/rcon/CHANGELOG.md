@@ -1,5 +1,11 @@
 # @jpp-toolkit/rcon
 
+## 0.0.4
+
+### Patch Changes
+
+- [`feb5085`](https://github.com/jpapini/jpp-toolkit/commit/feb508534653df416fd3ffc4e068de4ace28274e) Thanks [@jpapini](https://github.com/jpapini)! - Fix auto reload.
+
 ## 0.0.3
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
     "name": "jpp-toolkit",
-    "version": "0.0.30",
+    "version": "0.0.31",
     "description": "A set of tools for JS/TS projects.",
     "keywords": [
         "jpp",
