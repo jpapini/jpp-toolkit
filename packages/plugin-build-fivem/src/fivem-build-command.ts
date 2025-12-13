@@ -110,7 +110,6 @@ export class FivemBuildCommand extends Command {
         } else {
             this.logger.info(`Building FiveM resource...\n`);
             compiler.run(this._compilerCallback.bind(this));
-            this.exit(0);
         }
     }
 
