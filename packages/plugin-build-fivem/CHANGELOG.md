@@ -1,5 +1,12 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`46a37f7`](https://github.com/jpapini/jpp-toolkit/commit/46a37f7dfbf5662e35b652e77c647824c354b46e)]:
+    - @jpp-toolkit/rcon@0.0.3
+
 ## 0.0.7
 
 ### Patch Changes
