@@ -101,12 +101,12 @@ export class FivemBuildCommand extends Command {
                 );
             }
 
-            await this._enableAutoReload(compiler, resourceName, host, port, password);
+            this._enableAutoReload(compiler, resourceName, host, port, password);
         }
 
         if (flags.watch) {
             this.logger.info(`Building FiveM resource in watch mode...\n`);
-            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats, true));
+            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats));
         } else {
             this.logger.info(`Building FiveM resource...\n`);
             compiler.run((err, stats) => this._compilerCallback(err, stats));
@@ -126,34 +126,24 @@ export class FivemBuildCommand extends Command {
         return { host, port: parseInt(port) };
     }
 
-    private _compilerCallback(
-        err: Error | null,
-        stats: Stats | undefined,
-        isWatchMode = false,
-    ): void {
+    private _compilerCallback(err: Error | null, stats: Stats | undefined): void {
         if (err) {
             this.logger.error(getErrMsg(err));
             if ('details' in err) this.logger.error(err.details as string);
             if ('stack' in err) this.logger.error(err.stack);
-            if (!isWatchMode) this.exit(1);
             return;
         }
 
         if (stats) this.logger.log(stats.toString(), '\n');
-
-        if (!isWatchMode) this.exit(0);
     }
 
-    private async _enableAutoReload(
+    private _enableAutoReload(
         compiler: Compiler,
         resourceName: string,
         host: string,
         port: number,
         password: string,
-    ): Promise<void> {
-        const rcon = new FivemRcon({ host, port, password });
-        await rcon.connect();
-
+    ): void {
         compiler.hooks.done.tapPromise('FivemAutoReloadPlugin', async (stats) => {
             if (stats.hasErrors()) {
                 this.logger.warning('Build failed. Skipping FiveM resource reload.\n');
@@ -162,6 +152,7 @@ export class FivemBuildCommand extends Command {
 
             this.logger.info(`Reloading FiveM resource "${resourceName}"...`);
             try {
+                const rcon = new FivemRcon({ host, port, password });
                 await rcon.refreshAndEnsureResource(resourceName);
                 this.logger.success(`FiveM resource reloaded successfully.\n`);
             } catch (error) {
