@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.12
+
+### Patch Changes
+
+- [`feb5085`](https://github.com/jpapini/jpp-toolkit/commit/feb508534653df416fd3ffc4e068de4ace28274e) Thanks [@jpapini](https://github.com/jpapini)! - Fix auto reload.
+
+- Updated dependencies [[`feb5085`](https://github.com/jpapini/jpp-toolkit/commit/feb508534653df416fd3ffc4e068de4ace28274e)]:
+    - @jpp-toolkit/rcon@0.0.4
+
 ## 0.0.11
 
 ### Patch Changes
