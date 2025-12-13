@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 
 import type { RspackOptions } from '@rspack/core';
@@ -10,6 +11,18 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         overrides.mode ?? (process.env.NODE_ENV === 'production' ? 'production' : 'development');
     const isProduction = mode === 'production';
 
+    const entries: Record<string, string> = {};
+
+    for (const name of ['client', 'server', 'shared']) {
+        for (const file of [`src/${name}/index.ts`, `src/${name}.ts`]) {
+            const entryPath = path.resolve(cwd, file);
+            if (existsSync(entryPath)) {
+                entries[name] = entryPath;
+                break;
+            }
+        }
+    }
+
     const config: RspackOptions = {
         name: 'fivem',
 
@@ -19,7 +32,7 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         devtool: false,
         mode,
 
-        entry: path.resolve(cwd, 'src/index.ts'),
+        entry: entries,
 
         output: {
             clean: true,

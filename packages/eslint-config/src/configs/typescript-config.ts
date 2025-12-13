@@ -17,14 +17,14 @@ export const typescriptConfig = defineConfig([
         },
         rules: {
             /**
-             * Enforce that class methods utilize.
+             * Enforce that class methods utilize this.
              * @extension
              * @see {@link https://typescript-eslint.io/rules/class-methods-use-this}
              */
             // '@typescript-eslint/class-methods-use-this': 'error',
 
             /**
-             * Require.
+             * Require return statements to either always or never specify values.
              * @typeChecked
              * @extension
              * @see {@link https://typescript-eslint.io/rules/consistent-return}
@@ -446,7 +446,7 @@ export const typescriptConfig = defineConfig([
             '@typescript-eslint/promise-function-async': 'error',
 
             /**
-             * Require.
+             * Require Array#sort and Array#toSorted calls to always provide a compareFunction.
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/require-array-sort-compare}
              */
@@ -716,20 +716,20 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/no-inferrable-types': 'off',
 
             /**
-             * Disallow.
+             * Disallow void type outside of generic or return types.
              * @config strict
              * @see {@link https://typescript-eslint.io/rules/no-invalid-void-type}
              */
             // '@typescript-eslint/no-invalid-void-type': 'off',
 
             /**
-             * Disallow the.
+             * Disallow the void operator except when used to discard a value.
              * @config strict
              * @fixable
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/no-meaningless-void-operator}
              */
-            // '@typescript-eslint/no-meaningless-void-operator': 'off',
+            '@typescript-eslint/no-meaningless-void-operator': 'off',
 
             /**
              * Enforce valid definition of.
@@ -1101,7 +1101,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/prefer-reduce-type-parameter': 'off',
 
             /**
-             * Enforce.
+             * Enforce RegExp#exec over String#match if no global flag is provided.
              * @config stylistic
              * @fixable
              * @typeChecked
@@ -1110,7 +1110,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/prefer-regexp-exec': 'off',
 
             /**
-             * Enforce that.
+             * Enforce that this is used when only this type is returned.
              * @config strict
              * @fixable
              * @typeChecked
@@ -1119,7 +1119,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/prefer-return-this-type': 'off',
 
             /**
-             * Enforce using.
+             * Enforce using String#startsWith and String#endsWith over other equivalent methods of checking substrings.
              * @config stylistic
              * @fixable
              * @typeChecked
@@ -1128,7 +1128,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/prefer-string-starts-ends-with': 'off',
 
             /**
-             * Enforce that.
+             * Enforce that get() types should be assignable to their equivalent set() type.
              * @config strict
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/related-getter-setter-pairs}
@@ -1136,7 +1136,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/related-getter-setter-pairs': 'off',
 
             /**
-             * Disallow async functions which do not return promises and have no.
+             * Disallow async functions which do not return promises and have no await expression.
              * @config recommended
              * @typeChecked
              * @extension
@@ -1145,7 +1145,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/require-await': 'off',
 
             /**
-             * Require both operands of addition to be the same type and be.
+             * Require both operands of addition to be the same type and be bigint, number, or string.
              * @config recommended
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/restrict-plus-operands}
@@ -1153,7 +1153,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/restrict-plus-operands': 'off',
 
             /**
-             * Enforce template literal expressions to be of.
+             * Enforce template literal expressions to be of string type.
              * @config recommended
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/restrict-template-expressions}
@@ -1192,7 +1192,7 @@ export const typescriptConfig = defineConfig([
             // '@typescript-eslint/unified-signatures': 'off',
 
             /**
-             * Enforce typing arguments in Promise rejection callbacks as.
+             * Enforce typing arguments in Promise rejection callbacks as unknown.
              * @config strict
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable}

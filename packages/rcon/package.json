@@ -1,21 +1,19 @@
 {
-    "name": "@jpp-toolkit/plugin-build-fivem",
-    "version": "0.0.6",
-    "description": "Plugin that add the fivem build command to the jpp cli.",
+    "name": "@jpp-toolkit/rcon",
+    "version": "0.0.1",
+    "description": "Quake 3 RCON client library.",
     "keywords": [
         "jpp",
-        "plugin",
-        "build",
-        "fivem"
+        "rcon"
     ],
-    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/plugin-build-fivem#readme",
+    "homepage": "https://github.com/jpapini/jpp-toolkit/tree/main/packages/rcon#readme",
     "bugs": {
         "url": "https://github.com/jpapini/jpp-toolkit/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jpapini/jpp-toolkit.git",
-        "directory": "packages/plugin-build-fivem"
+        "directory": "packages/rcon"
     },
     "license": "MIT",
     "author": "Julien Papini <julien.papini@gmail.com> (https://github.com/jpapini)",
@@ -29,26 +27,15 @@
     },
     "files": [
         "dist",
-        "src",
-        "oclif.config.js",
-        "oclif.manifest.json"
+        "src"
     ],
     "scripts": {
         "typecheck": "tsc --noEmit --pretty",
         "dev": "build-lib --watch",
-        "build": "build-lib",
-        "prepack": "oclif manifest"
+        "build": "build-lib"
     },
     "dependencies": {
-        "@jpp-toolkit/core": "workspace:*",
-        "@jpp-toolkit/rcon": "workspace:*",
-        "@jpp-toolkit/rspack-config": "workspace:*",
-        "@jpp-toolkit/utils": "workspace:*",
-        "@oclif/core": "4.8.0",
-        "@rspack/core": "1.6.7"
-    },
-    "devDependencies": {
-        "oclif": "4.22.55"
+        "@jpp-toolkit/utils": "workspace:*"
     },
     "packageManager": "pnpm@10.25.0",
     "engines": {
