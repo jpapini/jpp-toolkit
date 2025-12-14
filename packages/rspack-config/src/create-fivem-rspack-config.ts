@@ -148,7 +148,9 @@ export function createFivemRspackConfig(
 
     for (const entryType of Object.values(FivemEntryType)) {
         const entry = findFirstExistingPath([
+            path.resolve(cwd, `src/${entryType}/index.tsx`),
             path.resolve(cwd, `src/${entryType}/index.ts`),
+            path.resolve(cwd, `src/${entryType}.tsx`),
             path.resolve(cwd, `src/${entryType}.ts`),
         ]);
 
