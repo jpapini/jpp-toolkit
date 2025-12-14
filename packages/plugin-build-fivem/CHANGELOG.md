@@ -1,5 +1,15 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.14
+
+### Patch Changes
+
+- [`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f) Thanks [@jpapini](https://github.com/jpapini)! - Improve FiveM config.
+
+- Updated dependencies [[`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f), [`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f)]:
+    - @jpp-toolkit/rspack-config@0.0.4
+    - @jpp-toolkit/core@0.0.16
+
 ## 0.0.13
 
 ### Patch Changes
