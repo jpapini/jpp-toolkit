@@ -1,5 +1,12 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.15
+
+### Patch Changes
+
+- Updated dependencies [[`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f)]:
+    - @jpp-toolkit/commitlint-config@0.0.15
+
 ## 0.0.14
 
 ### Patch Changes

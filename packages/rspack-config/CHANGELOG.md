@@ -1,5 +1,13 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f) Thanks [@jpapini](https://github.com/jpapini)! - Improve FiveM config.
+
+- [`2a05ca4`](https://github.com/jpapini/jpp-toolkit/commit/2a05ca43e4d8a650e4fbdd541247f9405acffc7f) Thanks [@jpapini](https://github.com/jpapini)! - Fix publicPath.
+
 ## 0.0.3
 
 ### Patch Changes
