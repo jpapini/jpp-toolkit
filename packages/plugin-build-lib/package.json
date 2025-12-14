@@ -47,7 +47,7 @@
         "tsdown": "0.17.4"
     },
     "devDependencies": {
-        "oclif": "4.22.55"
+        "oclif": "4.22.56"
     },
     "packageManager": "pnpm@10.25.0",
     "engines": {
