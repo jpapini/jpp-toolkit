@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.5
+
+### Patch Changes
+
+- [`f5d5f39`](https://github.com/jpapini/jpp-toolkit/commit/f5d5f399f2a7e6e1b01ad2430a593f3b803430df) Thanks [@jpapini](https://github.com/jpapini)! - tsx extension.
+
 ## 0.0.4
 
 ### Patch Changes
