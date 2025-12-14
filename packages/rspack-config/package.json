@@ -36,9 +36,6 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "webpack-merge": "6.0.1"
-    },
-    "devDependencies": {
         "@rspack/core": "1.6.7"
     },
     "packageManager": "pnpm@10.25.0",

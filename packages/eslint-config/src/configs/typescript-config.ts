@@ -415,7 +415,7 @@ export const typescriptConfig = defineConfig([
             '@typescript-eslint/prefer-enum-initializers': 'error',
 
             /**
-             * Require private members to be marked as.
+             * Require private members to be marked as readonly if they're never modified outside of the constructor.
              * @fixable
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/prefer-readonly}
@@ -423,7 +423,7 @@ export const typescriptConfig = defineConfig([
             '@typescript-eslint/prefer-readonly': 'error',
 
             /**
-             * Require function parameters to be typed as.
+             * Require function parameters to be typed as readonly to prevent accidental mutation of inputs.
              * @typeChecked
              * @see {@link https://typescript-eslint.io/rules/prefer-readonly-parameter-types}
              */

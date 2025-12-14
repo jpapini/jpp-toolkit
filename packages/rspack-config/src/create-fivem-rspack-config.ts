@@ -1,42 +1,46 @@
-import { existsSync } from 'node:fs';
 import path from 'node:path';
 
+import { rspack } from '@rspack/core';
 import type { RspackOptions } from '@rspack/core';
 
-import { mergeConfig } from './utils/merge-config';
+import { Environment, FivemEntryType } from './enums';
+import { findFirstExistingPath } from './utils/find-first-existing-path';
 
-export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOptions {
-    const cwd = overrides.context ?? process.cwd();
-    const mode =
-        overrides.mode ?? (process.env.NODE_ENV === 'production' ? 'production' : 'development');
-    const isProduction = mode === 'production';
+type BuildConfigOptions = {
+    readonly cwd: string;
+    readonly entry: string;
+    readonly entryType: FivemEntryType;
+    readonly resourceName: string;
+    readonly environment: Environment;
+};
 
-    const entries: Record<string, string> = {};
+function buildConfig(options: BuildConfigOptions): RspackOptions {
+    const { cwd, entry, entryType, resourceName, environment } = options;
 
-    for (const name of ['client', 'server', 'shared']) {
-        for (const file of [`src/${name}/index.ts`, `src/${name}.ts`]) {
-            const entryPath = path.resolve(cwd, file);
-            if (existsSync(entryPath)) {
-                entries[name] = entryPath;
-                break;
-            }
-        }
-    }
+    const htmlTemplateFile = findFirstExistingPath([
+        path.resolve(cwd, `src/${entryType}/index.html`),
+        path.resolve(cwd, `src/${entryType}.html`),
+    ]);
+    const publicPath = `https://cfx-nui-${resourceName}/dist/${entryType}/`;
+
+    const isProduction = environment === 'production';
+    const isUi = entryType === FivemEntryType.UI;
 
     const config: RspackOptions = {
-        name: 'fivem',
+        name: `fivem-${entryType}`,
 
         context: cwd,
 
-        target: 'node16',
+        target: isUi ? 'web' : 'node16',
         devtool: false,
-        mode,
+        mode: environment,
 
-        entry: entries,
+        entry,
 
         output: {
             clean: true,
-            path: path.resolve(cwd, 'dist'),
+            path: path.resolve(cwd, 'dist', entryType),
+            ...(isUi ? { publicPath } : {}),
         },
 
         optimization: {
@@ -44,7 +48,7 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         },
 
         resolve: {
-            extensions: ['.js', '.json', '.wasm', '.ts'],
+            extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.wasm'],
             extensionAlias: {
                 '.js': ['.ts', '.js'],
                 '.cjs': ['.cts', '.cjs'],
@@ -54,33 +58,34 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         },
 
         node: {
-            global: false,
-            __filename: false,
-            __dirname: false,
+            global: isUi,
+            __filename: isUi,
+            __dirname: isUi,
         },
 
         externalsPresets: {
-            node: true,
+            node: !isUi,
+            web: isUi,
         },
 
         module: {
             rules: [
                 {
-                    test: /\.(?:ts|cts|mts)$/iu,
+                    test: /\.(?:ts|tsx|cts|mts)$/iu,
                     type: 'javascript/auto',
                     exclude: [/dist\//u, /node_modules\//u],
                     loader: 'builtin:swc-loader',
                     options: {
                         minify: isProduction,
-                        module: {
-                            type: 'nodenext',
-                        },
+                        module: { type: 'nodenext' },
                         jsc: {
-                            target: 'es2021',
+                            target: isUi ? 'es5' : 'es2021',
                             parser: {
                                 syntax: 'typescript',
+                                tsx: true,
                             },
                             transform: {
+                                react: { runtime: 'automatic' },
                                 useDefineForClassFields: true,
                             },
                             keepClassNames: true,
@@ -88,8 +93,22 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
                         },
                     },
                 },
+                ...(isUi ?
+                    [
+                        {
+                            test: /\.(?:jpe?g|png|gif|svg)$/iu,
+                            type: 'asset/resource',
+                        },
+                    ]
+                :   []),
             ],
         },
+
+        ...(isUi ? { experiments: { css: true } } : {}),
+
+        ...(isUi && htmlTemplateFile ?
+            { plugins: [new rspack.HtmlRspackPlugin({ template: htmlTemplateFile, publicPath })] }
+        :   {}),
 
         watchOptions: {
             aggregateTimeout: 200,
@@ -105,5 +124,41 @@ export function createFivemRspackConfig(overrides: RspackOptions = {}): RspackOp
         },
     };
 
-    return mergeConfig(config, overrides);
+    return config;
+}
+
+export type CreateFivemRspackConfigOptions = {
+    readonly resourceName?: string | undefined;
+    readonly environment?: Environment | undefined;
+    readonly cwd?: string | undefined;
+};
+
+export function createFivemRspackConfig(
+    options: CreateFivemRspackConfigOptions = {},
+): RspackOptions[] {
+    const environment =
+        options.environment
+        ?? (process.env.NODE_ENV === Environment.PRODUCTION ?
+            Environment.PRODUCTION
+        :   Environment.DEVELOPMENT);
+    const cwd = options.cwd ?? process.cwd();
+    const resourceName = options.resourceName ?? path.basename(cwd);
+
+    const configs: RspackOptions[] = [];
+
+    for (const entryType of Object.values(FivemEntryType)) {
+        const entry = findFirstExistingPath([
+            path.resolve(cwd, `src/${entryType}/index.ts`),
+            path.resolve(cwd, `src/${entryType}.ts`),
+        ]);
+
+        if (!entry) continue;
+
+        const config = buildConfig({ cwd, entry, entryType, environment, resourceName });
+        configs.push(config);
+    }
+
+    if (configs.length === 0) throw new Error('No valid FiveM resource entries found.');
+
+    return configs;
 }

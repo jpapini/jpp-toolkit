@@ -41,7 +41,6 @@
     },
     "dependencies": {
         "@jpp-toolkit/core": "workspace:*",
-        "@jpp-toolkit/rcon": "workspace:*",
         "@jpp-toolkit/rspack-config": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",

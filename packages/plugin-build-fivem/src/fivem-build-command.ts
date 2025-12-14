@@ -1,15 +1,23 @@
 import path from 'node:path';
 
 import { Command } from '@jpp-toolkit/core';
-import { FivemRcon } from '@jpp-toolkit/rcon';
 import { createFivemRspackConfig } from '@jpp-toolkit/rspack-config';
 import { getErrMsg } from '@jpp-toolkit/utils';
 import { Flags } from '@oclif/core';
-import type { Compiler, Stats } from '@rspack/core';
+import type { MultiStats } from '@rspack/core';
 import { rspack } from '@rspack/core';
 
-type Mode = 'development' | 'production';
-type ServerAddress = { readonly host: string; readonly port: number };
+import { refreshAndEnsureFivemResource } from './fivem-rcon';
+import type { RconOptions } from './fivem-rcon';
+
+type Environment = 'development' | 'production';
+
+type FivemBuildCommandOptions = {
+    readonly env: Environment;
+    readonly resourceName: string;
+    readonly rconOptions?: RconOptions | undefined;
+    readonly watch: boolean;
+};
 
 export class FivemBuildCommand extends Command {
     static override summary = 'Build the FiveM resource using predefined config.';
@@ -20,9 +28,9 @@ export class FivemBuildCommand extends Command {
             description: 'Watch files for changes and rebuild automatically.',
             default: false,
         }),
-        mode: Flags.string({
-            char: 'm',
-            description: 'Set the build mode (development or production).',
+        env: Flags.string({
+            char: 'e',
+            description: 'Set the build environment (development or production).',
             options: ['development', 'production'],
             required: false,
         }),
@@ -60,8 +68,8 @@ export class FivemBuildCommand extends Command {
             command: '<%= config.bin %> <%= command.id %> --watch',
         },
         {
-            description: 'Build the FiveM resource in production mode.',
-            command: '<%= config.bin %> <%= command.id %> --mode=production',
+            description: 'Build the FiveM resource in production environment.',
+            command: '<%= config.bin %> <%= command.id %> --env=production',
         },
         {
             description:
@@ -84,80 +92,75 @@ export class FivemBuildCommand extends Command {
     ];
 
     public async run(): Promise<void> {
-        const { flags } = await this.parse(FivemBuildCommand);
+        const { env, resourceName, rconOptions, watch } = await this._parseOptions();
 
-        const { watch, autoReload, password } = flags;
-        const mode = (flags.mode ?? (watch ? 'development' : 'production')) as Mode;
-        const { host, port } = this._parseServerAddress(flags.server);
-        const resourceName = flags.resourceName ?? path.basename(process.cwd());
-
-        const config = createFivemRspackConfig({ mode });
+        const config = createFivemRspackConfig({ environment: env, resourceName });
         const compiler = rspack(config);
 
-        if (autoReload) {
-            if (!password) {
-                this.fatalError(
-                    'RCON password is required for auto-reload. Please provide it using the --password flag.',
-                );
-            }
-
-            this._enableAutoReload(compiler, resourceName, host, port, password);
-        }
-
-        if (flags.watch) {
-            this.logger.info(`Building FiveM resource in watch mode...\n`);
-            compiler.watch({}, (err, stats) => this._compilerCallback(err, stats));
-        } else {
-            this.logger.info(`Building FiveM resource...\n`);
-            compiler.run((err, stats) => this._compilerCallback(err, stats));
-        }
-    }
-
-    private _parseServerAddress(address: string): ServerAddress {
-        const match = /^(?<host>[^:]+):(?<port>\d+)$/u.exec(address);
-        const { host, port } = match?.groups ?? {};
-
-        if (!host || !port) {
-            throw new Error(
-                `Invalid server address format: ${address}. Expected format is "ip:port".`,
-            );
-        }
-
-        return { host, port: parseInt(port) };
-    }
-
-    private _compilerCallback(err: Error | null, stats: Stats | undefined): void {
-        if (err) {
-            this.logger.error(getErrMsg(err));
-            if ('details' in err) this.logger.error(err.details as string);
-            if ('stack' in err) this.logger.error(err.stack);
-            return;
-        }
-
-        if (stats) this.logger.log(stats.toString(), '\n');
-    }
-
-    private _enableAutoReload(
-        compiler: Compiler,
-        resourceName: string,
-        host: string,
-        port: number,
-        password: string,
-    ): void {
-        compiler.hooks.done.tapPromise('FivemAutoReloadPlugin', async (stats) => {
-            if (stats.hasErrors()) {
-                this.logger.warning('Build failed. Skipping FiveM resource reload.\n');
-                return;
-            }
-
+        const reloadFivemResource = async () => {
+            if (!rconOptions) return;
             this.logger.info(`Reloading FiveM resource "${resourceName}"...`);
             try {
-                const rcon = new FivemRcon({ host, port, password });
-                await rcon.refreshAndEnsureResource(resourceName);
+                await refreshAndEnsureFivemResource(resourceName, rconOptions);
                 this.logger.success(`FiveM resource reloaded successfully.\n`);
             } catch (error) {
                 this.logger.error(`Failed to reload FiveM resource: ${getErrMsg(error)}\n`);
             }
-        });
+        };
+
+        const compilerCallback = (err: Error | null, stats: MultiStats | undefined) => {
+            if (err) {
+                this.logger.error(getErrMsg(err));
+                if ('details' in err) this.logger.error(err.details as string);
+                if ('stack' in err) this.logger.error(err.stack);
+                return;
+            }
+
+            if (stats) this.logger.log(stats.toString(true), '\n');
+
+            void reloadFivemResource();
+        };
+
+        if (watch) {
+            this.logger.info(`Building FiveM resource in watch mode...\n`);
+            compiler.watch({}, compilerCallback);
+        } else {
+            this.logger.info(`Building FiveM resource...\n`);
+            compiler.run(compilerCallback);
+        }
+    }
+
+    private async _parseOptions(): Promise<FivemBuildCommandOptions> {
+        const { flags } = await this.parse(FivemBuildCommand);
+
+        const env = (flags.env ?? (flags.watch ? 'development' : 'production')) as Environment;
+        const resourceName = flags.resourceName ?? path.basename(process.cwd());
+
+        let rconOptions: RconOptions | undefined;
+
+        if (flags.autoReload) {
+            if (!flags.password) {
+                throw new Error(
+                    'RCON password is required for auto-reload. Please provide it using the --password flag.',
+                );
+            }
+
+            const match = /^(?<host>[^:]+):(?<port>\d+)$/u.exec(flags.server);
+            const { host, port } = match?.groups ?? {};
+
+            if (!host || !port) {
+                throw new Error(
+                    `Invalid server address format: ${flags.server}. Expected format is "ip:port".`,
+                );
+            }
+
+            rconOptions = {
+                host,
+                port: parseInt(port),
+                password: flags.password,
+            };
+        }
+
+        return { env, resourceName, rconOptions, watch: flags.watch };
     }
 }

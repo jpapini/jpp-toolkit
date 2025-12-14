@@ -141,7 +141,7 @@ export const eslintConfig = defineConfig({
          * Require return statements to either always or never specify values.
          * @see {@link https://eslint.org/docs/latest/rules/consistent-return}
          */
-        'consistent-return': ['error', { treatUndefinedAsUnspecified: true }],
+        'consistent-return': 'off',
 
         /**
          * Enforce consistent naming when capturing the current execution context.

@@ -35,7 +35,8 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp-toolkit/logger": "workspace:*"
+        "@jpp-toolkit/logger": "workspace:*",
+        "@oclif/parser": "3.8.17"
     },
     "devDependencies": {
         "@oclif/core": "4.8.0"
