@@ -1,5 +1,14 @@
 # @jpp-toolkit/tsdown-config
 
+## 0.0.19
+
+### Patch Changes
+
+- [#55](https://github.com/jpapini/jpp-toolkit/pull/55) [`3e3d85c`](https://github.com/jpapini/jpp-toolkit/commit/3e3d85c5f4fa23e93e763a285199cb1bac1445ab) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tsdown` to `0.17 || 0.18`.
+
+- [#56](https://github.com/jpapini/jpp-toolkit/pull/56) [`ea1b85f`](https://github.com/jpapini/jpp-toolkit/commit/ea1b85fc95308c73ea16f53a5dd058b1e8328cc4) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.26.0`.
+  Updated dependency `pnpm` to `10.26.0`.
+
 ## 0.0.18
 
 ### Patch Changes
