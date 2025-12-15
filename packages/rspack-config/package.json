@@ -36,7 +36,16 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@rspack/core": "1.6.8"
+        "@jpp-toolkit/logger": "workspace:*",
+        "@jpp-toolkit/utils": "workspace:*",
+        "@rspack/core": "1.6.8",
+        "@rspack/plugin-react-refresh": "1.5.3",
+        "react-refresh": "0.18.0",
+        "webpack-merge": "6.0.1",
+        "webpack-node-externals": "3.0.0"
+    },
+    "devDependencies": {
+        "@types/webpack-node-externals": "3.0.4"
     },
     "packageManager": "pnpm@10.26.0",
     "engines": {
