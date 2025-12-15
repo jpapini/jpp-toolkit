@@ -54,8 +54,8 @@ importers:
   internals/build-lib:
     dependencies:
       tsdown:
-        specifier: 0.17.4
-        version: 0.17.4(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.18.0
+        version: 0.18.0(synckit@0.11.11)(typescript@5.9.3)
 
   packages/cli:
     dependencies:
@@ -255,8 +255,8 @@ importers:
         specifier: 4.8.0
         version: 4.8.0
       tsdown:
-        specifier: 0.17.4
-        version: 0.17.4(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.18.0
+        version: 0.18.0(synckit@0.11.11)(typescript@5.9.3)
     devDependencies:
       oclif:
         specifier: 4.22.57
@@ -427,8 +427,8 @@ importers:
   packages/tsdown-config:
     devDependencies:
       tsdown:
-        specifier: 0.17.4
-        version: 0.17.4(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.18.0
+        version: 0.18.0(synckit@0.11.11)(typescript@5.9.3)
 
   packages/utils: {}
 
@@ -3959,8 +3959,8 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
-  tsdown@0.17.4:
-    resolution: {integrity: sha512-z+kNuv1rwM1POQIufDUVrdNc/uGy0ueRVafCyDH39IdHxin4JXgB8DNGSPoqdIpcOpqUoRbNreK8NxENFmlhKw==}
+  tsdown@0.18.0:
+    resolution: {integrity: sha512-Yotdh3NzizysnqR96xfpHFYtEntk1cZvSRHz8A+Pn3ZHNdTQa4fBQxh6HHzWZwfjdQv47xb7GCv6vEWMtxBirw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -8526,7 +8526,7 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  tsdown@0.17.4(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.18.0(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
