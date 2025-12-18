@@ -1,5 +1,15 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.8
+
+### Patch Changes
+
+- [#65](https://github.com/jpapini/jpp-toolkit/pull/65) [`2bd6c5d`](https://github.com/jpapini/jpp-toolkit/commit/2bd6c5d032980359303872a331d63892e3ef429a) Thanks [@jpapini](https://github.com/jpapini)! - Improve FiveM config.
+
+- Updated dependencies [[`2bd6c5d`](https://github.com/jpapini/jpp-toolkit/commit/2bd6c5d032980359303872a331d63892e3ef429a)]:
+    - @jpp-toolkit/logger@0.0.16
+    - @jpp-toolkit/utils@0.0.16
+
 ## 0.0.7
 
 ### Patch Changes
