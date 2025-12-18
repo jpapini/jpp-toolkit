@@ -1,5 +1,14 @@
 # jpp-toolkit
 
+## 0.0.41
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/cli@0.0.37
+    - @jpp-toolkit/eslint-config@0.0.23
+    - @jpp-toolkit/git-hooks@0.0.17
+
 ## 0.0.40
 
 ### Patch Changes

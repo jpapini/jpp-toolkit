@@ -1,5 +1,11 @@
 # @jpp-toolkit/utils
 
+## 0.0.16
+
+### Patch Changes
+
+- [#65](https://github.com/jpapini/jpp-toolkit/pull/65) [`2bd6c5d`](https://github.com/jpapini/jpp-toolkit/commit/2bd6c5d032980359303872a331d63892e3ef429a) Thanks [@jpapini](https://github.com/jpapini)! - Improve FiveM config.
+
 ## 0.0.15
 
 ### Patch Changes
