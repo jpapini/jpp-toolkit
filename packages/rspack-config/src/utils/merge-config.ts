@@ -1,3 +1,4 @@
+import type { RspackOptions } from '@rspack/core';
 import { mergeWithRules } from 'webpack-merge';
 
 export const mergeConfig = mergeWithRules({
@@ -10,4 +11,4 @@ export const mergeConfig = mergeWithRules({
         },
     },
     plugins: 'replace',
-});
+}) as (...configs: RspackOptions[]) => RspackOptions;

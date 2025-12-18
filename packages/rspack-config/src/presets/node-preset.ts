@@ -27,12 +27,16 @@ export const nodePreset: Preset<NodePresetOptions> = (options, context) => ({
     target: `node${options.nodeVersion}`,
 
     entry: {
-        main: ['@rspack/core/hot/poll?100', options.entryFile],
+        main: [...(context.isServeMode ? ['@rspack/core/hot/poll?100'] : []), options.entryFile],
     },
 
     externalsPresets: { node: true },
     externalsType: 'commonjs',
-    externals: [nodeExternals({ allowlist: ['@rspack/core/hot/poll?100'] }) as ExternalItem],
+    externals: [
+        nodeExternals(
+            context.isServeMode ? { allowlist: ['@rspack/core/hot/poll?100'] } : undefined,
+        ) as ExternalItem,
+    ],
 
     optimization: { minimize: false },
 
