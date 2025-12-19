@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/prettier-config",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "Prettier configurations for JS/TS projects.",
     "keywords": [
         "jpp",
