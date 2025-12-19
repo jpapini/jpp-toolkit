@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.10
+
+### Patch Changes
+
+- [`78db37e`](https://github.com/jpapini/jpp-toolkit/commit/78db37e967a5637d49561ebd489fb7119877d32b) Thanks [@jpapini](https://github.com/jpapini)! - Fix allowedHosts.
+
 ## 0.0.9
 
 ### Patch Changes
