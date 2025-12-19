@@ -41,7 +41,7 @@
     "peerDependencies": {
         "tsdown": "0.17 || 0.18"
     },
-    "packageManager": "pnpm@10.26.0",
+    "packageManager": "pnpm@10.26.1",
     "engines": {
         "node": "24",
         "pnpm": "10"
