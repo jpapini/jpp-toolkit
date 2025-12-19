@@ -1,5 +1,12 @@
 # @jpp-toolkit/cli
 
+## 0.0.39
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/plugin-build-fivem@0.0.21
+
 ## 0.0.38
 
 ### Patch Changes
