@@ -34,6 +34,7 @@ export const fivemUiPreset: Preset<FivemUiPresetOptions> = (_options, context) =
     output: { filename: '[name].js' },
 
     devServer: {
+        allowedHosts: 'all',
         devMiddleware: {
             writeToDisk: true,
         },
