@@ -1,5 +1,16 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.0.29
+
+### Patch Changes
+
+- [#77](https://github.com/jpapini/jpp-toolkit/pull/77) [`ef1a2a4`](https://github.com/jpapini/jpp-toolkit/commit/ef1a2a466280c19da12282cc25e1a1ec00bc819b) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tsdown` to `0.18.2`.
+
+- [#76](https://github.com/jpapini/jpp-toolkit/pull/76) [`98443f0`](https://github.com/jpapini/jpp-toolkit/commit/98443f09859aa8138df160f7940242c7cdad99a6) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.59`.
+
+- Updated dependencies [[`ef1a2a4`](https://github.com/jpapini/jpp-toolkit/commit/ef1a2a466280c19da12282cc25e1a1ec00bc819b)]:
+    - @jpp-toolkit/tsdown-config@0.0.22
+
 ## 0.0.28
 
 ### Patch Changes
