@@ -48,7 +48,7 @@
         "@rspack/dev-server": "1.1.4"
     },
     "devDependencies": {
-        "oclif": "4.22.58"
+        "oclif": "4.22.59"
     },
     "packageManager": "pnpm@10.26.1",
     "engines": {
