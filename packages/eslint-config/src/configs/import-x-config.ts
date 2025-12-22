@@ -294,7 +294,7 @@ export const importXConfig = defineConfig([
              * @config errors
              * @see {@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/default.md}
              */
-            // 'import-x/default': 'off',
+            'import-x/default': 'off',
 
             /**
              * Ensure named imports correspond to a named export in the remote file.
