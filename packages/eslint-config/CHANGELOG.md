@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.27
+
+### Patch Changes
+
+- [`a3e538e`](https://github.com/jpapini/jpp-toolkit/commit/a3e538e2ab64e3f5b764491dd0adcf951b01c3cd) Thanks [@jpapini](https://github.com/jpapini)! - Disable import-x/default rule.
+
 ## 0.0.26
 
 ### Patch Changes
