@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.31
+
+### Patch Changes
+
+- [#89](https://github.com/jpapini/jpp-toolkit/pull/89) [`a45f204`](https://github.com/jpapini/jpp-toolkit/commit/a45f2045a4c88a8695ceacec534362788901fa1a) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vitest/eslint-plugin` to `1.6.4`.
+
 ## 0.0.30
 
 ### Patch Changes
