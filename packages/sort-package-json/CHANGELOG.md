@@ -1,5 +1,12 @@
 # @jpp-toolkit/sort-package-json
 
+## 0.0.18
+
+### Patch Changes
+
+- [#101](https://github.com/jpapini/jpp-toolkit/pull/101) [`e1cf75a`](https://github.com/jpapini/jpp-toolkit/commit/e1cf75aa74263762ec38aa05095687f5b7b4e291) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.27.0`.
+  Updated dependency `pnpm` to `10.27.0`.
+
 ## 0.0.17
 
 ### Patch Changes
