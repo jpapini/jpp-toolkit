@@ -45,7 +45,7 @@
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
         "@rspack/core": "1.6.8",
-        "@rspack/dev-server": "1.1.4"
+        "@rspack/dev-server": "1.1.5"
     },
     "devDependencies": {
         "oclif": "4.22.61"
