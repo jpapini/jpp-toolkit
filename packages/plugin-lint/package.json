@@ -45,7 +45,7 @@
         "execa": "9.6.1"
     },
     "devDependencies": {
-        "oclif": "4.22.61"
+        "oclif": "4.22.62"
     },
     "packageManager": "pnpm@10.27.0",
     "engines": {
