@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-check-updates",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "description": "Plugin that add the check-updates command to the jpp cli.",
     "keywords": [
         "jpp",
