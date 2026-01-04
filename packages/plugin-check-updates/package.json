@@ -42,7 +42,7 @@
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
-        "npm-check-updates": "19.2.1"
+        "npm-check-updates": "19.3.0"
     },
     "devDependencies": {
         "oclif": "4.22.63"
