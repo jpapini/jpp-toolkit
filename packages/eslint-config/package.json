@@ -36,7 +36,7 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@eslint/compat": "2.0.0",
+        "@eslint/compat": "2.0.1",
         "@eslint/js": "9.39.2",
         "@jpp-toolkit/utils": "workspace:*",
         "@stylistic/eslint-plugin": "5.7.0",
