@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/sort-package-json",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "Sort an Object or package.json based on the well-known package.json keys.",
     "keywords": [
         "jpp",
