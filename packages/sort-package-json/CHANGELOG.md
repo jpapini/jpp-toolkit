@@ -1,5 +1,11 @@
 # @jpp-toolkit/sort-package-json
 
+## 0.0.20
+
+### Patch Changes
+
+- [#149](https://github.com/jpapini/jpp-toolkit/pull/149) [`0511320`](https://github.com/jpapini/jpp-toolkit/commit/0511320850c5155f4cb0b4149d792cd5a964bfaa) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `sort-object-keys` to `2.1.0`.
+
 ## 0.0.19
 
 ### Patch Changes
