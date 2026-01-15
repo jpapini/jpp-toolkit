@@ -29,7 +29,7 @@
         "@jpp-toolkit/internal-build-lib": "workspace:*",
         "@jpp-toolkit/prettier-config": "workspace:*",
         "@jpp-toolkit/ts-config": "workspace:*",
-        "@types/node": "24.10.8",
+        "@types/node": "24.10.9",
         "eslint": "9.39.2",
         "npm-run-all2": "8.0.4",
         "prettier": "3.8.0",
