@@ -1,5 +1,11 @@
 # @jpp-toolkit/sort-package-json
 
+## 0.0.21
+
+### Patch Changes
+
+- [#164](https://github.com/jpapini/jpp-toolkit/pull/164) [`cb93581`](https://github.com/jpapini/jpp-toolkit/commit/cb935814cf7c4d10c38f1ed6925a0d69536f7286) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `git-hooks-list` to `4.2.1`.
+
 ## 0.0.20
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @jpp-toolkit/prettier-plugin-packagejson
 
+## 0.0.22
+
+### Patch Changes
+
+- Updated dependencies [[`cb93581`](https://github.com/jpapini/jpp-toolkit/commit/cb935814cf7c4d10c38f1ed6925a0d69536f7286)]:
+    - @jpp-toolkit/sort-package-json@0.0.21
+
 ## 0.0.21
 
 ### Patch Changes
