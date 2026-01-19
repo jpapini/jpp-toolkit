@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.4
+
+### Patch Changes
+
+- [`2a7e342`](https://github.com/jpapini/jpp-toolkit/commit/2a7e3426e31365a91889851f3380534665992b15) Thanks [@jpapini](https://github.com/jpapini)! - Publish package.
+
 ## 0.0.3
 
 ### Patch Changes
