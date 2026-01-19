@@ -1,5 +1,12 @@
 # @jpp-toolkit/cli
 
+## 0.0.67
+
+### Patch Changes
+
+- Updated dependencies [[`2a7e342`](https://github.com/jpapini/jpp-toolkit/commit/2a7e3426e31365a91889851f3380534665992b15)]:
+    - @jpp-toolkit/plugin-build-react@0.0.4
+
 ## 0.0.66
 
 ### Patch Changes
