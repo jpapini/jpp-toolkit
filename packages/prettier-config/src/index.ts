@@ -107,7 +107,6 @@ const config: Config = {
      */
     plugins: [
         require.resolve('@jpp-toolkit/prettier-plugin-packagejson'),
-        require.resolve('prettier-plugin-rust'),
         require.resolve('prettier-plugin-tailwindcss'),
     ],
 };
