@@ -11,6 +11,7 @@ export default {
         '@jpp-toolkit/plugin-check-updates',
         '@jpp-toolkit/plugin-build-lib',
         '@jpp-toolkit/plugin-build-fivem',
+        '@jpp-toolkit/plugin-build-react',
         '@jpp-toolkit/plugin-changesets',
     ],
     commands: {

@@ -43,7 +43,9 @@ export const createNodeRspackConfig = createConfigBuilder<NodePresetOptions, Rsp
     (options, context) => {
         const presetOptions = getNodePresetDefaultOptions(options, context);
 
-        return mergeConfig(basePreset(presetOptions, context), nodePreset(presetOptions, context));
+        return mergeConfig(basePreset(presetOptions, context), nodePreset(presetOptions, context), {
+            name: 'node',
+        });
     },
 );
 
@@ -51,7 +53,13 @@ export const createReactRspackConfig = createConfigBuilder<ReactPresetOptions, R
     (options, context) => {
         const presetOptions = getReactPresetDefaultOptions(options, context);
 
-        return mergeConfig(basePreset(presetOptions, context), reactPreset(presetOptions, context));
+        return mergeConfig(
+            basePreset(presetOptions, context),
+            reactPreset(presetOptions, context),
+            {
+                name: 'react',
+            },
+        );
     },
 );
 

@@ -28,6 +28,7 @@ export const getBasePresetDefaultOptions: GetPresetDefaultOptions<BasePresetOpti
         '**/.turbo',
         '**/coverage',
         '**/dist',
+        '**/target',
         '**/generated',
         '**/old',
         '**/tmp',

@@ -34,6 +34,7 @@ export function createTsdownConfig(overrides: UserConfig = {}): UserConfig {
             /\/\.turbo\//u,
             /\/coverage\//u,
             /\/dist\//u,
+            /\/target\//u,
             /\/generated\//u,
             /\/old\//u,
             /\/tmp\//u,
