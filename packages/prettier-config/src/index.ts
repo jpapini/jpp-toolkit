@@ -105,7 +105,11 @@ const config: Config = {
      * Plugins to use with Prettier.
      * @see {@link https://prettier.io/docs/en/plugins.html}
      */
-    plugins: [require.resolve('@jpp-toolkit/prettier-plugin-packagejson')],
+    plugins: [
+        require.resolve('@jpp-toolkit/prettier-plugin-packagejson'),
+        require.resolve('prettier-plugin-rust'),
+        require.resolve('prettier-plugin-tailwindcss'),
+    ],
 };
 
 export default config;

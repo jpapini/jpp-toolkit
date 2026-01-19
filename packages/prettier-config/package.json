@@ -36,7 +36,9 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@jpp-toolkit/prettier-plugin-packagejson": "workspace:*"
+        "@jpp-toolkit/prettier-plugin-packagejson": "workspace:*",
+        "prettier-plugin-rust": "0.1.9",
+        "prettier-plugin-tailwindcss": "0.7.2"
     },
     "devDependencies": {
         "prettier": "3.8.0"
