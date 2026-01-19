@@ -1,5 +1,11 @@
 # @jpp-toolkit/prettier-config
 
+## 0.0.25
+
+### Patch Changes
+
+- [`ce30e3c`](https://github.com/jpapini/jpp-toolkit/commit/ce30e3c9d86c5179c41bd56a7f46950e81f78c14) Thanks [@jpapini](https://github.com/jpapini)! - Remove rust plugin.
+
 ## 0.0.24
 
 ### Patch Changes
