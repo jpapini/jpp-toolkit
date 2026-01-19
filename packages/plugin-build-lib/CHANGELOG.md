@@ -1,5 +1,12 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.0.45
+
+### Patch Changes
+
+- Updated dependencies [[`daac27f`](https://github.com/jpapini/jpp-toolkit/commit/daac27f975e4b967e04b5469acbc8df779757f73)]:
+    - @jpp-toolkit/tsdown-config@0.0.30
+
 ## 0.0.44
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @jpp-toolkit/cli
 
+## 0.0.65
+
+### Patch Changes
+
+- [`daac27f`](https://github.com/jpapini/jpp-toolkit/commit/daac27f975e4b967e04b5469acbc8df779757f73) Thanks [@jpapini](https://github.com/jpapini)! - Add React build command.
+
+- Updated dependencies [[`daac27f`](https://github.com/jpapini/jpp-toolkit/commit/daac27f975e4b967e04b5469acbc8df779757f73)]:
+    - @jpp-toolkit/plugin-build-react@0.0.2
+    - @jpp-toolkit/plugin-build-fivem@0.0.41
+    - @jpp-toolkit/plugin-build-lib@0.0.45
+
 ## 0.0.64
 
 ### Patch Changes
