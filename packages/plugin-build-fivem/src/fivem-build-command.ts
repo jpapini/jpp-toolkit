@@ -11,8 +11,8 @@ import type { MultiStats, Stats } from '@rspack/core';
 import { rspack } from '@rspack/core';
 import { RspackDevServer } from '@rspack/dev-server';
 
-import { refreshAndEnsureFivemResource } from './fivem-rcon';
 import type { RconOptions } from './fivem-rcon';
+import { refreshAndEnsureFivemResource } from './fivem-rcon';
 
 type FivemBuildCommandOptions = {
     readonly resourceName: string;

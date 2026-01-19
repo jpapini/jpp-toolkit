@@ -2,8 +2,8 @@ import rspack from '@rspack/core';
 
 import type { GetPresetDefaultOptions, Preset } from '~/types';
 
-import { getNodePresetDefaultOptions } from './node-preset';
 import type { NodePresetOptions } from './node-preset';
+import { getNodePresetDefaultOptions } from './node-preset';
 
 export type FivemScriptPresetOptions = NodePresetOptions;
 

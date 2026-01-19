@@ -1,7 +1,7 @@
 import path from 'node:path';
 
-import { rspack } from '@rspack/core';
 import type { SwcLoaderOptions } from '@rspack/core';
+import { rspack } from '@rspack/core';
 
 import { TS_RULE_TEST } from '~/constants';
 import type { GetPresetDefaultOptions, Preset } from '~/types';
