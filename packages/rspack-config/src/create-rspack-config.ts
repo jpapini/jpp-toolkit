@@ -1,5 +1,11 @@
 import type { RspackOptions } from '@rspack/core';
 
+import type {
+    FivemScriptPresetOptions,
+    FivemUiPresetOptions,
+    NodePresetOptions,
+    ReactPresetOptions,
+} from './presets';
 import {
     basePreset,
     fivemScriptPreset,
@@ -10,12 +16,6 @@ import {
     getReactPresetDefaultOptions,
     nodePreset,
     reactPreset,
-} from './presets';
-import type {
-    FivemScriptPresetOptions,
-    FivemUiPresetOptions,
-    NodePresetOptions,
-    ReactPresetOptions,
 } from './presets';
 import type { RspackEnv, RunContext } from './types';
 import { findFirstExistingFile } from './utils/find-first-existing-file';

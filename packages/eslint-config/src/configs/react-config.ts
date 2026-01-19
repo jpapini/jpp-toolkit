@@ -39,7 +39,7 @@ export const reactConfig = defineConfig({
          * Enforce all defaultProps have a corresponding non-required PropType.
          * @see {@link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md}
          */
-        'react/default-props-match-prop-types': 'error',
+        // 'react/default-props-match-prop-types': 'error',
 
         /**
          * Enforce consistent usage of destructuring assignment of props, state, and context.
@@ -487,7 +487,7 @@ export const reactConfig = defineConfig({
          * Enforce a defaultProps definition for every prop that is not a required prop.
          * @see {@link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md}
          */
-        'react/require-default-props': 'error',
+        // 'react/require-default-props': 'error',
 
         /**
          * Enforce React components to have a shouldComponentUpdate method.

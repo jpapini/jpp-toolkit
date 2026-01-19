@@ -1,8 +1,8 @@
 import { createRequire } from 'node:module';
 import path from 'node:path';
 
-import { rspack } from '@rspack/core';
 import type { SwcLoaderOptions } from '@rspack/core';
+import { rspack } from '@rspack/core';
 import ReactRefreshPlugin from '@rspack/plugin-react-refresh';
 
 import {
@@ -13,8 +13,8 @@ import {
 } from '~/constants';
 import type { GetPresetDefaultOptions, Preset } from '~/types';
 
-import { getBasePresetDefaultOptions } from './base-preset';
 import type { BasePresetOptions } from './base-preset';
+import { getBasePresetDefaultOptions } from './base-preset';
 
 const require = createRequire(import.meta.url);
 

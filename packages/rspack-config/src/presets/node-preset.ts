@@ -1,13 +1,13 @@
-import { rspack } from '@rspack/core';
 import type { ExternalItem, SwcLoaderOptions } from '@rspack/core';
+import { rspack } from '@rspack/core';
 import { RunScriptWebpackPlugin } from 'run-script-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 
 import { TS_RULE_TEST } from '~/constants';
 import type { GetPresetDefaultOptions, Preset } from '~/types';
 
-import { getBasePresetDefaultOptions } from './base-preset';
 import type { BasePresetOptions } from './base-preset';
+import { getBasePresetDefaultOptions } from './base-preset';
 
 export type NodePresetOptions = BasePresetOptions & {
     readonly nodeVersion: number;
