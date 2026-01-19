@@ -20,7 +20,7 @@ export const reactConfig = defineConfig({
          */
         'react/boolean-prop-naming': [
             'error',
-            { rule: '^(is|has|can|should)[A-Z][A-Za-z0-9]*', validateNested: true },
+            { rule: '^(is|has|can|should|as)[A-Z][A-Za-z0-9]*', validateNested: true },
         ],
 
         /**
