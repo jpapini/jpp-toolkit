@@ -1,5 +1,11 @@
 # @jpp-toolkit/prettier-config
 
+## 0.0.23
+
+### Patch Changes
+
+- [`471c0e3`](https://github.com/jpapini/jpp-toolkit/commit/471c0e32759d158dd7c9a4d6de0316b6071c64ea) Thanks [@jpapini](https://github.com/jpapini)! - Add prettier-plugin-rust and prettier-plugin-tailwindcss.
+
 ## 0.0.22
 
 ### Patch Changes
