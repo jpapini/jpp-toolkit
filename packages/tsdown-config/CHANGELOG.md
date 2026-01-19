@@ -1,5 +1,11 @@
 # @jpp-toolkit/tsdown-config
 
+## 0.0.30
+
+### Patch Changes
+
+- [`daac27f`](https://github.com/jpapini/jpp-toolkit/commit/daac27f975e4b967e04b5469acbc8df779757f73) Thanks [@jpapini](https://github.com/jpapini)! - Add React build command.
+
 ## 0.0.29
 
 ### Patch Changes
