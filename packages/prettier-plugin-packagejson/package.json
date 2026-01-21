@@ -40,7 +40,7 @@
         "@jpp-toolkit/sort-package-json": "workspace:*"
     },
     "devDependencies": {
-        "prettier": "3.8.0"
+        "prettier": "3.8.1"
     },
     "peerDependencies": {
         "prettier": "3"
