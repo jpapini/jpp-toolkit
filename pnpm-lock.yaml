@@ -239,8 +239,8 @@ importers:
         specifier: 1.7.3
         version: 1.7.3
       '@rspack/dev-server':
-        specifier: 1.2.0
-        version: 1.2.0(@rspack/core@1.7.3)(webpack@5.103.0)
+        specifier: 1.2.1
+        version: 1.2.1(@rspack/core@1.7.3)(webpack@5.103.0)
     devDependencies:
       oclif:
         specifier: 4.22.68
@@ -283,8 +283,8 @@ importers:
         specifier: 1.7.3
         version: 1.7.3
       '@rspack/dev-server':
-        specifier: 1.2.0
-        version: 1.2.0(@rspack/core@1.7.3)(webpack@5.103.0)
+        specifier: 1.2.1
+        version: 1.2.1(@rspack/core@1.7.3)(webpack@5.103.0)
     devDependencies:
       oclif:
         specifier: 4.22.68
@@ -1594,8 +1594,8 @@ packages:
       '@swc/helpers':
         optional: true
 
-  '@rspack/dev-server@1.2.0':
-    resolution: {integrity: sha512-lLgo2j/bLeey4NiHzaoy+1qiwz8S+9lQS4xUvjifY5lBk7IrQOAkaVcWGvj6fWB1+d5hloCr2W1gSz0oSgOczg==}
+  '@rspack/dev-server@1.2.1':
+    resolution: {integrity: sha512-e/ARvskYn2Qdd02qLvc0i6H9BnOmzP0xGHS2XCr7GZ3t2k5uC5ZlLkeN1iEebU0FkAW+6ot89NahFo3nupKuww==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': '*'
@@ -7034,7 +7034,7 @@ snapshots:
       '@rspack/binding': 1.7.3
       '@rspack/lite-tapable': 1.1.0
 
-  '@rspack/dev-server@1.2.0(@rspack/core@1.7.3)(webpack@5.103.0)':
+  '@rspack/dev-server@1.2.1(@rspack/core@1.7.3)(webpack@5.103.0)':
     dependencies:
       '@rspack/core': 1.7.3
       '@types/bonjour': 3.5.13
