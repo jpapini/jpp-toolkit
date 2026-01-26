@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.11
+
+### Patch Changes
+
+- [`e00c108`](https://github.com/jpapini/jpp-toolkit/commit/e00c1082779e22b50f264881c095ec8f110f0006) Thanks [@jpapini](https://github.com/jpapini)! - Fix RSPACK serve mode.
+
 ## 0.0.10
 
 ### Patch Changes
