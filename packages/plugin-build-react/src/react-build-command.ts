@@ -36,7 +36,7 @@ export class ReactBuildCommand extends Command {
             isProduction: !watch,
         })({
             RSPACK_BUILD: !watch,
-            RSPACK_WATCH: watch,
+            RSPACK_SERVE: watch,
         });
         const compiler = rspack(config);
 
