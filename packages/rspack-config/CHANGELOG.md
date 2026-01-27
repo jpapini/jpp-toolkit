@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.23
+
+### Patch Changes
+
+- [`e4b3180`](https://github.com/jpapini/jpp-toolkit/commit/e4b318099fc95721f7f9748fc9e1b39994f31581) Thanks [@jpapini](https://github.com/jpapini)! - Add asset rules regex.
+
 ## 0.0.22
 
 ### Patch Changes

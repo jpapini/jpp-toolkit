@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-build-fivem",
-    "version": "0.0.49",
+    "version": "0.0.50",
     "description": "Plugin that add the fivem build command to the jpp cli.",
     "keywords": [
         "jpp",
