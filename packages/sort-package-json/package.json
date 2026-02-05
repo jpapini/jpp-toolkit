@@ -35,7 +35,7 @@
         "detect-newline": "4.0.1",
         "git-hooks-list": "4.2.1",
         "is-plain-obj": "4.1.0",
-        "semver": "7.7.3",
+        "semver": "7.7.4",
         "sort-object-keys": "2.1.0"
     },
     "packageManager": "pnpm@10.28.2",
