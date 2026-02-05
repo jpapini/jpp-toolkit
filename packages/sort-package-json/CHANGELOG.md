@@ -1,5 +1,11 @@
 # @jpp-toolkit/sort-package-json
 
+## 0.0.24
+
+### Patch Changes
+
+- [#240](https://github.com/jpapini/jpp-toolkit/pull/240) [`4308999`](https://github.com/jpapini/jpp-toolkit/commit/43089993afffc9e8a5d2aa9fb7676613b8992992) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `semver` to `7.7.4`.
+
 ## 0.0.23
 
 ### Patch Changes
