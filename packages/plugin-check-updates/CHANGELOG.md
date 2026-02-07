@@ -1,5 +1,15 @@
 # @jpp-toolkit/plugin-check-updates
 
+## 0.0.47
+
+### Patch Changes
+
+- [#243](https://github.com/jpapini/jpp-toolkit/pull/243) [`ee4afa3`](https://github.com/jpapini/jpp-toolkit/commit/ee4afa321c61546efdab4cbb85a572daed8e706d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.29.1`.
+  Updated dependency `pnpm` to `10.29.1`.
+- Updated dependencies [[`ee4afa3`](https://github.com/jpapini/jpp-toolkit/commit/ee4afa321c61546efdab4cbb85a572daed8e706d)]:
+    - @jpp-toolkit/core@0.0.25
+    - @jpp-toolkit/utils@0.0.23
+
 ## 0.0.46
 
 ### Patch Changes
