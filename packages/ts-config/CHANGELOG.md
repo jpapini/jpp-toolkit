@@ -1,5 +1,12 @@
 # @jpp-toolkit/ts-config
 
+## 0.0.22
+
+### Patch Changes
+
+- [#243](https://github.com/jpapini/jpp-toolkit/pull/243) [`ee4afa3`](https://github.com/jpapini/jpp-toolkit/commit/ee4afa321c61546efdab4cbb85a572daed8e706d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.29.1`.
+  Updated dependency `pnpm` to `10.29.1`.
+
 ## 0.0.21
 
 ### Patch Changes
