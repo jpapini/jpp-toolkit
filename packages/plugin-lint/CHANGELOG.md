@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-lint
 
+## 0.0.46
+
+### Patch Changes
+
+- [#250](https://github.com/jpapini/jpp-toolkit/pull/250) [`e5ce15d`](https://github.com/jpapini/jpp-toolkit/commit/e5ce15d17dd4e8e333fd9303c1b2919356f0880f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.77`.
+
 ## 0.0.45
 
 ### Patch Changes
