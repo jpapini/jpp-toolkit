@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-clean
 
+## 0.0.43
+
+### Patch Changes
+
+- [#246](https://github.com/jpapini/jpp-toolkit/pull/246) [`85f73d5`](https://github.com/jpapini/jpp-toolkit/commit/85f73d581a8936e38beaf0b33ea8feb2208e2f3a) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.22.74`.
+
 ## 0.0.42
 
 ### Patch Changes
