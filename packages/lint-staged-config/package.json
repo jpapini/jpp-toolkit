@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/lint-staged-config",
-    "version": "0.0.23",
+    "version": "0.0.24",
     "description": "Lint-staged configuration for linting and formatting staged files.",
     "keywords": [
         "jpp",

@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-clean",
-    "version": "0.0.45",
+    "version": "0.0.46",
     "description": "Plugin that add the clean command to the jpp cli.",
     "keywords": [
         "jpp",
