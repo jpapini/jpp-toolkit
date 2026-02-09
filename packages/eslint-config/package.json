@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/eslint-config",
-    "version": "0.0.57",
+    "version": "0.0.58",
     "description": "ESLint configurations for JS/TS projects.",
     "keywords": [
         "jpp",
