@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.27
+
+### Patch Changes
+
+- [#260](https://github.com/jpapini/jpp-toolkit/pull/260) [`2fff75d`](https://github.com/jpapini/jpp-toolkit/commit/2fff75dfc305469351b5dc32b9c974fa0d4420df) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/core` to `1.7.6`.
+
 ## 0.0.26
 
 ### Patch Changes
