@@ -43,7 +43,7 @@
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.8.0",
         "execa": "9.6.1",
-        "rimraf": "6.1.2"
+        "rimraf": "6.1.3"
     },
     "devDependencies": {
         "oclif": "4.22.79"
