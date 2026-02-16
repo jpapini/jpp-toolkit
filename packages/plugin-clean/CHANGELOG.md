@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-clean
 
+## 0.0.50
+
+### Patch Changes
+
+- [#282](https://github.com/jpapini/jpp-toolkit/pull/282) [`32e8ff0`](https://github.com/jpapini/jpp-toolkit/commit/32e8ff00b782715ff77ca2c77e0efa320a818497) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `rimraf` to `6.1.3`.
+
 ## 0.0.49
 
 ### Patch Changes
