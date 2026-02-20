@@ -44,7 +44,7 @@
         "@jpp-toolkit/ts-config": "workspace:*"
     },
     "devDependencies": {
-        "eslint": "9.39.2",
+        "eslint": "9.39.3",
         "prettier": "3.8.1"
     },
     "peerDependencies": {
