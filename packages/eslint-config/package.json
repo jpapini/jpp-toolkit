@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "@eslint/compat": "2.0.2",
-        "@eslint/js": "9.39.3",
+        "@eslint/js": "10.0.1",
         "@jpp-toolkit/utils": "workspace:*",
         "@stylistic/eslint-plugin": "5.9.0",
         "@types/eslint-plugin-jsx-a11y": "6.10.1",
@@ -55,10 +55,10 @@
         "typescript-eslint": "8.56.0"
     },
     "devDependencies": {
-        "eslint": "9.39.3"
+        "eslint": "10.0.1"
     },
     "peerDependencies": {
-        "eslint": "9"
+        "eslint": "9 || 10"
     },
     "packageManager": "pnpm@10.30.1",
     "engines": {
