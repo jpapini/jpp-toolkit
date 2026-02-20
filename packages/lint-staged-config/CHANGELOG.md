@@ -1,5 +1,14 @@
 # @jpp-toolkit/lint-staged-config
 
+## 0.0.27
+
+### Patch Changes
+
+- [#301](https://github.com/jpapini/jpp-toolkit/pull/301) [`8a26476`](https://github.com/jpapini/jpp-toolkit/commit/8a264760457ae2cf228b60133eca1a2e78d3b33f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.30.1`.
+  Updated dependency `pnpm` to `10.30.1`.
+- Updated dependencies [[`8a26476`](https://github.com/jpapini/jpp-toolkit/commit/8a264760457ae2cf228b60133eca1a2e78d3b33f)]:
+    - @jpp-toolkit/utils@0.0.27
+
 ## 0.0.26
 
 ### Patch Changes
