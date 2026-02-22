@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-build-lib",
-    "version": "0.0.65",
+    "version": "0.0.66",
     "description": "Plugin that add the library build command to the jpp cli.",
     "keywords": [
         "jpp",
