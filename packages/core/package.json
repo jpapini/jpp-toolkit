@@ -39,7 +39,7 @@
         "@oclif/parser": "3.8.17"
     },
     "devDependencies": {
-        "@oclif/core": "4.8.0"
+        "@oclif/core": "4.8.1"
     },
     "peerDependencies": {
         "@oclif/core": "4"
