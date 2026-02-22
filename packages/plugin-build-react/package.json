@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-build-react",
-    "version": "0.0.30",
+    "version": "0.0.31",
     "description": "Plugin that add the react build command to the jpp cli.",
     "keywords": [
         "jpp",
