@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-check-updates
 
+## 0.0.63
+
+### Patch Changes
+
+- [#318](https://github.com/jpapini/jpp-toolkit/pull/318) [`ca6c6ce`](https://github.com/jpapini/jpp-toolkit/commit/ca6c6ce8702a77c7e7ee53b3df3977574e82da64) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `npm-check-updates` to `19.5.0`.
+
 ## 0.0.62
 
 ### Patch Changes
