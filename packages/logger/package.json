@@ -38,7 +38,7 @@
         "@jpp-toolkit/utils": "workspace:*",
         "colorette": "2.0.20"
     },
-    "packageManager": "pnpm@10.30.2",
+    "packageManager": "pnpm@10.30.3",
     "engines": {
         "node": "24",
         "pnpm": "10"
