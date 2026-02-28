@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.0.70
+
+### Patch Changes
+
+- [#333](https://github.com/jpapini/jpp-toolkit/pull/333) [`d8ae829`](https://github.com/jpapini/jpp-toolkit/commit/d8ae829c66bc325eee7d0fcb0d06a90f134dd48f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/core` to `4.8.2`.
+
+- Updated dependencies [[`d8ae829`](https://github.com/jpapini/jpp-toolkit/commit/d8ae829c66bc325eee7d0fcb0d06a90f134dd48f)]:
+    - @jpp-toolkit/core@0.0.33
+
 ## 0.0.69
 
 ### Patch Changes
