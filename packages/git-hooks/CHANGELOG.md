@@ -1,5 +1,19 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.38
+
+### Patch Changes
+
+- [#347](https://github.com/jpapini/jpp-toolkit/pull/347) [`e0c65d8`](https://github.com/jpapini/jpp-toolkit/commit/e0c65d8d71f18e0a03f8fa5e0135c520636b1690) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@commitlint/config-conventional` to `20.4.3`.
+  Updated dependency `@commitlint/types` to `20.4.3`.
+  Updated dependency `@commitlint/cli` to `20.4.3`.
+
+- [#348](https://github.com/jpapini/jpp-toolkit/pull/348) [`a76a05c`](https://github.com/jpapini/jpp-toolkit/commit/a76a05c3572df3a7162ae0a5d849ec887b61f90b) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `lint-staged` to `16.3.2`.
+
+- Updated dependencies [[`e0c65d8`](https://github.com/jpapini/jpp-toolkit/commit/e0c65d8d71f18e0a03f8fa5e0135c520636b1690), [`a76a05c`](https://github.com/jpapini/jpp-toolkit/commit/a76a05c3572df3a7162ae0a5d849ec887b61f90b)]:
+    - @jpp-toolkit/commitlint-config@0.0.35
+    - @jpp-toolkit/lint-staged-config@0.0.32
+
 ## 0.0.37
 
 ### Patch Changes
