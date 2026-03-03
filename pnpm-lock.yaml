@@ -415,11 +415,11 @@ importers:
         specifier: 4.2.1
         version: 4.2.1
       postcss:
-        specifier: 8.5.6
-        version: 8.5.6
+        specifier: 8.5.8
+        version: 8.5.8
       postcss-loader:
         specifier: 8.2.1
-        version: 8.2.1(@rspack/core@1.7.6)(postcss@8.5.6)(typescript@5.9.3)(webpack@5.103.0)
+        version: 8.2.1(@rspack/core@1.7.6)(postcss@8.5.8)(typescript@5.9.3)(webpack@5.103.0)
       react-refresh:
         specifier: 0.18.0
         version: 0.18.0
@@ -4514,8 +4514,8 @@ packages:
       webpack:
         optional: true
 
-  postcss@8.5.6:
-    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -7545,7 +7545,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.2.1
       '@tailwindcss/oxide': 4.2.1
-      postcss: 8.5.6
+      postcss: 8.5.8
       tailwindcss: 4.2.1
 
   '@tybys/wasm-util@0.10.1':
@@ -10251,11 +10251,11 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-loader@8.2.1(@rspack/core@1.7.6)(postcss@8.5.6)(typescript@5.9.3)(webpack@5.103.0):
+  postcss-loader@8.2.1(@rspack/core@1.7.6)(postcss@8.5.8)(typescript@5.9.3)(webpack@5.103.0):
     dependencies:
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
-      postcss: 8.5.6
+      postcss: 8.5.8
       semver: 7.7.4
     optionalDependencies:
       '@rspack/core': 1.7.6
@@ -10263,7 +10263,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  postcss@8.5.6:
+  postcss@8.5.8:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
