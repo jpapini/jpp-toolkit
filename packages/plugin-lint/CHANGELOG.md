@@ -1,5 +1,17 @@
 # @jpp-toolkit/plugin-lint
 
+## 0.0.67
+
+### Patch Changes
+
+- [#385](https://github.com/jpapini/jpp-toolkit/pull/385) [`61868b1`](https://github.com/jpapini/jpp-toolkit/commit/61868b1dd3c2ad54ca9b92383c3348a433160b7f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/core` to `4.8.4`.
+
+- [#387](https://github.com/jpapini/jpp-toolkit/pull/387) [`43357ee`](https://github.com/jpapini/jpp-toolkit/commit/43357ee39836bcfa09ec638eac4ec0aa9f88f7af) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.32.0`.
+  Updated dependency `pnpm` to `10.32.0`.
+- Updated dependencies [[`61868b1`](https://github.com/jpapini/jpp-toolkit/commit/61868b1dd3c2ad54ca9b92383c3348a433160b7f), [`43357ee`](https://github.com/jpapini/jpp-toolkit/commit/43357ee39836bcfa09ec638eac4ec0aa9f88f7af)]:
+    - @jpp-toolkit/core@0.0.36
+    - @jpp-toolkit/utils@0.0.31
+
 ## 0.0.66
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/ts-config",
-    "version": "0.0.29",
+    "version": "0.0.30",
     "description": "TypeScript configurations for JS/TS projects.",
     "keywords": [
         "jpp",

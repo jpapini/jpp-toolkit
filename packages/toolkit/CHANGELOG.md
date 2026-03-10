@@ -1,5 +1,18 @@
 # jpp-toolkit
 
+## 0.0.183
+
+### Patch Changes
+
+- [#387](https://github.com/jpapini/jpp-toolkit/pull/387) [`43357ee`](https://github.com/jpapini/jpp-toolkit/commit/43357ee39836bcfa09ec638eac4ec0aa9f88f7af) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.32.0`.
+  Updated dependency `pnpm` to `10.32.0`.
+- Updated dependencies [[`61868b1`](https://github.com/jpapini/jpp-toolkit/commit/61868b1dd3c2ad54ca9b92383c3348a433160b7f), [`43357ee`](https://github.com/jpapini/jpp-toolkit/commit/43357ee39836bcfa09ec638eac4ec0aa9f88f7af)]:
+    - @jpp-toolkit/cli@0.0.125
+    - @jpp-toolkit/eslint-config@0.0.80
+    - @jpp-toolkit/git-hooks@0.0.40
+    - @jpp-toolkit/prettier-config@0.0.37
+    - @jpp-toolkit/ts-config@0.0.30
+
 ## 0.0.182
 
 ### Patch Changes
