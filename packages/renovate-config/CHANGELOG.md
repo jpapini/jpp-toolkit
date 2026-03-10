@@ -1,5 +1,12 @@
 # @jpp-toolkit/renovate-config
 
+## 0.0.31
+
+### Patch Changes
+
+- [#387](https://github.com/jpapini/jpp-toolkit/pull/387) [`43357ee`](https://github.com/jpapini/jpp-toolkit/commit/43357ee39836bcfa09ec638eac4ec0aa9f88f7af) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.32.0`.
+  Updated dependency `pnpm` to `10.32.0`.
+
 ## 0.0.30
 
 ### Patch Changes
