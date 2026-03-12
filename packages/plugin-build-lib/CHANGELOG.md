@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.0.84
+
+### Patch Changes
+
+- [`8efc531`](https://github.com/jpapini/jpp-toolkit/commit/8efc531a5adcc7517199c3da84ce5a8008a91f52) Thanks [@jpapini](https://github.com/jpapini)! - Custom entry file for lib build.
+
 ## 0.0.83
 
 ### Patch Changes
