@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.189
+
+### Patch Changes
+
+- Updated dependencies [[`a4bc8a2`](https://github.com/jpapini/jpp-toolkit/commit/a4bc8a2d4e7ef29ea1806c59c2c7413600232d71)]:
+    - @jpp-toolkit/git-hooks@0.0.43
+
 ## 0.0.188
 
 ### Patch Changes
