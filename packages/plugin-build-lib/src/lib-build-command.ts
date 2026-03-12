@@ -1,3 +1,5 @@
+import path from 'node:path';
+
 import { Command } from '@jpp-toolkit/core';
 import { createTsdownConfig } from '@jpp-toolkit/tsdown-config';
 import { Args, Flags } from '@oclif/core';
@@ -34,6 +36,10 @@ export class LibBuildCommand extends Command {
             description: 'Watch files for changes and rebuild automatically.',
             default: false,
         }),
+        entry: Flags.string({
+            char: 'e',
+            description: 'The entry file for the build process.',
+        }),
     };
 
     static override examples = [
@@ -49,17 +55,33 @@ export class LibBuildCommand extends Command {
             description: 'Build the library using the hybrid preset.',
             command: '<%= config.bin %> <%= command.id %> hybrid',
         },
+        {
+            description: 'Build the library and watch for changes.',
+            command: '<%= config.bin %> <%= command.id %> esm --watch',
+        },
+        {
+            description: 'Build the library with a custom entry file.',
+            command: '<%= config.bin %> <%= command.id %> esm --entry src/main.ts',
+        },
     ];
 
     public async run(): Promise<void> {
         const { args, flags } = await this.parse(LibBuildCommand);
         const preset = args.preset as Preset;
-        const { watch } = flags;
+        const { watch, entry } = flags;
 
         this.logger.info(`Building library using the '${preset}' preset...`);
 
+        if (entry) {
+            this.logger.info(`Using custom entry file: ${entry}`);
+        }
+
         const format = presetFormatMap[preset];
-        const config = createTsdownConfig({ format, watch });
+        const config = createTsdownConfig({
+            format,
+            watch,
+            ...(entry ? { entry: path.resolve(process.cwd(), entry) } : {}),
+        });
         await tsdownBuild(config);
     }
 }
