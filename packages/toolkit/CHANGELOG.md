@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.192
+
+### Patch Changes
+
+- Updated dependencies [[`acafead`](https://github.com/jpapini/jpp-toolkit/commit/acafead9a1f516eecb8cf24878cdbdc0aefadf5d)]:
+    - @jpp-toolkit/eslint-config@0.0.83
+
 ## 0.0.191
 
 ### Patch Changes
