@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.197
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/git-hooks@0.0.46
+
 ## 0.0.196
 
 ### Patch Changes
