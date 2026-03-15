@@ -1,5 +1,14 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.45
+
+### Patch Changes
+
+- [#418](https://github.com/jpapini/jpp-toolkit/pull/418) [`ab25e4d`](https://github.com/jpapini/jpp-toolkit/commit/ab25e4dc8e8ed2a5d3ff4bebe713f14e70573d67) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@commitlint/cli` to `20.5.0`.
+
+- Updated dependencies [[`ab25e4d`](https://github.com/jpapini/jpp-toolkit/commit/ab25e4dc8e8ed2a5d3ff4bebe713f14e70573d67)]:
+    - @jpp-toolkit/commitlint-config@0.0.40
+
 ## 0.0.44
 
 ### Patch Changes
