@@ -36,8 +36,8 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@commitlint/config-conventional": "20.4.4",
-        "@commitlint/types": "20.4.4"
+        "@commitlint/config-conventional": "20.5.0",
+        "@commitlint/types": "20.5.0"
     },
     "devDependencies": {
         "@commitlint/cli": "20.5.0"
