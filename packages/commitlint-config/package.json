@@ -40,7 +40,7 @@
         "@commitlint/types": "20.4.4"
     },
     "devDependencies": {
-        "@commitlint/cli": "20.4.4"
+        "@commitlint/cli": "20.5.0"
     },
     "peerDependencies": {
         "@commitlint/cli": "20"
