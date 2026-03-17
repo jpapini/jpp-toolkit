@@ -324,8 +324,8 @@ importers:
         specifier: 4.9.0
         version: 4.9.0
       npm-check-updates:
-        specifier: 19.6.3
-        version: 19.6.3
+        specifier: 19.6.5
+        version: 19.6.5
     devDependencies:
       oclif:
         specifier: 4.22.92
@@ -4317,8 +4317,8 @@ packages:
     resolution: {integrity: sha512-X06Mfd/5aKsRHc0O0J5CUedwnPmnDtLF2+nq+KN9KSDlJHkPuh0JUviWjEWMe0SW/9TDdSLVPuk7L5gGTIA1/w==}
     engines: {node: '>=14.16'}
 
-  npm-check-updates@19.6.3:
-    resolution: {integrity: sha512-VAt9Bp26eLaymZ0nZyh5n/by+YZIuegXlvWR0yv1zBqd984f8VnEnBbn+1lS3nN5LyEjn62BJ+yYgzNSpb6Gzg==}
+  npm-check-updates@19.6.5:
+    resolution: {integrity: sha512-XlBUMC30relXfEerrnX239W9iB30U6Woz0Hj42Sv6iSF4EGOvj2mS2r45sZ3RglH0VPBxXOWooMxObZ/SMZhrw==}
     engines: {node: '>=20.0.0', npm: '>=8.12.1'}
     hasBin: true
 
@@ -10034,7 +10034,7 @@ snapshots:
 
   normalize-url@8.1.0: {}
 
-  npm-check-updates@19.6.3: {}
+  npm-check-updates@19.6.5: {}
 
   npm-normalize-package-bin@4.0.0: {}
 
