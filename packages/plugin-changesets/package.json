@@ -42,7 +42,7 @@
         "@changesets/cli": "2.30.0",
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
-        "@oclif/core": "4.10.1",
+        "@oclif/core": "4.10.2",
         "execa": "9.6.1"
     },
     "devDependencies": {
