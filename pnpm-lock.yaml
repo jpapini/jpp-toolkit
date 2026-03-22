@@ -88,8 +88,8 @@ importers:
         version: 6.2.40
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
       tsx:
         specifier: 4.21.0
         version: 4.21.0
@@ -243,8 +243,8 @@ importers:
         version: 1.2.1(@rspack/core@1.7.9)(webpack@5.103.0)
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-build-lib:
     dependencies:
@@ -265,8 +265,8 @@ importers:
         version: 0.21.4(synckit@0.11.12)(typescript@5.9.3)
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-build-react:
     dependencies:
@@ -287,8 +287,8 @@ importers:
         version: 1.2.1(@rspack/core@1.7.9)(webpack@5.103.0)
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-changesets:
     dependencies:
@@ -309,8 +309,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-check-updates:
     dependencies:
@@ -328,8 +328,8 @@ importers:
         version: 19.6.5
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-clean:
     dependencies:
@@ -350,8 +350,8 @@ importers:
         version: 6.1.3
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/plugin-lint:
     dependencies:
@@ -369,8 +369,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.93
-        version: 4.22.93(@types/node@24.12.0)
+        specifier: 4.22.94
+        version: 4.22.94(@types/node@24.12.0)
 
   packages/prettier-config:
     dependencies:
@@ -1439,8 +1439,8 @@ packages:
     resolution: {integrity: sha512-sU/PMrz1LnnnNk4T3qvZU8dTUiSc0MZaL7woh2wfuNSXbCnxicJzx4kX1sYeY6eF0NmqFiYlpNEQJykBG0g1sA==}
     engines: {node: '>=18.0.0'}
 
-  '@oclif/plugin-not-found@3.2.75':
-    resolution: {integrity: sha512-xBEf7fJoS/fIqzGBUe0i6yc7ozo23KTyusy50DHqh+oqay5gtMLPUfr1RbvJBGGwozzFAMMFXN9o+AvUDt/zTA==}
+  '@oclif/plugin-not-found@3.2.76':
+    resolution: {integrity: sha512-YM1S38iHHU4t5zaUuCbOpMXeyYK3uZuqdgRSUFSw29+Rsyw4wXvH9gBvOFm7/RzmqpLNMXwjzO9Dg5mQHNgOWg==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/plugin-warn-if-update-available@3.1.55':
@@ -4328,8 +4328,8 @@ packages:
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
-  oclif@4.22.93:
-    resolution: {integrity: sha512-x7FjnZOTuKl4p6KsWFZ2nCH3jQv0EU7+fG+udUHgV+CnXx6xGgCGPfkkDv3jYzjlcW7v1P62f3Ab8hudR0zrnA==}
+  oclif@4.22.94:
+    resolution: {integrity: sha512-YcuT0adhq+24mRq6RpVC3oUSiuYfpquFSwNfZcZ9OGY2qcef6kR/0ce7TkPc5tSa7RwEyRiWSWkaaqgVQA4k5w==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -6881,7 +6881,7 @@ snapshots:
     dependencies:
       '@oclif/core': 4.10.2
 
-  '@oclif/plugin-not-found@3.2.75(@types/node@24.12.0)':
+  '@oclif/plugin-not-found@3.2.76(@types/node@24.12.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@24.12.0)
       '@oclif/core': 4.10.2
@@ -9957,7 +9957,7 @@ snapshots:
 
   obug@2.1.1: {}
 
-  oclif@4.22.93(@types/node@24.12.0):
+  oclif@4.22.94(@types/node@24.12.0):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1009.0
       '@aws-sdk/client-s3': 3.1009.0
@@ -9966,7 +9966,7 @@ snapshots:
       '@inquirer/select': 2.5.0
       '@oclif/core': 4.9.0
       '@oclif/plugin-help': 6.2.40
-      '@oclif/plugin-not-found': 3.2.75(@types/node@24.12.0)
+      '@oclif/plugin-not-found': 3.2.76(@types/node@24.12.0)
       '@oclif/plugin-warn-if-update-available': 3.1.55
       ansis: 3.17.0
       async-retry: 1.3.3
