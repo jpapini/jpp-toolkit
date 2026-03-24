@@ -1,5 +1,15 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.64
+
+### Patch Changes
+
+- [#461](https://github.com/jpapini/jpp-toolkit/pull/461) [`28002d7`](https://github.com/jpapini/jpp-toolkit/commit/28002d7eb1146bf576076f8f8cf94ddf53af08be) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.33.0`.
+  Updated dependency `pnpm` to `10.33.0`.
+- Updated dependencies [[`28002d7`](https://github.com/jpapini/jpp-toolkit/commit/28002d7eb1146bf576076f8f8cf94ddf53af08be)]:
+    - @jpp-toolkit/core@0.0.42
+    - @jpp-toolkit/rspack-config@0.0.46
+
 ## 0.0.63
 
 ### Patch Changes

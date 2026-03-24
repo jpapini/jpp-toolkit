@@ -1,5 +1,14 @@
 # @jpp-toolkit/prettier-plugin-packagejson
 
+## 0.0.37
+
+### Patch Changes
+
+- [#461](https://github.com/jpapini/jpp-toolkit/pull/461) [`28002d7`](https://github.com/jpapini/jpp-toolkit/commit/28002d7eb1146bf576076f8f8cf94ddf53af08be) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.33.0`.
+  Updated dependency `pnpm` to `10.33.0`.
+- Updated dependencies [[`28002d7`](https://github.com/jpapini/jpp-toolkit/commit/28002d7eb1146bf576076f8f8cf94ddf53af08be)]:
+    - @jpp-toolkit/sort-package-json@0.0.35
+
 ## 0.0.36
 
 ### Patch Changes
