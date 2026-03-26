@@ -81,8 +81,8 @@ importers:
         specifier: workspace:*
         version: link:../plugin-lint
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       '@oclif/plugin-help':
         specifier: 6.2.40
         version: 6.2.40
@@ -117,8 +117,8 @@ importers:
         version: 3.8.17
     devDependencies:
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
 
   packages/eslint-config:
     dependencies:
@@ -233,8 +233,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       '@rspack/core':
         specifier: 1.7.10
         version: 1.7.10
@@ -258,8 +258,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       tsdown:
         specifier: 0.21.5
         version: 0.21.5(synckit@0.11.12)(typescript@5.9.3)
@@ -277,8 +277,8 @@ importers:
         specifier: workspace:*
         version: link:../rspack-config
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       '@rspack/core':
         specifier: 1.7.10
         version: 1.7.10
@@ -302,8 +302,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -321,8 +321,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       npm-check-updates:
         specifier: 19.6.5
         version: 19.6.5
@@ -340,8 +340,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -362,8 +362,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.10.2
-        version: 4.10.2
+        specifier: 4.10.3
+        version: 4.10.3
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -1479,8 +1479,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oclif/core@4.10.2':
-    resolution: {integrity: sha512-3GvDh5nqpIE8566qUF5cBHKog9DFV9XgBeuR0nUrz0OMuz2FPYHat1AZHOwyQbvH9OKL4gJNQZHcsDOqDM/FRA==}
+  '@oclif/core@4.10.3':
+    resolution: {integrity: sha512-0mD8vcrrX5uRsxzvI8tbWmSVGngvZA/Qo6O0ZGvLPAWEauSf5GFniwgirhY0SkszuHwu0S1J1ivj/jHmqtIDuA==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/core@4.9.0':
@@ -7187,7 +7187,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@oclif/core@4.10.2':
+  '@oclif/core@4.10.3':
     dependencies:
       ansi-escapes: 4.3.2
       ansis: 3.17.0
@@ -7248,12 +7248,12 @@ snapshots:
 
   '@oclif/plugin-help@6.2.40':
     dependencies:
-      '@oclif/core': 4.10.2
+      '@oclif/core': 4.10.3
 
   '@oclif/plugin-not-found@3.2.76(@types/node@24.12.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@24.12.0)
-      '@oclif/core': 4.10.2
+      '@oclif/core': 4.10.3
       ansis: 3.17.0
       fast-levenshtein: 3.0.0
     transitivePeerDependencies:
@@ -7261,7 +7261,7 @@ snapshots:
 
   '@oclif/plugin-warn-if-update-available@3.1.57':
     dependencies:
-      '@oclif/core': 4.10.2
+      '@oclif/core': 4.10.3
       ansis: 3.17.0
       debug: 4.4.3(supports-color@8.1.1)
       http-call: 5.3.0
