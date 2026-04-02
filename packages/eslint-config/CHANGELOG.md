@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.91
+
+### Patch Changes
+
+- [#487](https://github.com/jpapini/jpp-toolkit/pull/487) [`49c5440`](https://github.com/jpapini/jpp-toolkit/commit/49c544012027a4fa6d60f358fff67b814f5b4bae) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-perfectionist` to `5.8.0`.
+
 ## 0.0.90
 
 ### Patch Changes
