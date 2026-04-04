@@ -41,7 +41,7 @@
     "dependencies": {
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
-        "@oclif/core": "4.10.4",
+        "@oclif/core": "4.10.5",
         "execa": "9.6.1"
     },
     "devDependencies": {
