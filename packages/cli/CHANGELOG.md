@@ -1,5 +1,11 @@
 # @jpp-toolkit/cli
 
+## 0.0.159
+
+### Patch Changes
+
+- [#495](https://github.com/jpapini/jpp-toolkit/pull/495) [`dece741`](https://github.com/jpapini/jpp-toolkit/commit/dece74137991893d75056dfb80829b33fb00b21f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/plugin-help` to `6.2.42`.
+
 ## 0.0.158
 
 ### Patch Changes
