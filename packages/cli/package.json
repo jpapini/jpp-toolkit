@@ -54,7 +54,7 @@
         "@oclif/plugin-help": "6.2.43"
     },
     "devDependencies": {
-        "oclif": "4.22.97",
+        "oclif": "4.22.98",
         "tsx": "4.21.0"
     },
     "packageManager": "pnpm@10.33.0",
