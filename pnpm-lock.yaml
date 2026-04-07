@@ -88,8 +88,8 @@ importers:
         version: 6.2.43
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
       tsx:
         specifier: 4.21.0
         version: 4.21.0
@@ -243,8 +243,8 @@ importers:
         version: 1.2.1(@rspack/core@1.7.11)(webpack@5.103.0)
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-build-lib:
     dependencies:
@@ -265,8 +265,8 @@ importers:
         version: 0.21.7(synckit@0.11.12)(typescript@5.9.3)
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-build-react:
     dependencies:
@@ -287,8 +287,8 @@ importers:
         version: 1.2.1(@rspack/core@1.7.11)(webpack@5.103.0)
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-changesets:
     dependencies:
@@ -309,8 +309,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-check-updates:
     dependencies:
@@ -328,8 +328,8 @@ importers:
         version: 19.6.6
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-clean:
     dependencies:
@@ -350,8 +350,8 @@ importers:
         version: 6.1.3
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/plugin-lint:
     dependencies:
@@ -369,8 +369,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.22.97
-        version: 4.22.97(@types/node@24.12.2)
+        specifier: 4.22.98
+        version: 4.22.98(@types/node@24.12.2)
 
   packages/prettier-config:
     dependencies:
@@ -4070,8 +4070,8 @@ packages:
   lodash.upperfirst@4.3.1:
     resolution: {integrity: sha512-sReKOYJIJf74dhJONhU4e0/shzi1trVbSWDOhKYE5XV2O+H7Sb2Dihwuc7xWxVl+DgFPyTqIN3zMfT9cq5iWDg==}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   log-update@6.1.0:
     resolution: {integrity: sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==}
@@ -4336,8 +4336,8 @@ packages:
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
-  oclif@4.22.97:
-    resolution: {integrity: sha512-Z/ItrZquYfheBgvpiP3AQHYufjz5El+YGYRrPP/LkDuFzH+yj8V8LtVUuTKPlXx5xAF7YUZS6z9u7/R++Wyrdg==}
+  oclif@4.22.98:
+    resolution: {integrity: sha512-oaKgE8okvFYb5C+S97Hu4w8NJWa43Q1hHRsOSRjUbl/kIH1td3xMy8wacWk97O28hojtIoX7t99mznuV7K8EJw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -6912,7 +6912,7 @@ snapshots:
       ansis: 3.17.0
       debug: 4.4.3(supports-color@8.1.1)
       http-call: 5.3.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       registry-auth-token: 5.1.1
     transitivePeerDependencies:
       - supports-color
@@ -9760,7 +9760,7 @@ snapshots:
 
   lodash.upperfirst@4.3.1: {}
 
-  lodash@4.17.23: {}
+  lodash@4.18.1: {}
 
   log-update@6.1.0:
     dependencies:
@@ -9984,7 +9984,7 @@ snapshots:
 
   obug@2.1.1: {}
 
-  oclif@4.22.97(@types/node@24.12.2):
+  oclif@4.22.98(@types/node@24.12.2):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1009.0
       '@aws-sdk/client-s3': 3.1014.0
@@ -10004,7 +10004,7 @@ snapshots:
       fs-extra: 8.1.0
       github-slugger: 2.0.0
       got: 13.0.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       normalize-package-data: 6.0.2
       semver: 7.7.4
       sort-package-json: 2.15.1
