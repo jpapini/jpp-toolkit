@@ -1,5 +1,12 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.73
+
+### Patch Changes
+
+- Updated dependencies [[`048d859`](https://github.com/jpapini/jpp-toolkit/commit/048d859bc6952c60303195e85d085b920674bc30)]:
+    - @jpp-toolkit/rspack-config@0.0.49
+
 ## 0.0.72
 
 ### Patch Changes
