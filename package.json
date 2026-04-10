@@ -32,7 +32,7 @@
         "@types/node": "24.12.2",
         "eslint": "9.39.4",
         "npm-run-all2": "8.0.4",
-        "prettier": "3.8.1",
+        "prettier": "3.8.2",
         "turbo": "2.9.5",
         "typescript": "5.9.3"
     },
