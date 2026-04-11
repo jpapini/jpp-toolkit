@@ -51,7 +51,7 @@
         "@jpp-toolkit/plugin-clean": "workspace:*",
         "@jpp-toolkit/plugin-lint": "workspace:*",
         "@oclif/core": "4.10.5",
-        "@oclif/plugin-help": "6.2.43"
+        "@oclif/plugin-help": "6.2.44"
     },
     "devDependencies": {
         "oclif": "4.23.0",
