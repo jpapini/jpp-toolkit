@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.99
+
+### Patch Changes
+
+- [#539](https://github.com/jpapini/jpp-toolkit/pull/539) [`ee8b72c`](https://github.com/jpapini/jpp-toolkit/commit/ee8b72cef8b92187bf65c009ba2148efc0a8b0c5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-react-hooks` to `7.1.0`.
+
 ## 0.0.98
 
 ### Patch Changes
