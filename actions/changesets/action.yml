@@ -115,7 +115,7 @@ runs:
 
         - name: Run Changesets
           id: changesets
-          uses: changesets/action@v1
+          uses: changesets/action@v1.7.0
           env:
               GITHUB_TOKEN: ${{ inputs.token }}
           with:
