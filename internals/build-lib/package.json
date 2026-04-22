@@ -9,7 +9,7 @@
         "*.js"
     ],
     "dependencies": {
-        "tsdown": "0.21.9"
+        "tsdown": "0.21.10"
     },
     "packageManager": "pnpm@10.33.0",
     "engines": {
