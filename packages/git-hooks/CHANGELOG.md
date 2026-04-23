@@ -1,5 +1,16 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.49
+
+### Patch Changes
+
+- [#561](https://github.com/jpapini/jpp-toolkit/pull/561) [`69c8802`](https://github.com/jpapini/jpp-toolkit/commit/69c88021232500cb23dc18874e3e76d312697f16) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.33.2`.
+  Updated dependency `pnpm` to `10.33.2`.
+- Updated dependencies [[`69c8802`](https://github.com/jpapini/jpp-toolkit/commit/69c88021232500cb23dc18874e3e76d312697f16)]:
+    - @jpp-toolkit/commitlint-config@0.0.44
+    - @jpp-toolkit/lint-staged-config@0.0.40
+    - @jpp-toolkit/utils@0.0.35
+
 ## 0.0.48
 
 ### Patch Changes
