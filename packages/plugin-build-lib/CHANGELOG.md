@@ -1,5 +1,16 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.0.110
+
+### Patch Changes
+
+- [#561](https://github.com/jpapini/jpp-toolkit/pull/561) [`69c8802`](https://github.com/jpapini/jpp-toolkit/commit/69c88021232500cb23dc18874e3e76d312697f16) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.33.2`.
+  Updated dependency `pnpm` to `10.33.2`.
+- Updated dependencies [[`69c8802`](https://github.com/jpapini/jpp-toolkit/commit/69c88021232500cb23dc18874e3e76d312697f16)]:
+    - @jpp-toolkit/core@0.0.47
+    - @jpp-toolkit/tsdown-config@0.0.58
+    - @jpp-toolkit/utils@0.0.35
+
 ## 0.0.109
 
 ### Patch Changes
