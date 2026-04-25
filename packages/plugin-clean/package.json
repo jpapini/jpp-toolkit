@@ -41,7 +41,7 @@
     "dependencies": {
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
-        "@oclif/core": "4.10.5",
+        "@oclif/core": "4.10.6",
         "execa": "9.6.1",
         "rimraf": "6.1.3"
     },
