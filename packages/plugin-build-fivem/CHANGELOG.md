@@ -1,5 +1,12 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.117
+
+### Patch Changes
+
+- Updated dependencies [[`49c54eb`](https://github.com/jpapini/jpp-toolkit/commit/49c54eb238d148d6fdae56096e00a42099b74cbc)]:
+    - @jpp-toolkit/rspack-config@0.0.56
+
 ## 0.0.116
 
 ### Patch Changes
