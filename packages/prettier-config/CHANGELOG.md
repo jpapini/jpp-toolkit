@@ -1,5 +1,11 @@
 # @jpp-toolkit/prettier-config
 
+## 0.0.45
+
+### Patch Changes
+
+- [#574](https://github.com/jpapini/jpp-toolkit/pull/574) [`b2dc5a1`](https://github.com/jpapini/jpp-toolkit/commit/b2dc5a16afc88a94413e42cceeb707d5eea56b1a) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `prettier-plugin-tailwindcss` to `0.8.0`.
+
 ## 0.0.44
 
 ### Patch Changes
