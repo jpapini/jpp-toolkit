@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "@jpp-toolkit/prettier-plugin-packagejson": "workspace:*",
-        "prettier-plugin-tailwindcss": "0.7.3"
+        "prettier-plugin-tailwindcss": "0.8.0"
     },
     "devDependencies": {
         "prettier": "3.8.3"
