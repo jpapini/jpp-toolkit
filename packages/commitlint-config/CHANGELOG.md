@@ -1,5 +1,12 @@
 # @jpp-toolkit/commitlint-config
 
+## 0.0.46
+
+### Patch Changes
+
+- [#578](https://github.com/jpapini/jpp-toolkit/pull/578) [`2712c76`](https://github.com/jpapini/jpp-toolkit/commit/2712c76e745b06cbcad0eae0b9524a10ff5a93b5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@commitlint/config-conventional` to `20.5.3`.
+  Updated dependency `@commitlint/cli` to `20.5.3`.
+
 ## 0.0.45
 
 ### Patch Changes
