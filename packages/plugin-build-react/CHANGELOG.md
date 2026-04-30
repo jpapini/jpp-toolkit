@@ -1,5 +1,15 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.82
+
+### Patch Changes
+
+- [#581](https://github.com/jpapini/jpp-toolkit/pull/581) [`8361a66`](https://github.com/jpapini/jpp-toolkit/commit/8361a6693dace36441adb0485d32d15b6f7313b1) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/core` to `4.11.0`.
+
+- Updated dependencies [[`5f9dc54`](https://github.com/jpapini/jpp-toolkit/commit/5f9dc5467a4f3638a4927ecdedfe24260a33849e), [`8361a66`](https://github.com/jpapini/jpp-toolkit/commit/8361a6693dace36441adb0485d32d15b6f7313b1)]:
+    - @jpp-toolkit/rspack-config@0.0.57
+    - @jpp-toolkit/core@0.0.49
+
 ## 0.0.81
 
 ### Patch Changes
