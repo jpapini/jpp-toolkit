@@ -1,5 +1,20 @@
 # @jpp-toolkit/cli
 
+## 0.0.183
+
+### Patch Changes
+
+- [#597](https://github.com/jpapini/jpp-toolkit/pull/597) [`e1dea5e`](https://github.com/jpapini/jpp-toolkit/commit/e1dea5e4a5762db6752c027fb78a0a3dcb8fb970) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.33.4`.
+  Updated dependency `pnpm` to `10.33.4`.
+- Updated dependencies [[`e1dea5e`](https://github.com/jpapini/jpp-toolkit/commit/e1dea5e4a5762db6752c027fb78a0a3dcb8fb970)]:
+    - @jpp-toolkit/plugin-build-lib@0.0.114
+    - @jpp-toolkit/plugin-build-react@0.0.85
+    - @jpp-toolkit/plugin-build-fivem@0.0.121
+    - @jpp-toolkit/plugin-changesets@0.0.94
+    - @jpp-toolkit/plugin-check-updates@0.0.104
+    - @jpp-toolkit/plugin-lint@0.0.92
+    - @jpp-toolkit/plugin-clean@0.0.92
+
 ## 0.0.182
 
 ### Patch Changes
