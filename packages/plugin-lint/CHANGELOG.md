@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-lint
 
+## 0.0.93
+
+### Patch Changes
+
+- [#599](https://github.com/jpapini/jpp-toolkit/pull/599) [`cc4bb29`](https://github.com/jpapini/jpp-toolkit/commit/cc4bb29f12542136b6968bc3a86b4ea90786448f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/core` to `4.11.1`.
+
+- Updated dependencies [[`cc4bb29`](https://github.com/jpapini/jpp-toolkit/commit/cc4bb29f12542136b6968bc3a86b4ea90786448f)]:
+    - @jpp-toolkit/core@0.0.52
+
 ## 0.0.92
 
 ### Patch Changes
