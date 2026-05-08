@@ -1,5 +1,13 @@
 # jpp-toolkit
 
+## 0.0.271
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/cli@0.0.186
+    - @jpp-toolkit/prettier-config@0.0.48
+
 ## 0.0.270
 
 ### Patch Changes

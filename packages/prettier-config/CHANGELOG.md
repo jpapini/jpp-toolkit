@@ -1,5 +1,12 @@
 # @jpp-toolkit/prettier-config
 
+## 0.0.48
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/prettier-plugin-packagejson@0.0.44
+
 ## 0.0.47
 
 ### Patch Changes
