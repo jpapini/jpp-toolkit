@@ -84,8 +84,8 @@ importers:
         specifier: 4.11.2
         version: 4.11.2
       '@oclif/plugin-help':
-        specifier: 6.2.47
-        version: 6.2.47
+        specifier: 6.2.48
+        version: 6.2.48
     devDependencies:
       oclif:
         specifier: 4.23.0
@@ -1438,8 +1438,8 @@ packages:
     engines: {node: '>=8.0.0'}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
-  '@oclif/plugin-help@6.2.47':
-    resolution: {integrity: sha512-+PWSkPfB6rgZHjj94tptFfkn6IW6678FVxeBjnY10GPiHtiMwcaXRXeOaGCRBy4QRWSFxyY7kbTTkr5HhewkeA==}
+  '@oclif/plugin-help@6.2.48':
+    resolution: {integrity: sha512-nvGLBtUZUWrHfoAEDRsRZUHKVwptyZ6F+MErdVRLQBo3dja0GCZH8DE33dA7mBux2KOmbxGqop15gyud9HZYhQ==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/plugin-not-found@3.2.76':
@@ -7051,7 +7051,7 @@ snapshots:
       chalk: 4.1.2
       tslib: 2.8.1
 
-  '@oclif/plugin-help@6.2.47':
+  '@oclif/plugin-help@6.2.48':
     dependencies:
       '@oclif/core': 4.11.2
 
@@ -10245,7 +10245,7 @@ snapshots:
       '@inquirer/input': 2.3.0
       '@inquirer/select': 2.5.0
       '@oclif/core': 4.9.0
-      '@oclif/plugin-help': 6.2.47
+      '@oclif/plugin-help': 6.2.48
       '@oclif/plugin-not-found': 3.2.76(@types/node@24.12.3)
       '@oclif/plugin-warn-if-update-available': 3.1.57
       ansis: 3.17.0
