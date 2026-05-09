@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.274
+
+### Patch Changes
+
+- Updated dependencies [[`adb8d2b`](https://github.com/jpapini/jpp-toolkit/commit/adb8d2bd447d871806cdb3df8b5da1928408332a)]:
+    - @jpp-toolkit/cli@0.0.189
+
 ## 0.0.273
 
 ### Patch Changes
