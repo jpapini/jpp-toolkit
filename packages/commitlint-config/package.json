@@ -36,14 +36,14 @@
         "build": "build-lib"
     },
     "dependencies": {
-        "@commitlint/config-conventional": "20.5.3",
-        "@commitlint/types": "20.5.0"
+        "@commitlint/config-conventional": "21.0.1",
+        "@commitlint/types": "21.0.1"
     },
     "devDependencies": {
-        "@commitlint/cli": "20.5.3"
+        "@commitlint/cli": "21.0.1"
     },
     "peerDependencies": {
-        "@commitlint/cli": "20"
+        "@commitlint/cli": "20 || 21"
     },
     "packageManager": "pnpm@10.33.4",
     "engines": {
