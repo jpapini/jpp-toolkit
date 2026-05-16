@@ -39,10 +39,10 @@
         "@jpp-toolkit/utils": "workspace:*"
     },
     "devDependencies": {
-        "lint-staged": "16.4.0"
+        "lint-staged": "17.0.5"
     },
     "peerDependencies": {
-        "lint-staged": "16"
+        "lint-staged": "16 || 17"
     },
     "packageManager": "pnpm@10.33.4",
     "engines": {
