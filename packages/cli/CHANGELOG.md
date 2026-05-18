@@ -1,5 +1,22 @@
 # @jpp-toolkit/cli
 
+## 0.0.200
+
+### Patch Changes
+
+- [`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6) Thanks [@jpapini](https://github.com/jpapini)! - Update PNPM to v11.
+
+- [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da) Thanks [@jpapini](https://github.com/jpapini)! - Update dependencies.
+
+- Updated dependencies [[`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6), [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da)]:
+    - @jpp-toolkit/plugin-check-updates@0.0.113
+    - @jpp-toolkit/plugin-build-fivem@0.0.131
+    - @jpp-toolkit/plugin-build-react@0.0.95
+    - @jpp-toolkit/plugin-changesets@0.0.103
+    - @jpp-toolkit/plugin-build-lib@0.0.124
+    - @jpp-toolkit/plugin-clean@0.0.101
+    - @jpp-toolkit/plugin-lint@0.0.101
+
 ## 0.0.199
 
 ### Patch Changes

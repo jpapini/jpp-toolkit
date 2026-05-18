@@ -1,5 +1,20 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.54
+
+### Patch Changes
+
+- [`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6) Thanks [@jpapini](https://github.com/jpapini)! - Update PNPM to v11.
+
+- [`c39d743`](https://github.com/jpapini/jpp-toolkit/commit/c39d743812f9c63eb6b628e32791ddacdf27e0d9) Thanks [@jpapini](https://github.com/jpapini)! - Update commitlint to v21.
+
+- [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da) Thanks [@jpapini](https://github.com/jpapini)! - Update dependencies.
+
+- Updated dependencies [[`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6), [`c39d743`](https://github.com/jpapini/jpp-toolkit/commit/c39d743812f9c63eb6b628e32791ddacdf27e0d9), [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da)]:
+    - @jpp-toolkit/lint-staged-config@0.0.43
+    - @jpp-toolkit/commitlint-config@0.0.49
+    - @jpp-toolkit/utils@0.0.38
+
 ## 0.0.53
 
 ### Patch Changes

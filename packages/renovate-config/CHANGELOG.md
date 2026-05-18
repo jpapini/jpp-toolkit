@@ -1,5 +1,11 @@
 # @jpp-toolkit/renovate-config
 
+## 0.0.38
+
+### Patch Changes
+
+- [`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6) Thanks [@jpapini](https://github.com/jpapini)! - Update PNPM to v11.
+
 ## 0.0.37
 
 ### Patch Changes
