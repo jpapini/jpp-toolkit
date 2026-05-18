@@ -1,5 +1,11 @@
 # jpp-toolkit
 
+## 0.0.288
+
+### Patch Changes
+
+- [`66df19e`](https://github.com/jpapini/jpp-toolkit/commit/66df19e0cc09a869497757b53958fd10715e7933) Thanks [@jpapini](https://github.com/jpapini)! - Fix ts config files.
+
 ## 0.0.287
 
 ### Patch Changes
