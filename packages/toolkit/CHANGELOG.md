@@ -1,5 +1,11 @@
 # jpp-toolkit
 
+## 0.0.287
+
+### Patch Changes
+
+- [`d05ec95`](https://github.com/jpapini/jpp-toolkit/commit/d05ec959ff2725f58447a28fe3632afd5e3d1c2f) Thanks [@jpapini](https://github.com/jpapini)! - Build instead of prepack scripts.
+
 ## 0.0.286
 
 ### Patch Changes
