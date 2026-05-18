@@ -2,5 +2,6 @@ packages:
     - internals/*
     - packages/*
 
-onlyBuiltDependencies:
-    - esbuild
+allowBuilds:
+    esbuild: true
+    unrs-resolver: false
