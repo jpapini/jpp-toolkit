@@ -34,7 +34,7 @@
         "ts-config/*.json"
     ],
     "scripts": {
-        "prepack": "node scripts/generate.js"
+        "build": "node scripts/generate.js"
     },
     "dependencies": {
         "@jpp-toolkit/cli": "workspace:*",
