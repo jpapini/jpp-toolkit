@@ -1,5 +1,20 @@
 # jpp-toolkit
 
+## 0.0.286
+
+### Patch Changes
+
+- [`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6) Thanks [@jpapini](https://github.com/jpapini)! - Update PNPM to v11.
+
+- [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da) Thanks [@jpapini](https://github.com/jpapini)! - Update dependencies.
+
+- Updated dependencies [[`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6), [`c39d743`](https://github.com/jpapini/jpp-toolkit/commit/c39d743812f9c63eb6b628e32791ddacdf27e0d9), [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da)]:
+    - @jpp-toolkit/prettier-config@0.0.49
+    - @jpp-toolkit/eslint-config@0.0.112
+    - @jpp-toolkit/git-hooks@0.0.54
+    - @jpp-toolkit/ts-config@0.0.37
+    - @jpp-toolkit/cli@0.0.200
+
 ## 0.0.285
 
 ### Patch Changes

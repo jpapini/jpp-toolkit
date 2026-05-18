@@ -1,5 +1,16 @@
 # @jpp-toolkit/prettier-plugin-packagejson
 
+## 0.0.45
+
+### Patch Changes
+
+- [`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6) Thanks [@jpapini](https://github.com/jpapini)! - Update PNPM to v11.
+
+- [`59f38dc`](https://github.com/jpapini/jpp-toolkit/commit/59f38dc276376fa632789a66f2e25f4b60a926da) Thanks [@jpapini](https://github.com/jpapini)! - Update dependencies.
+
+- Updated dependencies [[`9807528`](https://github.com/jpapini/jpp-toolkit/commit/9807528f86bacb0ce574b98973b98568bf2054b6)]:
+    - @jpp-toolkit/sort-package-json@0.0.41
+
 ## 0.0.44
 
 ### Patch Changes

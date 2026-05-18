@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/plugin-lint",
-    "version": "0.0.100",
+    "version": "0.0.101",
     "description": "Plugin that add the lint command to the jpp cli.",
     "keywords": [
         "jpp",
