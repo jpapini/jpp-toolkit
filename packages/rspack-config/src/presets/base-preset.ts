@@ -18,7 +18,7 @@ export type BasePresetOptions = {
 export const getBasePresetDefaultOptions: GetPresetDefaultOptions<BasePresetOptions> = (
     options,
 ) => ({
-    entryFile: options.entryFile ?? 'src/index.js',
+    entryFile: options.entryFile ?? './src/index.js',
     tsconfigFile: options.tsconfigFile ?? 'tsconfig.json',
     outDir: options.outDir ?? 'dist',
     envVariables: options.envVariables ?? {},
