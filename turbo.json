@@ -12,7 +12,7 @@
         },
         "build": {
             "dependsOn": ["^build"],
-            "outputs": ["dist/**"]
+            "outputs": ["dist/**", "ts-config/tsconfig.*.json"]
         }
     }
 }
