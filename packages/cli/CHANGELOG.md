@@ -1,5 +1,11 @@
 # @jpp-toolkit/cli
 
+## 0.0.202
+
+### Patch Changes
+
+- [#651](https://github.com/jpapini/jpp-toolkit/pull/651) [`092827c`](https://github.com/jpapini/jpp-toolkit/commit/092827c44561743b8bb2e4136c63c668d5aff05f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tsx` to `4.22.2`.
+
 ## 0.0.201
 
 ### Patch Changes
