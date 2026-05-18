@@ -31,10 +31,10 @@
         "bin/jpp.js",
         "eslint/index.js",
         "prettier/index.js",
-        "ts-config/*.json"
+        "ts-config"
     ],
     "scripts": {
-        "build": "node scripts/generate.js"
+        "prepack": "node scripts/generate.js"
     },
     "dependencies": {
         "@jpp-toolkit/cli": "workspace:*",
