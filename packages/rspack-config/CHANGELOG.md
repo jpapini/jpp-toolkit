@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.63
+
+### Patch Changes
+
+- [`8207e59`](https://github.com/jpapini/jpp-toolkit/commit/8207e5951872d22ead81c58320721e4ecd3c11e6) Thanks [@jpapini](https://github.com/jpapini)! - fix: entry point
+
 ## 0.0.62
 
 ### Patch Changes
