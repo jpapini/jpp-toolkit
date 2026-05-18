@@ -25,7 +25,6 @@ export function buildEslintArgs(options: BuildEslintArgsOptions, patterns?: stri
     }
     args.push('--cache', '--cache-location', cacheLocation);
 
-    args.push('--flag', 'v10_config_lookup_from_file');
     args.push(...(options.format ? ['--fix'] : []));
     args.push(...(patterns ?? DEFAULT_ESLINT_PATTERNS));
 

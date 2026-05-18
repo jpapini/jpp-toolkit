@@ -1,6 +1,5 @@
-import { includeIgnoreFile } from '@eslint/compat';
 import { findGitIgnore } from '@jpp-toolkit/utils';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 
 /**
  * Generates an ESLint configuration that ignores files based on the project's .gitignore.

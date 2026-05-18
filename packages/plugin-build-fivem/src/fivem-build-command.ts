@@ -125,7 +125,8 @@ export class FivemBuildCommand extends Command {
         };
 
         if (watch) {
-            const devServerOptions = uiConfig.devServer ?? {};
+            const devServerOptions =
+                typeof uiConfig.devServer === 'object' ? uiConfig.devServer : {};
             devServerOptions.hot = true;
             const devServer = new RspackDevServer(devServerOptions, uiCompiler);
             await devServer.start();
@@ -171,7 +172,7 @@ export class FivemBuildCommand extends Command {
 
             rconOptions = {
                 host,
-                port: parseInt(port),
+                port: parseInt(port, 10),
                 password: flags.password,
             };
         }

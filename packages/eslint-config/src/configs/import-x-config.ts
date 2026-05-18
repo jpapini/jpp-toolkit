@@ -9,7 +9,6 @@ import { defineConfig } from 'eslint/config';
 export const importXConfig = defineConfig([
     {
         name: 'import-x-config',
-        // @ts-expect-error - import-x flatConfigs is wrongly typed
         extends: [importX.flatConfigs.recommended],
         settings: {
             'import-x/resolver-next': [createNodeResolver()],
@@ -51,7 +50,7 @@ export const importXConfig = defineConfig([
              * Forbid modules without exports, or exports without matching import in another module.
              * @see {@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unused-modules.md}
              */
-            'import-x/no-unused-modules': 'error',
+            'import-x/no-unused-modules': 'off',
 
             /**
              * Forbid AMD require and define calls.
@@ -335,7 +334,6 @@ export const importXConfig = defineConfig([
     {
         name: 'import-x-config-typescript',
         files: ['**/*.{ts,tsx}'],
-        // @ts-expect-error - import-x flatConfigs is wrongly typed
         extends: [importX.flatConfigs.typescript],
         settings: {
             'import-x/resolver-next': [createTypeScriptImportResolver(), createNodeResolver()],

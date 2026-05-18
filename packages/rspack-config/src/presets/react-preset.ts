@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import type { SwcLoaderOptions } from '@rspack/core';
 import { rspack } from '@rspack/core';
-import ReactRefreshPlugin from '@rspack/plugin-react-refresh';
+import { ReactRefreshRspackPlugin } from '@rspack/plugin-react-refresh';
 
 import {
     ASSET_RULE_TEST,
@@ -111,8 +111,8 @@ export const reactPreset: Preset<ReactPresetOptions> = (options, context) => {
         },
 
         devServer: {
-            host: publicUrl.hostname || undefined,
-            port: publicUrl.port || undefined,
+            ...(publicUrl.hostname ? { host: publicUrl.hostname } : {}),
+            ...(publicUrl.port ? { port: publicUrl.port } : {}),
             historyApiFallback: true,
             hot: 'only',
             headers: {
@@ -133,7 +133,7 @@ export const reactPreset: Preset<ReactPresetOptions> = (options, context) => {
                 template: path.resolve(context.cwd, options.htmlTemplateFile),
                 minify: context.isProduction,
             }),
-            context.isServeMode && new ReactRefreshPlugin({ forceEnable: true }),
+            context.isServeMode && new ReactRefreshRspackPlugin({ forceEnable: true }),
         ],
     };
 };

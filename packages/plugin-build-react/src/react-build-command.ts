@@ -50,7 +50,7 @@ export class ReactBuildCommand extends Command {
         };
 
         if (watch) {
-            const devServerOptions = config.devServer ?? {};
+            const devServerOptions = typeof config.devServer === 'object' ? config.devServer : {};
             devServerOptions.hot = true;
             const devServer = new RspackDevServer(devServerOptions, compiler);
             await devServer.start();

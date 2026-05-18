@@ -5,10 +5,10 @@
     "scripts": {
         "lint": "run-s -c lint:*",
         "lint:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -c '**/*' '!**/pnpm-lock.yaml'",
-        "lint:eslint": "eslint --flag v10_config_lookup_from_file --cache --cache-location node_modules/.cache/eslint/.eslintcache .",
+        "lint:eslint": "eslint --cache --cache-location node_modules/.cache/eslint/.eslintcache .",
         "format": "run-s -c format:*",
         "format:prettier": "prettier --cache --cache-location node_modules/.cache/prettier/.prettiercache -u -w '**/*' '!**/pnpm-lock.yaml'",
-        "format:eslint": "eslint --flag v10_config_lookup_from_file --cache --cache-location node_modules/.cache/eslint/.eslintcache --fix .",
+        "format:eslint": "eslint --cache --cache-location node_modules/.cache/eslint/.eslintcache --fix .",
         "typecheck": "turbo run typecheck",
         "dev": "turbo run dev",
         "build": "turbo run build",
@@ -30,11 +30,11 @@
         "@jpp-toolkit/prettier-config": "workspace:*",
         "@jpp-toolkit/ts-config": "workspace:*",
         "@types/node": "24.12.4",
-        "eslint": "9.39.4",
+        "eslint": "10.4.0",
         "npm-run-all2": "8.0.4",
         "prettier": "3.8.3",
         "turbo": "2.9.14",
-        "typescript": "5.9.3"
+        "typescript": "6.0.3"
     },
     "packageManager": "pnpm@11.1.2",
     "engines": {

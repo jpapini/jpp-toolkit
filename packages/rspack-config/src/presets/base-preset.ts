@@ -40,7 +40,6 @@ export const basePreset: Preset<BasePresetOptions> = (options, context) => ({
 
     context: context.cwd,
     mode: context.isProduction ? 'production' : 'development',
-    cache: !context.isProduction,
 
     entry: { main: options.entryFile },
 
@@ -90,15 +89,16 @@ export const basePreset: Preset<BasePresetOptions> = (options, context) => ({
         ],
     },
 
-    experiments: {
-        cache: {
-            type: 'persistent',
-            storage: {
-                type: 'filesystem',
-                directory: path.resolve(context.cwd, 'node_modules/.cache/rspack'),
-            },
-        },
-    },
+    cache:
+        !context.isProduction ?
+            {
+                type: 'persistent',
+                storage: {
+                    type: 'filesystem',
+                    directory: path.resolve(context.cwd, 'node_modules/.cache/rspack'),
+                },
+            }
+        :   false,
 
     stats: {
         preset: 'normal',
