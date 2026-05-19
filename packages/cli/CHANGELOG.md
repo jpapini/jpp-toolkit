@@ -1,5 +1,15 @@
 # @jpp-toolkit/cli
 
+## 0.0.203
+
+### Patch Changes
+
+- [#657](https://github.com/jpapini/jpp-toolkit/pull/657) [`dcef1b6`](https://github.com/jpapini/jpp-toolkit/commit/dcef1b618fb115925d4c654105c759f520bb6e1a) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tsx` to `4.22.3`.
+
+- Updated dependencies []:
+    - @jpp-toolkit/plugin-build-fivem@0.0.133
+    - @jpp-toolkit/plugin-build-react@0.0.97
+
 ## 0.0.202
 
 ### Patch Changes

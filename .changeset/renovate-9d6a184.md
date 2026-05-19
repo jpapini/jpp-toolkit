@@ -1,5 +1,0 @@
----
-'@jpp-toolkit/cli': patch
----
-
-Updated dependency `tsx` to `4.22.3`.
