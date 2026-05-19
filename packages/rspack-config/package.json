@@ -41,7 +41,7 @@
         "@rspack/core": "2.0.3",
         "@rspack/plugin-react-refresh": "2.0.0",
         "@tailwindcss/postcss": "4.3.0",
-        "postcss": "8.5.14",
+        "postcss": "8.5.15",
         "postcss-loader": "8.2.1",
         "react-refresh": "0.18.0",
         "run-script-webpack-plugin": "0.2.3",

@@ -412,11 +412,11 @@ importers:
         specifier: 4.3.0
         version: 4.3.0
       postcss:
-        specifier: 8.5.14
-        version: 8.5.14
+        specifier: 8.5.15
+        version: 8.5.15
       postcss-loader:
         specifier: 8.2.1
-        version: 8.2.1(@rspack/core@2.0.3)(postcss@8.5.14)(typescript@6.0.3)(webpack@5.106.2(postcss@8.5.14))
+        version: 8.2.1(@rspack/core@2.0.3)(postcss@8.5.15)(typescript@6.0.3)(webpack@5.106.2(postcss@8.5.15))
       react-refresh:
         specifier: 0.18.0
         version: 0.18.0
@@ -435,7 +435,7 @@ importers:
     devDependencies:
       '@types/webpack-node-externals':
         specifier: 3.0.4
-        version: 3.0.4(postcss@8.5.14)
+        version: 3.0.4(postcss@8.5.15)
 
   packages/sort-package-json:
     dependencies:
@@ -3867,6 +3867,10 @@ packages:
     resolution: {integrity: sha512-SoSL4+OSEtR99LHFZQiJLkT59C5B1amGO1NzTwj7TT1qCUgUO6hxOvzkOYxD+vMrXBM3XJIKzokoERdqQq/Zmg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.15:
+    resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -6171,10 +6175,10 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/webpack-node-externals@3.0.4(postcss@8.5.14)':
+  '@types/webpack-node-externals@3.0.4(postcss@8.5.15)':
     dependencies:
       '@types/node': 24.12.4
-      webpack: 5.106.2(postcss@8.5.14)
+      webpack: 5.106.2(postcss@8.5.15)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -8385,19 +8389,25 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-loader@8.2.1(@rspack/core@2.0.3)(postcss@8.5.14)(typescript@6.0.3)(webpack@5.106.2(postcss@8.5.14)):
+  postcss-loader@8.2.1(@rspack/core@2.0.3)(postcss@8.5.15)(typescript@6.0.3)(webpack@5.106.2(postcss@8.5.15)):
     dependencies:
       cosmiconfig: 9.0.1(typescript@6.0.3)
       jiti: 2.7.0
-      postcss: 8.5.14
+      postcss: 8.5.15
       semver: 7.8.0
     optionalDependencies:
       '@rspack/core': 2.0.3
-      webpack: 5.106.2(postcss@8.5.14)
+      webpack: 5.106.2(postcss@8.5.15)
     transitivePeerDependencies:
       - typescript
 
   postcss@8.5.14:
+    dependencies:
+      nanoid: 3.3.12
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.15:
     dependencies:
       nanoid: 3.3.12
       picocolors: 1.1.1
@@ -8847,15 +8857,15 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.6.0(postcss@8.5.14)(webpack@5.106.2(postcss@8.5.14)):
+  terser-webpack-plugin@5.6.0(postcss@8.5.15)(webpack@5.106.2(postcss@8.5.15)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.47.1
-      webpack: 5.106.2(postcss@8.5.14)
+      webpack: 5.106.2(postcss@8.5.15)
     optionalDependencies:
-      postcss: 8.5.14
+      postcss: 8.5.15
 
   terser@5.47.1:
     dependencies:
@@ -9070,7 +9080,7 @@ snapshots:
 
   webpack-sources@3.4.1: {}
 
-  webpack@5.106.2(postcss@8.5.14):
+  webpack@5.106.2(postcss@8.5.15):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -9093,7 +9103,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.0(postcss@8.5.14)(webpack@5.106.2(postcss@8.5.14))
+      terser-webpack-plugin: 5.6.0(postcss@8.5.15)(webpack@5.106.2(postcss@8.5.15))
       watchpack: 2.5.1
       webpack-sources: 3.4.1
     transitivePeerDependencies:
