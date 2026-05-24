@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/cli",
-    "version": "0.0.204",
+    "version": "0.0.205",
     "description": "CLI tool for JS/TS project development workflows.",
     "keywords": [
         "jpp",
