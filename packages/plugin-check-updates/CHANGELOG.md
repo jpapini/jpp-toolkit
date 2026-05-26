@@ -1,5 +1,13 @@
 # @jpp-toolkit/plugin-check-updates
 
+## 0.0.115
+
+### Patch Changes
+
+- [#567](https://github.com/jpapini/jpp-toolkit/pull/567) [`ceba668`](https://github.com/jpapini/jpp-toolkit/commit/ceba6688f469626aac74683fc4604ef70ddb75de) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `npm-check-updates` to `22.2.1`.
+
+- [#665](https://github.com/jpapini/jpp-toolkit/pull/665) [`3a30127`](https://github.com/jpapini/jpp-toolkit/commit/3a301273a1843bf428c7b0cd1b7c3d77e4b2d2e8) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.23.8`.
+
 ## 0.0.114
 
 ### Patch Changes
