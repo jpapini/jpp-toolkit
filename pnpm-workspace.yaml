@@ -1,3 +1,7 @@
+saveExact: true
+trustLockfile: true
+minimumReleaseAge: 0
+
 packages:
     - internals/*
     - packages/*
