@@ -39,7 +39,7 @@
         "@jpp-toolkit/logger": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
         "@rspack/core": "2.0.5",
-        "@rspack/plugin-react-refresh": "2.0.0",
+        "@rspack/plugin-react-refresh": "2.0.1",
         "@tailwindcss/postcss": "4.3.0",
         "postcss": "8.5.15",
         "postcss-loader": "8.2.1",
