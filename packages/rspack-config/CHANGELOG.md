@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.67
+
+### Patch Changes
+
+- [#677](https://github.com/jpapini/jpp-toolkit/pull/677) [`a8af387`](https://github.com/jpapini/jpp-toolkit/commit/a8af3878d8075dc1990eb74869d45f95a038a6ce) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/plugin-react-refresh` to `2.0.1`.
+
 ## 0.0.66
 
 ### Patch Changes
