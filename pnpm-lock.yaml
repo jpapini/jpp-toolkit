@@ -84,8 +84,8 @@ importers:
         specifier: 4.11.4
         version: 4.11.4
       '@oclif/plugin-help':
-        specifier: 6.2.49
-        version: 6.2.49
+        specifier: 6.2.50
+        version: 6.2.50
     devDependencies:
       oclif:
         specifier: 4.23.8
@@ -1381,10 +1381,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oclif/core@4.11.3':
-    resolution: {integrity: sha512-gQCSYAtUhJilGKaSaZhqejH9X1dDu+jWQjLmtGOgN/XcKaAEPPSeT2mu1UvlvtPox1/NNRdlBcUa8KRKo2HnJQ==}
-    engines: {node: '>=18.0.0'}
-
   '@oclif/core@4.11.4':
     resolution: {integrity: sha512-URwiQ5ALx/sJ2iH4vzXEd+H4K6NAI7LRs6Jag3hrgKEpGmaE6alfRC8qjO4GIgb6A3ACaJumqP9twi/M9ywdHQ==}
     engines: {node: '>=18.0.0'}
@@ -1404,6 +1400,10 @@ packages:
 
   '@oclif/plugin-help@6.2.49':
     resolution: {integrity: sha512-fEsO0YU7ThtzHE1RGuoHxFu/OGlqxm7PCfFp+U1PS8sde4E0cDqjVDuv78+VKrr45LpC5lWOApj7pm3FNfHrVA==}
+    engines: {node: '>=18.0.0'}
+
+  '@oclif/plugin-help@6.2.50':
+    resolution: {integrity: sha512-rNCG4hUm+kPXFbhJfAVk/fZ3OdWJYwBDASlyX8CqOLP0MssjIGl7iEgfZz7TMuZFa+KucupKU5NRSc0KWfPTQA==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/plugin-not-found@3.2.86':
@@ -6006,27 +6006,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
 
-  '@oclif/core@4.11.3':
-    dependencies:
-      ansi-escapes: 4.3.2
-      ansis: 3.17.0
-      clean-stack: 3.0.1
-      cli-spinners: 2.9.2
-      debug: 4.4.3(supports-color@8.1.1)
-      ejs: 3.1.10
-      get-package-type: 0.1.0
-      indent-string: 4.0.0
-      is-wsl: 2.2.0
-      lilconfig: 3.1.3
-      minimatch: 10.2.5
-      semver: 7.8.1
-      string-width: 4.2.3
-      supports-color: 8.1.1
-      tinyglobby: 0.2.16
-      widest-line: 3.1.0
-      wordwrap: 1.0.0
-      wrap-ansi: 7.0.0
-
   '@oclif/core@4.11.4':
     dependencies:
       ansi-escapes: 4.3.2
@@ -6067,7 +6046,11 @@ snapshots:
 
   '@oclif/plugin-help@6.2.49':
     dependencies:
-      '@oclif/core': 4.11.3
+      '@oclif/core': 4.11.4
+
+  '@oclif/plugin-help@6.2.50':
+    dependencies:
+      '@oclif/core': 4.11.4
 
   '@oclif/plugin-not-found@3.2.86(@types/node@24.12.4)':
     dependencies:
