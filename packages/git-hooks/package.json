@@ -33,7 +33,7 @@
         "@jpp-toolkit/utils": "workspace:*",
         "execa": "9.6.1",
         "husky": "9.1.7",
-        "lint-staged": "17.0.6"
+        "lint-staged": "17.0.7"
     },
     "packageManager": "pnpm@11.5.0",
     "engines": {
