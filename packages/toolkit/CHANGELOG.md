@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.307
+
+### Patch Changes
+
+- Updated dependencies [[`6b93700`](https://github.com/jpapini/jpp-toolkit/commit/6b93700f7f81153556bcc12d426cf3da2e6f08b1)]:
+    - @jpp-toolkit/eslint-config@0.0.120
+
 ## 0.0.306
 
 ### Patch Changes
