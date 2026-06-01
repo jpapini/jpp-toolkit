@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.119
+
+### Patch Changes
+
+- [#697](https://github.com/jpapini/jpp-toolkit/pull/697) [`9ca0517`](https://github.com/jpapini/jpp-toolkit/commit/9ca0517239a827b2d0391f321381aba5f575b7a8) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-import-resolver-typescript` to `4.4.5`.
+
 ## 0.0.118
 
 ### Patch Changes
