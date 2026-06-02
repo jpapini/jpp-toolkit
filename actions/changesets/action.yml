@@ -55,7 +55,7 @@ runs:
     steps:
         - name: Checkout repository
           if: inputs.checkout == 'true'
-          uses: actions/checkout@v6
+          uses: actions/checkout@v6.0.3
           with:
               token: ${{ inputs.token }}
 
@@ -92,10 +92,10 @@ runs:
               echo "Git configured with SSH signing enabled"
 
         - name: Setup PNPM
-          uses: pnpm/action-setup@v6
+          uses: pnpm/action-setup@v6.0.8
 
         - name: Setup Node.js
-          uses: actions/setup-node@v6
+          uses: actions/setup-node@v6.4.0
           with:
               node-version-file: package.json
               cache: pnpm
