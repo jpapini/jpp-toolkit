@@ -1,5 +1,13 @@
 # @jpp-toolkit/cli
 
+## 0.0.213
+
+### Patch Changes
+
+- Updated dependencies [[`db30ad4`](https://github.com/jpapini/jpp-toolkit/commit/db30ad4246e5b9eecdbdcc505271afcd0df4b828)]:
+    - @jpp-toolkit/plugin-build-react@0.0.105
+    - @jpp-toolkit/plugin-build-fivem@0.0.141
+
 ## 0.0.212
 
 ### Patch Changes
