@@ -43,7 +43,7 @@
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/rspack-config": "workspace:*",
         "@oclif/core": "4.11.4",
-        "@rspack/core": "2.0.5",
+        "@rspack/core": "2.0.6",
         "@rspack/dev-server": "2.0.3"
     },
     "devDependencies": {
