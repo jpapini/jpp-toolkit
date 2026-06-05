@@ -406,8 +406,8 @@ importers:
         specifier: 2.0.6
         version: 2.0.6
       '@rspack/plugin-react-refresh':
-        specifier: 2.0.1
-        version: 2.0.1(@rspack/core@2.0.6)(react-refresh@0.18.0)
+        specifier: 2.0.2
+        version: 2.0.2(@rspack/core@2.0.6)(react-refresh@0.18.0)
       '@tailwindcss/postcss':
         specifier: 4.3.0
         version: 4.3.0
@@ -1575,10 +1575,10 @@ packages:
       selfsigned:
         optional: true
 
-  '@rspack/plugin-react-refresh@2.0.1':
-    resolution: {integrity: sha512-rYmxHJeDhN9/neZJgEjSFqG20A2Mu1mKv8+15kgwyuIDFSd3cgP3OVxwXLz5UmZSmWAfSzayDmmU1tBT0j1Nxw==}
+  '@rspack/plugin-react-refresh@2.0.2':
+    resolution: {integrity: sha512-dGNZiCxQxgAUI9sah7gd8u+O7OJZRCmqtEJNDOd8xW5RqcieC86F7p5qcShyw6onH5pKf57evpr2VjGbaFGkZg==}
     peerDependencies:
-      '@rspack/core': ^2.0.0-0
+      '@rspack/core': ^2.0.0
       react-refresh: '>=0.10.0 <1.0.0'
     peerDependenciesMeta:
       '@rspack/core':
@@ -6043,7 +6043,7 @@ snapshots:
       '@rspack/core': 2.0.6
       '@rspack/dev-middleware': 2.0.1(@rspack/core@2.0.6)
 
-  '@rspack/plugin-react-refresh@2.0.1(@rspack/core@2.0.6)(react-refresh@0.18.0)':
+  '@rspack/plugin-react-refresh@2.0.2(@rspack/core@2.0.6)(react-refresh@0.18.0)':
     dependencies:
       react-refresh: 0.18.0
     optionalDependencies:
