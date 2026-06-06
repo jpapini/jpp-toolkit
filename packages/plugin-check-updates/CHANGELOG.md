@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-check-updates
 
+## 0.0.118
+
+### Patch Changes
+
+- [#717](https://github.com/jpapini/jpp-toolkit/pull/717) [`374b339`](https://github.com/jpapini/jpp-toolkit/commit/374b339bc83ad25921a444f542630204c4567db9) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `npm-check-updates` to `22.2.3`.
+
 ## 0.0.117
 
 ### Patch Changes
