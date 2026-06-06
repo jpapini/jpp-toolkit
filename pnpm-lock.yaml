@@ -321,8 +321,8 @@ importers:
         specifier: 4.11.4
         version: 4.11.4
       npm-check-updates:
-        specifier: 22.2.2
-        version: 22.2.2
+        specifier: 22.2.3
+        version: 22.2.3
     devDependencies:
       oclif:
         specifier: 4.23.10
@@ -3711,8 +3711,8 @@ packages:
     resolution: {integrity: sha512-JYc0DPlpGWB40kH5g07gGTrYuMqV653k3uBKY6uITPWds3M0ov3GaWGp9lbE3Bzngx8+XkfzgvASb9vk9JDFXQ==}
     engines: {node: '>=14.16'}
 
-  npm-check-updates@22.2.2:
-    resolution: {integrity: sha512-dgDPmR9FfONMrHdMKsPoYzb2NgR+NxlLGBi3nL/3yN3aFr8IKLyQJMBEMj4pKM5yuv9esV4nL5TX0TY2veliNw==}
+  npm-check-updates@22.2.3:
+    resolution: {integrity: sha512-n8HZ0ywZugYRgEqIm67hbZC5L/9S/gLX+MkGchJB43pP2xib1+u76OpVEJRZ4QP2BksPRi5M1CCStJVfc16+/A==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: '>=10.0.0'}
     hasBin: true
 
@@ -5025,7 +5025,7 @@ snapshots:
       '@babel/code-frame': 7.29.0
       '@babel/generator': 7.29.1
       '@babel/helper-compilation-targets': 7.28.6
-      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0)
+      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0(supports-color@8.1.1))
       '@babel/helpers': 7.29.2
       '@babel/parser': 7.29.3
       '@babel/template': 7.28.6
@@ -5074,7 +5074,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0)':
+  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.29.0(supports-color@8.1.1)
       '@babel/helper-module-imports': 7.28.6
@@ -8357,7 +8357,7 @@ snapshots:
 
   normalize-url@8.1.1: {}
 
-  npm-check-updates@22.2.2: {}
+  npm-check-updates@22.2.3: {}
 
   npm-normalize-package-bin@6.0.0: {}
 
