@@ -40,7 +40,7 @@
         "prettier-plugin-tailwindcss": "0.8.0"
     },
     "devDependencies": {
-        "prettier": "3.8.3"
+        "prettier": "3.8.4"
     },
     "peerDependencies": {
         "prettier": "3"
