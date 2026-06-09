@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.121
+
+### Patch Changes
+
+- [#728](https://github.com/jpapini/jpp-toolkit/pull/728) [`e3870ed`](https://github.com/jpapini/jpp-toolkit/commit/e3870ed60f2272d844235ba7c1035a64866ea709) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `typescript-eslint` to `8.61.0`.
+
 ## 0.0.120
 
 ### Patch Changes
