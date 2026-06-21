@@ -81,8 +81,8 @@ importers:
         specifier: workspace:*
         version: link:../plugin-lint
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       '@oclif/plugin-help':
         specifier: 6.2.52
         version: 6.2.52
@@ -117,8 +117,8 @@ importers:
         version: 3.8.17
     devDependencies:
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
 
   packages/eslint-config:
     dependencies:
@@ -230,8 +230,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       '@rspack/core':
         specifier: 2.0.8
         version: 2.0.8
@@ -255,8 +255,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       tsdown:
         specifier: 0.22.3
         version: 0.22.3(tsx@4.22.4)(typescript@6.0.3)
@@ -274,8 +274,8 @@ importers:
         specifier: workspace:*
         version: link:../rspack-config
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       '@rspack/core':
         specifier: 2.0.8
         version: 2.0.8
@@ -299,8 +299,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -318,8 +318,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       npm-check-updates:
         specifier: 22.2.7
         version: 22.2.7
@@ -337,8 +337,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -359,8 +359,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@oclif/core':
-        specifier: 4.11.8
-        version: 4.11.8
+        specifier: 4.11.9
+        version: 4.11.9
       execa:
         specifier: 9.6.1
         version: 9.6.1
@@ -1374,8 +1374,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oclif/core@4.11.8':
-    resolution: {integrity: sha512-61cTnKgGyMvGdErqiChXru3MwniokcshUjQKzahYjjcD0qPGDalQ+FUtm0QBDduHPtt591mC2YN3RM+P0teG+w==}
+  '@oclif/core@4.11.9':
+    resolution: {integrity: sha512-w8uupjkdEQQcTFp1BUzWZCRNRW4BwXaSnFldHuziqx79F8q4NRCFwgGoMHV48HpJ6Xn9zeN0l3BiuppnPh6bWA==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/errors@1.3.6':
@@ -5933,7 +5933,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
 
-  '@oclif/core@4.11.8':
+  '@oclif/core@4.11.9':
     dependencies:
       ansi-escapes: 4.3.2
       ansis: 3.17.0
@@ -5973,12 +5973,12 @@ snapshots:
 
   '@oclif/plugin-help@6.2.52':
     dependencies:
-      '@oclif/core': 4.11.8
+      '@oclif/core': 4.11.9
 
   '@oclif/plugin-not-found@3.2.87(@types/node@24.13.2)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@24.13.2)
-      '@oclif/core': 4.11.8
+      '@oclif/core': 4.11.9
       ansis: 3.17.0
       fast-levenshtein: 3.0.0
     transitivePeerDependencies:
@@ -5986,7 +5986,7 @@ snapshots:
 
   '@oclif/plugin-warn-if-update-available@3.1.65':
     dependencies:
-      '@oclif/core': 4.11.8
+      '@oclif/core': 4.11.9
       ansis: 3.17.0
       debug: 4.4.3(supports-color@8.1.1)
       http-call: 5.3.0
@@ -8415,7 +8415,7 @@ snapshots:
       '@inquirer/confirm': 3.2.0
       '@inquirer/input': 2.3.0
       '@inquirer/select': 2.5.0
-      '@oclif/core': 4.11.8
+      '@oclif/core': 4.11.9
       '@oclif/plugin-help': 6.2.52
       '@oclif/plugin-not-found': 3.2.87(@types/node@24.13.2)
       '@oclif/plugin-warn-if-update-available': 3.1.65
