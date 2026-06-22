@@ -89,7 +89,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
       tsx:
         specifier: 4.22.4
         version: 4.22.4
@@ -236,12 +236,12 @@ importers:
         specifier: 2.0.8
         version: 2.0.8
       '@rspack/dev-server':
-        specifier: 2.0.3
-        version: 2.0.3(@rspack/core@2.0.8)
+        specifier: 2.1.0
+        version: 2.1.0(@rspack/core@2.0.8)
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-build-lib:
     dependencies:
@@ -263,7 +263,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-build-react:
     dependencies:
@@ -280,12 +280,12 @@ importers:
         specifier: 2.0.8
         version: 2.0.8
       '@rspack/dev-server':
-        specifier: 2.0.3
-        version: 2.0.3(@rspack/core@2.0.8)
+        specifier: 2.1.0
+        version: 2.1.0(@rspack/core@2.0.8)
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-changesets:
     dependencies:
@@ -307,7 +307,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-check-updates:
     dependencies:
@@ -326,7 +326,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-clean:
     dependencies:
@@ -348,7 +348,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-lint:
     dependencies:
@@ -367,7 +367,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.17
-        version: 4.23.17(@types/node@24.13.2)
+        version: 4.23.17(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/prettier-config:
     dependencies:
@@ -1538,20 +1538,20 @@ packages:
       '@swc/helpers':
         optional: true
 
-  '@rspack/dev-middleware@2.0.1':
-    resolution: {integrity: sha512-cXSubf5/C+dvkWV2/+rGTtiZ93wSLd3OlTQhwMvsmsmGDdPlkYqIvQ+BTkOk9UCXxKIaF0DDYYmCpBeRRYJfJw==}
+  '@rspack/dev-middleware@2.0.3':
+    resolution: {integrity: sha512-GxnGj9jy76G3eCPyZei81fwKLAMLZaPEEqFz1/QDYquhwi/qYZX5fekFJ1XVpuwxGEK9KSX3hxZylfwrs4cmLA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      '@rspack/core': ^2.0.0-0
+      '@rspack/core': ^2.0.0
     peerDependenciesMeta:
       '@rspack/core':
         optional: true
 
-  '@rspack/dev-server@2.0.3':
-    resolution: {integrity: sha512-S29nOxXQS9o+0uGNe7SgND2dAKnte5ZTD5tiT3/B4lKbviqpXD4tbH7NZWA3hGwlSkmOIbFlysYPL1bVHuBcSg==}
+  '@rspack/dev-server@2.1.0':
+    resolution: {integrity: sha512-WkCi6bWThVX5Ziv04srPaRoCoUY5FJolO4gqzE7xPO0XbXShsGnwn0vGD0DFfnYFcw9VSsxlmeCDV799lNYclA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      '@rspack/core': ^2.0.0-0
+      '@rspack/core': ^2.0.0
       selfsigned: ^5.0.0
     peerDependenciesMeta:
       selfsigned:
@@ -4912,7 +4912,7 @@ snapshots:
       '@babel/code-frame': 7.29.0
       '@babel/generator': 7.29.1
       '@babel/helper-compilation-targets': 7.28.6
-      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0)
+      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0(supports-color@8.1.1))
       '@babel/helpers': 7.29.2
       '@babel/parser': 7.29.3
       '@babel/template': 7.28.6
@@ -4961,7 +4961,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0)':
+  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.29.0(supports-color@8.1.1)
       '@babel/helper-module-imports': 7.28.6
@@ -5798,12 +5798,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@oclif/plugin-warn-if-update-available@3.1.65':
+  '@oclif/plugin-warn-if-update-available@3.1.65(supports-color@8.1.1)':
     dependencies:
       '@oclif/core': 4.11.9
       ansis: 3.17.0
       debug: 4.4.3(supports-color@8.1.1)
-      http-call: 5.3.0
+      http-call: 5.3.0(supports-color@8.1.1)
       lodash: 4.18.1
       registry-auth-token: 5.1.1
     transitivePeerDependencies:
@@ -5933,14 +5933,14 @@ snapshots:
     dependencies:
       '@rspack/binding': 2.0.8
 
-  '@rspack/dev-middleware@2.0.1(@rspack/core@2.0.8)':
+  '@rspack/dev-middleware@2.0.3(@rspack/core@2.0.8)':
     optionalDependencies:
       '@rspack/core': 2.0.8
 
-  '@rspack/dev-server@2.0.3(@rspack/core@2.0.8)':
+  '@rspack/dev-server@2.1.0(@rspack/core@2.0.8)':
     dependencies:
       '@rspack/core': 2.0.8
-      '@rspack/dev-middleware': 2.0.1(@rspack/core@2.0.8)
+      '@rspack/dev-middleware': 2.0.3(@rspack/core@2.0.8)
 
   '@rspack/plugin-react-refresh@2.0.2(@rspack/core@2.0.8)(react-refresh@0.18.0)':
     dependencies:
@@ -7709,7 +7709,7 @@ snapshots:
 
   http-cache-semantics@4.2.0: {}
 
-  http-call@5.3.0:
+  http-call@5.3.0(supports-color@8.1.1):
     dependencies:
       content-type: 1.0.5
       debug: 4.4.3(supports-color@8.1.1)
@@ -8259,7 +8259,7 @@ snapshots:
 
   obug@2.1.3: {}
 
-  oclif@4.23.17(@types/node@24.13.2):
+  oclif@4.23.17(@types/node@24.13.2)(supports-color@8.1.1):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1068.0
       '@aws-sdk/client-s3': 3.1063.0
@@ -8269,7 +8269,7 @@ snapshots:
       '@oclif/core': 4.11.9
       '@oclif/plugin-help': 6.2.52
       '@oclif/plugin-not-found': 3.2.87(@types/node@24.13.2)
-      '@oclif/plugin-warn-if-update-available': 3.1.65
+      '@oclif/plugin-warn-if-update-available': 3.1.65(supports-color@8.1.1)
       ansis: 3.17.0
       async-retry: 1.3.3
       change-case: 4.1.2
