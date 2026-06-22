@@ -89,7 +89,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
       tsx:
         specifier: 4.22.4
         version: 4.22.4
@@ -165,8 +165,8 @@ importers:
         specifier: 64.0.0
         version: 64.0.0(eslint@10.5.0(jiti@2.7.0))
       globals:
-        specifier: 17.6.0
-        version: 17.6.0
+        specifier: 17.7.0
+        version: 17.7.0
       typescript-eslint:
         specifier: 8.61.1
         version: 8.61.1(eslint@10.5.0(jiti@2.7.0))(supports-color@8.1.1)(typescript@6.0.3)
@@ -241,7 +241,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-build-lib:
     dependencies:
@@ -263,7 +263,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-build-react:
     dependencies:
@@ -285,7 +285,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-changesets:
     dependencies:
@@ -307,7 +307,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-check-updates:
     dependencies:
@@ -326,7 +326,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-clean:
     dependencies:
@@ -348,7 +348,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/plugin-lint:
     dependencies:
@@ -367,7 +367,7 @@ importers:
     devDependencies:
       oclif:
         specifier: 4.23.20
-        version: 4.23.20(@types/node@24.13.2)
+        version: 4.23.20(@types/node@24.13.2)(supports-color@8.1.1)
 
   packages/prettier-config:
     dependencies:
@@ -3052,8 +3052,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.6.0:
-    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
+  globals@17.7.0:
+    resolution: {integrity: sha512-Czmyns5dUsq4seFBR/Kdydhmo8y9kC79hiSkPn0YcGtNnYWnrgt0vjrSjx9tspoDGWm2CMarffRuLjM4xUz8xg==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -5103,7 +5103,7 @@ snapshots:
       '@babel/code-frame': 7.29.0
       '@babel/generator': 7.29.1
       '@babel/helper-compilation-targets': 7.28.6
-      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0)
+      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0(supports-color@8.1.1))
       '@babel/helpers': 7.29.2
       '@babel/parser': 7.29.3
       '@babel/template': 7.28.6
@@ -5152,7 +5152,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0)':
+  '@babel/helper-module-transforms@7.28.6(@babel/core@7.29.0(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.29.0(supports-color@8.1.1)
       '@babel/helper-module-imports': 7.28.6
@@ -5989,12 +5989,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@oclif/plugin-warn-if-update-available@3.1.65':
+  '@oclif/plugin-warn-if-update-available@3.1.65(supports-color@8.1.1)':
     dependencies:
       '@oclif/core': 4.11.10
       ansis: 3.17.0
       debug: 4.4.3(supports-color@8.1.1)
-      http-call: 5.3.0
+      http-call: 5.3.0(supports-color@8.1.1)
       lodash: 4.18.1
       registry-auth-token: 5.1.1
     transitivePeerDependencies:
@@ -7420,7 +7420,7 @@ snapshots:
       core-js-compat: 3.49.0
       eslint: 10.5.0(jiti@2.7.0)
       find-up-simple: 1.0.1
-      globals: 17.6.0
+      globals: 17.7.0
       indent-string: 5.0.0
       is-builtin-module: 5.0.0
       jsesc: 3.1.0
@@ -7823,7 +7823,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.6.0: {}
+  globals@17.7.0: {}
 
   globalthis@1.0.4:
     dependencies:
@@ -7900,7 +7900,7 @@ snapshots:
 
   http-cache-semantics@4.2.0: {}
 
-  http-call@5.3.0:
+  http-call@5.3.0(supports-color@8.1.1):
     dependencies:
       content-type: 1.0.5
       debug: 4.4.3(supports-color@8.1.1)
@@ -8450,7 +8450,7 @@ snapshots:
 
   obug@2.1.3: {}
 
-  oclif@4.23.20(@types/node@24.13.2):
+  oclif@4.23.20(@types/node@24.13.2)(supports-color@8.1.1):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1068.0
       '@aws-sdk/client-s3': 3.1073.0
@@ -8460,7 +8460,7 @@ snapshots:
       '@oclif/core': 4.11.10
       '@oclif/plugin-help': 6.2.52
       '@oclif/plugin-not-found': 3.2.87(@types/node@24.13.2)
-      '@oclif/plugin-warn-if-update-available': 3.1.65
+      '@oclif/plugin-warn-if-update-available': 3.1.65(supports-color@8.1.1)
       ansis: 3.17.0
       async-retry: 1.3.3
       change-case: 4.1.2
