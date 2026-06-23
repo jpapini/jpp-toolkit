@@ -1,5 +1,15 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.59
+
+### Patch Changes
+
+- [#793](https://github.com/jpapini/jpp-toolkit/pull/793) [`fb412a6`](https://github.com/jpapini/jpp-toolkit/commit/fb412a67ddf9d0303a071c08e4d6c362acfcbf6d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@commitlint/config-conventional` to `21.1.0`.
+  Updated dependency `@commitlint/types` to `21.1.0`.
+  Updated dependency `@commitlint/cli` to `21.1.0`.
+- Updated dependencies [[`fb412a6`](https://github.com/jpapini/jpp-toolkit/commit/fb412a67ddf9d0303a071c08e4d6c362acfcbf6d)]:
+    - @jpp-toolkit/commitlint-config@0.0.51
+
 ## 0.0.58
 
 ### Patch Changes
