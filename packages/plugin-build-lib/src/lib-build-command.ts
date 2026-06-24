@@ -1,5 +1,3 @@
-import path from 'node:path';
-
 import { Command } from '@jpp-toolkit/core';
 import { createTsdownConfig } from '@jpp-toolkit/tsdown-config';
 import { Args, Flags } from '@oclif/core';
@@ -38,7 +36,17 @@ export class LibBuildCommand extends Command {
         }),
         entry: Flags.string({
             char: 'e',
-            description: 'The entry file for the build process.',
+            description: 'The entry file(s) or glob(s) for the build process. Can be repeated.',
+            multiple: true,
+        }),
+        unbundle: Flags.boolean({
+            description:
+                'Preserve the source module structure in the output (one file per source module) instead of bundling.',
+            default: false,
+        }),
+        root: Flags.string({
+            description:
+                'Root directory of the input files, used to compute output paths in unbundle mode.',
         }),
     };
 
@@ -63,24 +71,32 @@ export class LibBuildCommand extends Command {
             description: 'Build the library with a custom entry file.',
             command: '<%= config.bin %> <%= command.id %> esm --entry src/main.ts',
         },
+        {
+            description:
+                'Build the library preserving the source module structure from multiple entries/globs.',
+            command:
+                "<%= config.bin %> <%= command.id %> esm --unbundle -e lib/index.ts -e 'generated/**/*.ts'",
+        },
     ];
 
     public async run(): Promise<void> {
         const { args, flags } = await this.parse(LibBuildCommand);
         const preset = args.preset as Preset;
-        const { watch, entry } = flags;
+        const { watch, entry, unbundle, root } = flags;
 
         this.logger.info(`Building library using the '${preset}' preset...`);
 
-        if (entry) {
-            this.logger.info(`Using custom entry file: ${entry}`);
+        if (entry?.length) {
+            this.logger.info(`Using custom entry file(s): ${entry.join(', ')}`);
         }
 
         const format = presetFormatMap[preset];
         const config = createTsdownConfig({
             format,
             watch,
-            ...(entry ? { entry: path.resolve(process.cwd(), entry) } : {}),
+            ...(entry?.length ? { entry } : {}),
+            ...(unbundle ? { unbundle: true } : {}),
+            ...(root ? { root } : {}),
         });
         await tsdownBuild(config);
     }
