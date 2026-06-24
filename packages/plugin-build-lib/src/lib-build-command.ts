@@ -48,6 +48,12 @@ export class LibBuildCommand extends Command {
             description:
                 'Root directory of the input files, used to compute output paths in unbundle mode.',
         }),
+        shims: Flags.boolean({
+            description:
+                'Inject node:path / node:url / import.meta.url shims into emitted files (use --no-shims to disable).',
+            allowNo: true,
+            default: true,
+        }),
     };
 
     static override examples = [
@@ -77,12 +83,17 @@ export class LibBuildCommand extends Command {
             command:
                 "<%= config.bin %> <%= command.id %> esm --unbundle -e lib/index.ts -e 'generated/**/*.ts'",
         },
+        {
+            description:
+                'Build the library without injecting node:path / node:url / import.meta.url shims.',
+            command: '<%= config.bin %> <%= command.id %> esm --no-shims',
+        },
     ];
 
     public async run(): Promise<void> {
         const { args, flags } = await this.parse(LibBuildCommand);
         const preset = args.preset as Preset;
-        const { watch, entry, unbundle, root } = flags;
+        const { watch, entry, unbundle, root, shims } = flags;
 
         this.logger.info(`Building library using the '${preset}' preset...`);
 
@@ -94,6 +105,7 @@ export class LibBuildCommand extends Command {
         const config = createTsdownConfig({
             format,
             watch,
+            shims,
             ...(entry?.length ? { entry } : {}),
             ...(unbundle ? { unbundle: true } : {}),
             ...(root ? { root } : {}),
