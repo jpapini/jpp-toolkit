@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.1.0
+
+### Minor Changes
+
+- [`4f2c539`](https://github.com/jpapini/jpp-toolkit/commit/4f2c53934ee6266843573a9d26653f99d3b4aa16) Thanks [@jpapini](https://github.com/jpapini)! - Add tsdown unbundle mode to `jpp build lib`: `--entry`/`-e` now accepts multiple values (entries/globs), plus new `--unbundle` and `--root` flags to emit a structure-preserving build (one file per source module).
+
 ## 0.0.142
 
 ### Patch Changes
