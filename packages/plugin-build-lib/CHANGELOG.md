@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-lib
 
+## 0.2.0
+
+### Minor Changes
+
+- [`44f9e03`](https://github.com/jpapini/jpp-toolkit/commit/44f9e03987fc546984750f9ff5aa868fa1914807) Thanks [@jpapini](https://github.com/jpapini)! - Add a `--shims` / `--no-shims` flag to `jpp build lib` to control whether tsdown injects the `node:path` / `node:url` / `import.meta.url` shims into emitted files. Defaults to `true`, preserving current behavior.
+
 ## 0.1.0
 
 ### Minor Changes
