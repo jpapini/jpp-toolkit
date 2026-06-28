@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.159
+
+### Patch Changes
+
+- [#818](https://github.com/jpapini/jpp-toolkit/pull/818) [`e50c0ce`](https://github.com/jpapini/jpp-toolkit/commit/e50c0ce4cb8125b56e8fb7c797ffa7e22c80877f) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.23.23`.
+
 ## 0.0.158
 
 ### Patch Changes
