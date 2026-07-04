@@ -36,13 +36,13 @@
         "turbo": "2.10.3",
         "typescript": "6.0.3"
     },
-    "packageManager": "pnpm@11.9.0",
+    "packageManager": "pnpm@11.10.0",
     "engines": {
         "node": "24",
         "pnpm": "11"
     },
     "volta": {
         "node": "24.18.0",
-        "pnpm": "11.9.0"
+        "pnpm": "11.10.0"
     }
 }
