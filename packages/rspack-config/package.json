@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/rspack-config",
-    "version": "0.0.76",
+    "version": "0.0.77",
     "description": "Rspack configurations for JS/TS projects.",
     "keywords": [
         "jpp",
