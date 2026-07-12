@@ -1,5 +1,13 @@
 # @jpp-toolkit/cli
 
+## 0.0.254
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/plugin-build-fivem@0.0.170
+    - @jpp-toolkit/plugin-build-react@0.0.134
+
 ## 0.0.253
 
 ### Patch Changes
