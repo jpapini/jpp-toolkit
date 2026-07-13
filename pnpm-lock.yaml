@@ -55,7 +55,7 @@ importers:
     dependencies:
       tsdown:
         specifier: 0.22.7
-        version: 0.22.7(tsx@4.23.0)(typescript@6.0.3)
+        version: 0.22.7(tsx@4.23.1)(typescript@6.0.3)
 
   packages/cli:
     dependencies:
@@ -91,8 +91,8 @@ importers:
         specifier: 4.23.27
         version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
       tsx:
-        specifier: 4.23.0
-        version: 4.23.0
+        specifier: 4.23.1
+        version: 4.23.1
 
   packages/commitlint-config:
     dependencies:
@@ -259,7 +259,7 @@ importers:
         version: 4.11.14
       tsdown:
         specifier: 0.22.7
-        version: 0.22.7(tsx@4.23.0)(typescript@6.0.3)
+        version: 0.22.7(tsx@4.23.1)(typescript@6.0.3)
     devDependencies:
       oclif:
         specifier: 4.23.27
@@ -493,7 +493,7 @@ importers:
     devDependencies:
       tsdown:
         specifier: 0.22.7
-        version: 0.22.7(tsx@4.23.0)(typescript@6.0.3)
+        version: 0.22.7(tsx@4.23.1)(typescript@6.0.3)
 
   packages/utils: {}
 
@@ -4408,8 +4408,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.23.0:
-    resolution: {integrity: sha512-eUdUIaCr963q2h5u3+QwvYp0+eqPvn+egeqZUm0hwERCqqx1E3kK5ehbGCvqSE5MQAULr67ww0cA3jKc3YkM1w==}
+  tsx@4.23.1:
+    resolution: {integrity: sha512-GQHnkIfxyx1wYCOS/wonik5MVRZU9hi1TEZmzGZSCJB1y9YgoZ8H6itNE/u4suE+yLmOzuE4E5S4TZ/ZX2wcWQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -8751,7 +8751,7 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  tsdown@0.22.7(tsx@4.23.0)(typescript@6.0.3):
+  tsdown@0.22.7(tsx@4.23.1)(typescript@6.0.3):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -8769,7 +8769,7 @@ snapshots:
       tree-kill: 1.2.2
       unconfig-core: 7.5.0
     optionalDependencies:
-      tsx: 4.23.0
+      tsx: 4.23.1
       typescript: 6.0.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'
@@ -8779,7 +8779,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsx@4.23.0:
+  tsx@4.23.1:
     dependencies:
       esbuild: 0.28.0
     optionalDependencies:
