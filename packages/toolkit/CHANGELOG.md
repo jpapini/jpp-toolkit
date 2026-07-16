@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.381
+
+### Patch Changes
+
+- Updated dependencies []:
+    - @jpp-toolkit/cli@0.0.262
+
 ## 0.0.380
 
 ### Patch Changes
