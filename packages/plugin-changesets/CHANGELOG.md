@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-changesets
 
+## 0.0.125
+
+### Patch Changes
+
+- [#900](https://github.com/jpapini/jpp-toolkit/pull/900) [`2fe8a26`](https://github.com/jpapini/jpp-toolkit/commit/2fe8a26ee6543538a179a12ec996ec31b17045a7) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@changesets/cli` to `2.31.1`.
+
 ## 0.0.124
 
 ### Patch Changes
