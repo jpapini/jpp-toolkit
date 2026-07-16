@@ -39,7 +39,7 @@
         "prepack": "oclif manifest"
     },
     "dependencies": {
-        "@changesets/cli": "2.31.0",
+        "@changesets/cli": "2.31.1",
         "@jpp-toolkit/core": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.11.14",
