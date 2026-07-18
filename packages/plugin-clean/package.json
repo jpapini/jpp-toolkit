@@ -48,7 +48,7 @@
     "devDependencies": {
         "oclif": "4.23.27"
     },
-    "packageManager": "pnpm@11.14.0",
+    "packageManager": "pnpm@11.15.0",
     "engines": {
         "node": "24",
         "pnpm": "11"
