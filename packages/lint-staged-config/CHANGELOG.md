@@ -1,5 +1,11 @@
 # @jpp-toolkit/lint-staged-config
 
+## 0.0.47
+
+### Patch Changes
+
+- [#908](https://github.com/jpapini/jpp-toolkit/pull/908) [`e836183`](https://github.com/jpapini/jpp-toolkit/commit/e83618360200ea309681423d7cbd9fdf4f31fee5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `lint-staged` to `17.1.0`.
+
 ## 0.0.46
 
 ### Patch Changes
