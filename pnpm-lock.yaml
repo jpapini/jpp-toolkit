@@ -54,8 +54,8 @@ importers:
   internals/build-lib:
     dependencies:
       tsdown:
-        specifier: 0.22.9
-        version: 0.22.9(tsx@4.23.1)(typescript@6.0.3)
+        specifier: 0.22.11
+        version: 0.22.11(tsx@4.23.1)(typescript@6.0.3)
 
   packages/cli:
     dependencies:
@@ -258,8 +258,8 @@ importers:
         specifier: 4.11.14
         version: 4.11.14
       tsdown:
-        specifier: 0.22.9
-        version: 0.22.9(tsx@4.23.1)(typescript@6.0.3)
+        specifier: 0.22.11
+        version: 0.22.11(tsx@4.23.1)(typescript@6.0.3)
     devDependencies:
       oclif:
         specifier: 4.23.27
@@ -492,8 +492,8 @@ importers:
   packages/tsdown-config:
     devDependencies:
       tsdown:
-        specifier: 0.22.9
-        version: 0.22.9(tsx@4.23.1)(typescript@6.0.3)
+        specifier: 0.22.11
+        version: 0.22.11(tsx@4.23.1)(typescript@6.0.3)
 
   packages/utils: {}
 
@@ -3698,6 +3698,10 @@ packages:
     resolution: {integrity: sha512-9miFgM2OFba7hB+pRgvtV84pYTBaoTHohvmIgiRt6dRIzbwEOIaNaP+dIlGs2fNFoB0SeISs0Jz5WFVRid6Xyg==}
     engines: {node: '>=12.20.0'}
 
+  obug@2.1.4:
+    resolution: {integrity: sha512-4a+OsYv9UktOJKE+l1A4OufDgdRF9PifWj+tJnHURo/P+WOxpG4GzUFL9qCalmWauao6ogiG+QvnCovwPoyAWA==}
+    engines: {node: '>=12.20.0'}
+
   oclif@4.23.27:
     resolution: {integrity: sha512-DNUQ22pglqstzuTRb+E4yjJI20PVGNGHCJa/vzH3HQCrS0B0GQPjWwIeMWjgWaQHBi1oXO2jMDHHpCLDNgW/tQ==}
     engines: {node: '>=18.0.0'}
@@ -4350,14 +4354,14 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
-  tsdown@0.22.9:
-    resolution: {integrity: sha512-/0QEjQEhOU1t1YxOIAGzFN7bIssd8P0pBpkOmNLCQi3c5UtrcMF5bvq3f30xHJNW9QCA9aUNcNAorMr2CTd6Lg==}
+  tsdown@0.22.11:
+    resolution: {integrity: sha512-BERdQpqAltv3vYGC0pE4n+mRGPIN91T/on+Ud73bYRkbptknelFm27tJgBBUz4RJ5d3VNeVH90HfjBo1Ouj8yQ==}
     engines: {node: ^22.18.0 || >=24.11.0}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@tsdown/css': 0.22.9
-      '@tsdown/exe': 0.22.9
+      '@tsdown/css': 0.22.11
+      '@tsdown/exe': 0.22.11
       '@vitejs/devtools': '*'
       publint: ^0.3.8
       tsx: '*'
@@ -8061,6 +8065,8 @@ snapshots:
 
   obug@2.1.3: {}
 
+  obug@2.1.4: {}
+
   oclif@4.23.27(@types/node@24.13.3)(supports-color@8.1.1):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1079.0
@@ -8671,7 +8677,7 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
-  tsdown@0.22.9(tsx@4.23.1)(typescript@6.0.3):
+  tsdown@0.22.11(tsx@4.23.1)(typescript@6.0.3):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -8679,7 +8685,7 @@ snapshots:
       empathic: 2.0.1
       hookable: 6.1.1
       import-without-cache: 0.4.0
-      obug: 2.1.3
+      obug: 2.1.4
       picomatch: 4.0.5
       rolldown: 1.2.0
       rolldown-plugin-dts: 0.27.9(rolldown@1.2.0)(typescript@6.0.3)
