@@ -88,8 +88,8 @@ importers:
         version: 6.2.53
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
       tsx:
         specifier: 4.23.1
         version: 4.23.1
@@ -240,8 +240,8 @@ importers:
         version: 2.1.0(@rspack/core@2.1.4)
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-build-lib:
     dependencies:
@@ -262,8 +262,8 @@ importers:
         version: 0.22.12(tsx@4.23.1)(typescript@6.0.3)
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-build-react:
     dependencies:
@@ -284,8 +284,8 @@ importers:
         version: 2.1.0(@rspack/core@2.1.4)
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-changesets:
     dependencies:
@@ -306,8 +306,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-check-updates:
     dependencies:
@@ -325,8 +325,8 @@ importers:
         version: 22.2.9
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-clean:
     dependencies:
@@ -347,8 +347,8 @@ importers:
         version: 6.1.3
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/plugin-lint:
     dependencies:
@@ -366,8 +366,8 @@ importers:
         version: 9.6.1
     devDependencies:
       oclif:
-        specifier: 4.23.27
-        version: 4.23.27(@types/node@24.13.3)(supports-color@8.1.1)
+        specifier: 4.23.28
+        version: 4.23.28(@types/node@24.13.3)(supports-color@8.1.1)
 
   packages/prettier-config:
     dependencies:
@@ -3698,8 +3698,8 @@ packages:
     resolution: {integrity: sha512-4a+OsYv9UktOJKE+l1A4OufDgdRF9PifWj+tJnHURo/P+WOxpG4GzUFL9qCalmWauao6ogiG+QvnCovwPoyAWA==}
     engines: {node: '>=12.20.0'}
 
-  oclif@4.23.27:
-    resolution: {integrity: sha512-DNUQ22pglqstzuTRb+E4yjJI20PVGNGHCJa/vzH3HQCrS0B0GQPjWwIeMWjgWaQHBi1oXO2jMDHHpCLDNgW/tQ==}
+  oclif@4.23.28:
+    resolution: {integrity: sha512-u0Jo1RAo5zrZUhrTTxGGicjZ606L7dYV+L1VoFstA5RfV7pktEE6lVs3ueELQcNUgkUvofAiZqleocZCBA/Hqg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -8065,7 +8065,7 @@ snapshots:
 
   obug@2.1.4: {}
 
-  oclif@4.23.27(@types/node@24.13.3)(supports-color@8.1.1):
+  oclif@4.23.28(@types/node@24.13.3)(supports-color@8.1.1):
     dependencies:
       '@aws-sdk/client-cloudfront': 3.1079.0
       '@aws-sdk/client-s3': 3.1079.0
