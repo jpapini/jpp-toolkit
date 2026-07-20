@@ -11,7 +11,7 @@ jobs:
         timeout-minutes: 5
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v6.0.3
+              uses: actions/checkout@v6.1.0
               with:
                   fetch-depth: 0
 
@@ -27,7 +27,7 @@ jobs:
         timeout-minutes: 5
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v6.0.3
+              uses: actions/checkout@v6.1.0
 
             - name: Lint files
               uses: ./actions/lint-files
@@ -41,7 +41,7 @@ jobs:
         timeout-minutes: 5
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v6.0.3
+              uses: actions/checkout@v6.1.0
 
             - name: Typecheck
               uses: ./actions/typecheck
