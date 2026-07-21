@@ -44,7 +44,7 @@
         "@jpp-toolkit/tsdown-config": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
         "@oclif/core": "4.11.14",
-        "tsdown": "0.22.12"
+        "tsdown": "0.22.13"
     },
     "devDependencies": {
         "oclif": "4.23.28"
