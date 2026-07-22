@@ -34,7 +34,7 @@
         "dev": "build-lib --watch",
         "build": "build-lib"
     },
-    "packageManager": "pnpm@11.15.1",
+    "packageManager": "pnpm@11.16.0",
     "engines": {
         "node": "24",
         "pnpm": "11"
