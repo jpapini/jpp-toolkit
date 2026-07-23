@@ -31,7 +31,7 @@
         "@jpp-toolkit/commitlint-config": "workspace:*",
         "@jpp-toolkit/lint-staged-config": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
-        "execa": "9.6.1",
+        "execa": "10.0.0",
         "husky": "9.1.7",
         "lint-staged": "17.2.0"
     },
