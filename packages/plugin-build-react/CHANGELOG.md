@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.146
+
+### Patch Changes
+
+- [#948](https://github.com/jpapini/jpp-toolkit/pull/948) [`9a91d57`](https://github.com/jpapini/jpp-toolkit/commit/9a91d572fb091c3f1584d64df18a4403eb4f64a1) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `oclif` to `4.23.29`.
+
 ## 0.0.145
 
 ### Patch Changes
