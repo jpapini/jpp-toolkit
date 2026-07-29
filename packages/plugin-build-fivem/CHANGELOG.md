@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.186
+
+### Patch Changes
+
+- [#965](https://github.com/jpapini/jpp-toolkit/pull/965) [`04e716f`](https://github.com/jpapini/jpp-toolkit/commit/04e716f6263e68afb52c38b703e5b7ac15bad24c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/core` to `2.1.7`.
+
+- Updated dependencies [[`04e716f`](https://github.com/jpapini/jpp-toolkit/commit/04e716f6263e68afb52c38b703e5b7ac15bad24c)]:
+    - @jpp-toolkit/rspack-config@0.0.90
+
 ## 0.0.185
 
 ### Patch Changes
