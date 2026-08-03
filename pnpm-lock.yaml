@@ -236,8 +236,8 @@ importers:
         specifier: 2.1.7
         version: 2.1.7
       '@rspack/dev-server':
-        specifier: 2.1.0
-        version: 2.1.0(@rspack/core@2.1.7)
+        specifier: 2.2.0
+        version: 2.2.0(@rspack/core@2.1.7)
     devDependencies:
       oclif:
         specifier: 4.23.29
@@ -280,8 +280,8 @@ importers:
         specifier: 2.1.7
         version: 2.1.7
       '@rspack/dev-server':
-        specifier: 2.1.0
-        version: 2.1.0(@rspack/core@2.1.7)
+        specifier: 2.2.0
+        version: 2.2.0(@rspack/core@2.1.7)
     devDependencies:
       oclif:
         specifier: 4.23.29
@@ -1490,8 +1490,8 @@ packages:
       '@rspack/core':
         optional: true
 
-  '@rspack/dev-server@2.1.0':
-    resolution: {integrity: sha512-WkCi6bWThVX5Ziv04srPaRoCoUY5FJolO4gqzE7xPO0XbXShsGnwn0vGD0DFfnYFcw9VSsxlmeCDV799lNYclA==}
+  '@rspack/dev-server@2.2.0':
+    resolution: {integrity: sha512-Bd0DNphOJ5/KAm3bFpUUZeP7O6jvVDNdXJEmlpsVZLfdSgjmrd6Ut/EHCBv95tmiwOQN0M41SdvlUU4f855HFA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@rspack/core': ^2.0.0
@@ -5793,7 +5793,7 @@ snapshots:
     optionalDependencies:
       '@rspack/core': 2.1.7
 
-  '@rspack/dev-server@2.1.0(@rspack/core@2.1.7)':
+  '@rspack/dev-server@2.2.0(@rspack/core@2.1.7)':
     dependencies:
       '@rspack/core': 2.1.7
       '@rspack/dev-middleware': 2.0.3(@rspack/core@2.1.7)
