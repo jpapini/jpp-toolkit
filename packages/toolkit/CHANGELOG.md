@@ -1,5 +1,12 @@
 # jpp-toolkit
 
+## 0.0.414
+
+### Patch Changes
+
+- Updated dependencies [[`ec7c2f9`](https://github.com/jpapini/jpp-toolkit/commit/ec7c2f94c3e012f5ed5dca27653fc16ccd9f3284)]:
+    - @jpp-toolkit/cli@0.0.287
+
 ## 0.0.413
 
 ### Patch Changes
