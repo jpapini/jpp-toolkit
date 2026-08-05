@@ -55,7 +55,7 @@
     },
     "devDependencies": {
         "oclif": "4.23.29",
-        "tsx": "4.23.7"
+        "tsx": "4.23.8"
     },
     "packageManager": "pnpm@11.20.0",
     "engines": {
