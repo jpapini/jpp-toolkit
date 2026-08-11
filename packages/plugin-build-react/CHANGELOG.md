@@ -1,5 +1,14 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.156
+
+### Patch Changes
+
+- [#1024](https://github.com/jpapini/jpp-toolkit/pull/1024) [`453c9b6`](https://github.com/jpapini/jpp-toolkit/commit/453c9b69e9916e7c7c5f099f910f5ce32e34cc26) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/core` to `2.1.9`.
+
+- Updated dependencies [[`453c9b6`](https://github.com/jpapini/jpp-toolkit/commit/453c9b69e9916e7c7c5f099f910f5ce32e34cc26)]:
+    - @jpp-toolkit/rspack-config@0.0.93
+
 ## 0.0.155
 
 ### Patch Changes
