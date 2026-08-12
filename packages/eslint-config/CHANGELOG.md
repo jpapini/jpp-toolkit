@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.150
+
+### Patch Changes
+
+- [#1026](https://github.com/jpapini/jpp-toolkit/pull/1026) [`ed37d74`](https://github.com/jpapini/jpp-toolkit/commit/ed37d7401445020a22a5525ea06050197d1bd66c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `globals` to `17.10.0`.
+
 ## 0.0.149
 
 ### Patch Changes
