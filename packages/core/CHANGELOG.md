@@ -1,5 +1,11 @@
 # @jpp-toolkit/core
 
+## 0.0.69
+
+### Patch Changes
+
+- [#1039](https://github.com/jpapini/jpp-toolkit/pull/1039) [`63b36fa`](https://github.com/jpapini/jpp-toolkit/commit/63b36fa98f7bfa492d256b73f7e5d68d58ee7603) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@oclif/core` to `4.13.5`.
+
 ## 0.0.68
 
 ### Patch Changes
