@@ -1,6 +1,6 @@
 {
     "name": "@jpp-toolkit/core",
-    "version": "0.0.69",
+    "version": "0.0.70",
     "description": "Core utilities for jpp cli and plugins.",
     "keywords": [
         "jpp",
