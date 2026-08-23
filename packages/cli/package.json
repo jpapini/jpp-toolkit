@@ -57,7 +57,7 @@
         "oclif": "4.23.30",
         "tsx": "4.23.12"
     },
-    "packageManager": "pnpm@11.22.0",
+    "packageManager": "pnpm@11.23.0",
     "engines": {
         "node": "24",
         "pnpm": "11"
