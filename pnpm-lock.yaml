@@ -412,11 +412,11 @@ importers:
         specifier: 4.3.3
         version: 4.3.3
       postcss:
-        specifier: 8.5.27
-        version: 8.5.27
+        specifier: 8.5.28
+        version: 8.5.28
       postcss-loader:
         specifier: 8.2.1
-        version: 8.2.1(@rspack/core@2.2.2)(postcss@8.5.27)(typescript@6.0.3)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27))
+        version: 8.2.1(@rspack/core@2.2.2)(postcss@8.5.28)(typescript@6.0.3)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28))
       react-refresh:
         specifier: 0.18.0
         version: 0.18.0
@@ -435,7 +435,7 @@ importers:
     devDependencies:
       '@types/webpack-node-externals':
         specifier: 3.0.4
-        version: 3.0.4(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)
+        version: 3.0.4(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)
 
   packages/sort-package-json:
     dependencies:
@@ -3920,8 +3920,8 @@ packages:
       webpack:
         optional: true
 
-  postcss@8.5.27:
-    resolution: {integrity: sha512-79Iho8QeYyooJ8e9lCRyTVlyTAkS/kXBYKff6TMzS3kEWGQ8Ds5UEtXpGrSUDLUWok6QTvxeYy0GO8fopHnaSA==}
+  postcss@8.5.28:
+    resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
 
   powershell-utils@0.1.0:
@@ -6039,7 +6039,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
-      postcss: 8.5.27
+      postcss: 8.5.28
       tailwindcss: 4.3.3
 
   '@turbo/darwin-64@2.10.12':
@@ -6109,10 +6109,10 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
-  '@types/webpack-node-externals@3.0.4(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)':
+  '@types/webpack-node-externals@3.0.4(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)':
     dependencies:
       '@types/node': 24.13.3
-      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)
+      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -8367,19 +8367,19 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-loader@8.2.1(@rspack/core@2.2.2)(postcss@8.5.27)(typescript@6.0.3)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)):
+  postcss-loader@8.2.1(@rspack/core@2.2.2)(postcss@8.5.28)(typescript@6.0.3)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)):
     dependencies:
       cosmiconfig: 9.0.1(typescript@6.0.3)
       jiti: 2.7.0
-      postcss: 8.5.27
+      postcss: 8.5.28
       semver: 7.8.5
     optionalDependencies:
       '@rspack/core': 2.2.2
-      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)
+      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)
     transitivePeerDependencies:
       - typescript
 
-  postcss@8.5.27:
+  postcss@8.5.28:
     dependencies:
       nanoid: 3.3.18
       picocolors: 1.1.1
@@ -8792,17 +8792,17 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.6.0(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)):
+  terser-webpack-plugin@5.6.0(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.47.1
-      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)
+      webpack: 5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)
     optionalDependencies:
       esbuild: 0.28.0
       lightningcss: 1.32.0
-      postcss: 8.5.27
+      postcss: 8.5.28
 
   terser@5.47.1:
     dependencies:
@@ -9027,7 +9027,7 @@ snapshots:
 
   webpack-sources@3.4.1: {}
 
-  webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27):
+  webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -9050,7 +9050,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.0(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.27))
+      terser-webpack-plugin: 5.6.0(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28)(webpack@5.106.2(esbuild@0.28.0)(lightningcss@1.32.0)(postcss@8.5.28))
       watchpack: 2.5.1
       webpack-sources: 3.4.1
     transitivePeerDependencies:
