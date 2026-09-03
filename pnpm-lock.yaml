@@ -84,8 +84,8 @@ importers:
         specifier: 4.14.0
         version: 4.14.0
       '@oclif/plugin-help':
-        specifier: 6.3.0
-        version: 6.3.0
+        specifier: 7.0.0
+        version: 7.0.0
     devDependencies:
       oclif:
         specifier: 4.24.0
@@ -1265,6 +1265,10 @@ packages:
     resolution: {integrity: sha512-QCJIZoVJxV7jywgVAUlsQwl3dr3Sa21kfi5z9KrYolbexWJUtFSEtMoNiBWojD05mYycLnB50gp/VxlGdaOCRA==}
     engines: {node: '>=18.0.0'}
 
+  '@oclif/core@5.0.0':
+    resolution: {integrity: sha512-24ZsN528VButCtvqjBoHw7cEpqXZZILH7Zp0d8oFKrWbqU2BqYrxLd5aGU8LyqRev7CCjAHg+/m1Bewz4V7AmQ==}
+    engines: {node: '>=22.0.0'}
+
   '@oclif/errors@1.3.6':
     resolution: {integrity: sha512-fYaU4aDceETd89KXP+3cLyg9EHZsLD3RxF2IU9yxahhBpspWjkWi3Dy3bTgcwZ3V47BgxQaGapzJWDM33XIVDQ==}
     engines: {node: '>=8.0.0'}
@@ -1281,6 +1285,10 @@ packages:
   '@oclif/plugin-help@6.3.0':
     resolution: {integrity: sha512-cpSRv7tyHHFPv39HrV22eNmu8ylrwjmPvqdlNo3URp79+p5319p+a8PI/3ez6A6GZmjwBj1EWUdVz1aPUAsSmw==}
     engines: {node: '>=18.0.0'}
+
+  '@oclif/plugin-help@7.0.0':
+    resolution: {integrity: sha512-lJVCS6E0FrBRQ7jkLK9pUwUo52WmNLD7zOAu7P28WkQ6G+8zBUbv5lq/IyakNTOTNO7oD5EJkLVYQLmwChetpg==}
+    engines: {node: '>=22.0.0'}
 
   '@oclif/plugin-not-found@3.3.0':
     resolution: {integrity: sha512-GbdWJOmmBO3xmrVjDXeWG7tXl4vzeGZ+af9ztCfAmhOPEkd/+eeAAadzQPeZoygedqCvsdux3QLq9/MAxusPKg==}
@@ -5720,6 +5728,27 @@ snapshots:
       wrap-ansi: 7.0.0
       wsl-utils: 0.4.0
 
+  '@oclif/core@5.0.0':
+    dependencies:
+      ansi-escapes: 4.3.2
+      ansis: 3.17.0
+      clean-stack: 3.0.1
+      cli-spinners: 2.9.2
+      debug: 4.4.3(supports-color@8.1.1)
+      ejs: 6.0.1
+      get-package-type: 0.1.0
+      indent-string: 4.0.0
+      lilconfig: 3.1.3
+      minimatch: 10.2.5
+      semver: 7.8.5
+      string-width: 4.2.3
+      supports-color: 8.1.1
+      tinyglobby: 0.2.17
+      widest-line: 3.1.0
+      wordwrap: 1.0.0
+      wrap-ansi: 7.0.0
+      wsl-utils: 0.4.0
+
   '@oclif/errors@1.3.6':
     dependencies:
       clean-stack: 3.0.1
@@ -5740,6 +5769,10 @@ snapshots:
   '@oclif/plugin-help@6.3.0':
     dependencies:
       '@oclif/core': 4.14.0
+
+  '@oclif/plugin-help@7.0.0':
+    dependencies:
+      '@oclif/core': 5.0.0
 
   '@oclif/plugin-not-found@3.3.0(@types/node@24.13.3)':
     dependencies:
