@@ -45,7 +45,7 @@
         "npm-check-updates": "22.2.9"
     },
     "devDependencies": {
-        "oclif": "4.24.0"
+        "oclif": "5.0.1"
     },
     "packageManager": "pnpm@11.25.0",
     "engines": {
