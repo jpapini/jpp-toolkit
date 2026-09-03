@@ -36,10 +36,10 @@
         "build": "build-lib"
     },
     "devDependencies": {
-        "tsdown": "0.22.14"
+        "tsdown": "0.23.0"
     },
     "peerDependencies": {
-        "tsdown": "0.22"
+        "tsdown": "0.22 || 0.23"
     },
     "packageManager": "pnpm@11.25.0",
     "engines": {
