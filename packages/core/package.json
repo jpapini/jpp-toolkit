@@ -39,10 +39,10 @@
         "@oclif/parser": "3.8.17"
     },
     "devDependencies": {
-        "@oclif/core": "4.14.0"
+        "@oclif/core": "5.0.0"
     },
     "peerDependencies": {
-        "@oclif/core": "4"
+        "@oclif/core": "4 || 5"
     },
     "packageManager": "pnpm@11.25.0",
     "engines": {
