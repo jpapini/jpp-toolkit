@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.158
+
+### Patch Changes
+
+- [#1084](https://github.com/jpapini/jpp-toolkit/pull/1084) [`31845e8`](https://github.com/jpapini/jpp-toolkit/commit/31845e8fc3c981a77ad201b724c7f218101dde36) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `10.10.0`.
+
 ## 0.0.157
 
 ### Patch Changes
