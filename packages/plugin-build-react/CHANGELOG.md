@@ -1,5 +1,12 @@
 # @jpp-toolkit/plugin-build-react
 
+## 0.0.168
+
+### Patch Changes
+
+- Updated dependencies [[`6800cad`](https://github.com/jpapini/jpp-toolkit/commit/6800cad2bb982204ac9739bb7f42d50ed4acb973)]:
+    - @jpp-toolkit/rspack-config@0.0.100
+
 ## 0.0.167
 
 ### Patch Changes

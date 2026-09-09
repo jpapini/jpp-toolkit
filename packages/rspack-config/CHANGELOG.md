@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.100
+
+### Patch Changes
+
+- [#1096](https://github.com/jpapini/jpp-toolkit/pull/1096) [`6800cad`](https://github.com/jpapini/jpp-toolkit/commit/6800cad2bb982204ac9739bb7f42d50ed4acb973) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `react-refresh` to `0.19.0`.
+
 ## 0.0.99
 
 ### Patch Changes
