@@ -32,7 +32,7 @@ runs:
     steps:
         - name: Checkout repository
           if: inputs.checkout == 'true'
-          uses: actions/checkout@v6.1.0
+          uses: actions/checkout@v7.0.1
           with:
               fetch-depth: 0
 
