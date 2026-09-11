@@ -57,10 +57,10 @@
         "oclif": "4.24.0",
         "tsx": "4.23.13"
     },
-    "packageManager": "pnpm@11.26.0",
+    "packageManager": "pnpm@12.4.1",
     "engines": {
         "node": "24",
-        "pnpm": "11"
+        "pnpm": "12"
     },
     "volta": {
         "extends": "../../package.json"
