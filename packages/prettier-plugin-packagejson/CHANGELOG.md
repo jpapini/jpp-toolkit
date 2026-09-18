@@ -1,5 +1,11 @@
 # @jpp-toolkit/prettier-plugin-packagejson
 
+## 0.0.60
+
+### Patch Changes
+
+- [#1115](https://github.com/jpapini/jpp-toolkit/pull/1115) [`20351e7`](https://github.com/jpapini/jpp-toolkit/commit/20351e72e7ae52be953c39678f0cebe437277f56) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `prettier` to `3.9.8`.
+
 ## 0.0.59
 
 ### Patch Changes
