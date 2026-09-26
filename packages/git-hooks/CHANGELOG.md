@@ -1,5 +1,14 @@
 # @jpp-toolkit/git-hooks
 
+## 0.0.71
+
+### Patch Changes
+
+- [#1140](https://github.com/jpapini/jpp-toolkit/pull/1140) [`0512a49`](https://github.com/jpapini/jpp-toolkit/commit/0512a49f15c1e3fa8d6e3cf7910abb1ae18b4c31) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `lint-staged` to `17.6.0`.
+
+- Updated dependencies [[`0512a49`](https://github.com/jpapini/jpp-toolkit/commit/0512a49f15c1e3fa8d6e3cf7910abb1ae18b4c31)]:
+    - @jpp-toolkit/lint-staged-config@0.0.54
+
 ## 0.0.70
 
 ### Patch Changes
