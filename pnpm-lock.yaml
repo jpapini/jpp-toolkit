@@ -165,8 +165,8 @@ importers:
         specifier: 64.0.0
         version: 64.0.0(eslint@10.11.0(jiti@2.7.0)(supports-color@8.1.1))
       globals:
-        specifier: 17.12.0
-        version: 17.12.0
+        specifier: 17.13.0
+        version: 17.13.0
       typescript-eslint:
         specifier: 8.71.0
         version: 8.71.0(eslint@10.11.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
@@ -3093,8 +3093,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.12.0:
-    resolution: {integrity: sha512-cezEd/DTyyht9cvSSURyygXPfy04GtWO/5e6ZPvH7fCtjKz9PYOmuawphw1Ctd1f6C+5JypXfGD7ahNMXvevBA==}
+  globals@17.13.0:
+    resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -6597,9 +6597,7 @@ snapshots:
 
   acorn@8.16.0: {}
 
-  ajv-formats@2.1.1:
-    dependencies:
-      ajv: 8.20.0
+  ajv-formats@2.1.1: {}
 
   ajv-keywords@5.1.0(ajv@8.20.0):
     dependencies:
@@ -7319,7 +7317,7 @@ snapshots:
       core-js-compat: 3.49.0
       eslint: 10.11.0(jiti@2.7.0)(supports-color@8.1.1)
       find-up-simple: 1.0.1
-      globals: 17.12.0
+      globals: 17.13.0
       indent-string: 5.0.0
       is-builtin-module: 5.0.0
       jsesc: 3.1.0
@@ -7673,7 +7671,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.12.0: {}
+  globals@17.13.0: {}
 
   globalthis@1.0.4:
     dependencies:
