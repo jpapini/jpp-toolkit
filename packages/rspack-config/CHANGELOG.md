@@ -1,5 +1,11 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.107
+
+### Patch Changes
+
+- [#1167](https://github.com/jpapini/jpp-toolkit/pull/1167) [`5415ac7`](https://github.com/jpapini/jpp-toolkit/commit/5415ac70d2261ff5eda56ce52d5bfe88caebe040) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `postcss` to `8.5.30`.
+
 ## 0.0.106
 
 ### Patch Changes
