@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.170
+
+### Patch Changes
+
+- [#1174](https://github.com/jpapini/jpp-toolkit/pull/1174) [`0603998`](https://github.com/jpapini/jpp-toolkit/commit/06039985078d1d10f61f035976fe7a8803f7915c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-prettier` to `5.5.7`.
+
 ## 0.0.169
 
 ### Patch Changes
