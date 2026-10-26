@@ -1,5 +1,11 @@
 # @jpp-toolkit/plugin-build-fivem
 
+## 0.0.214
+
+### Patch Changes
+
+- [#1195](https://github.com/jpapini/jpp-toolkit/pull/1195) [`fc4b006`](https://github.com/jpapini/jpp-toolkit/commit/fc4b00648056670ba2a5311fb6a44f385dbba059) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/dev-server` to `2.2.2`.
+
 ## 0.0.213
 
 ### Patch Changes
