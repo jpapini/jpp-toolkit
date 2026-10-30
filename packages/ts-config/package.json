@@ -34,7 +34,7 @@
     "peerDependencies": {
         "typescript": "6"
     },
-    "packageManager": "pnpm@11.28.9",
+    "packageManager": "pnpm@11.28.10",
     "engines": {
         "node": "24",
         "pnpm": "11"
