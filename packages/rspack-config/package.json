@@ -38,7 +38,7 @@
     "dependencies": {
         "@jpp-toolkit/logger": "workspace:*",
         "@jpp-toolkit/utils": "workspace:*",
-        "@rspack/core": "2.3.0",
+        "@rspack/core": "2.3.1",
         "@rspack/plugin-react-refresh": "2.0.2",
         "@tailwindcss/postcss": "4.3.4",
         "postcss": "8.5.32",
