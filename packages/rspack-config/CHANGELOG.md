@@ -1,5 +1,12 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.114
+
+### Patch Changes
+
+- [#1226](https://github.com/jpapini/jpp-toolkit/pull/1226) [`9db2df5`](https://github.com/jpapini/jpp-toolkit/commit/9db2df5b2835dc22623295a0f67c976cacb7ef08) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@tailwindcss/postcss` to `4.3.5`.
+  Updated dependency `tailwindcss` to `4.3.5`.
+
 ## 0.0.113
 
 ### Patch Changes
