@@ -1,5 +1,11 @@
 # @jpp-toolkit/eslint-config
 
+## 0.0.177
+
+### Patch Changes
+
+- [#1232](https://github.com/jpapini/jpp-toolkit/pull/1232) [`9f8cb1d`](https://github.com/jpapini/jpp-toolkit/commit/9f8cb1ddce4f5ae0f110066a45c2a03ebfcc1523) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-import-x` to `4.18.1`.
+
 ## 0.0.176
 
 ### Patch Changes
