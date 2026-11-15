@@ -1,5 +1,13 @@
 # @jpp-toolkit/rspack-config
 
+## 0.0.116
+
+### Patch Changes
+
+- [#1234](https://github.com/jpapini/jpp-toolkit/pull/1234) [`ed3fa69`](https://github.com/jpapini/jpp-toolkit/commit/ed3fa69ec2248d8ab25aaa9fbf5f9c5614031040) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `postcss` to `8.5.33`.
+
+- [#1231](https://github.com/jpapini/jpp-toolkit/pull/1231) [`28c5e77`](https://github.com/jpapini/jpp-toolkit/commit/28c5e77af1f18bf2c8ff4a42871d18bbc63d245d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@rspack/plugin-react-refresh` to `2.0.3`.
+
 ## 0.0.115
 
 ### Patch Changes
