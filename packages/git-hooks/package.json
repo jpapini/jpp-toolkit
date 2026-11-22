@@ -35,7 +35,7 @@
         "husky": "9.1.7",
         "lint-staged": "17.6.2"
     },
-    "packageManager": "pnpm@11.28.13",
+    "packageManager": "pnpm@11.29.0",
     "engines": {
         "node": "24",
         "pnpm": "11"
