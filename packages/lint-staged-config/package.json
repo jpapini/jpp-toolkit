@@ -39,7 +39,7 @@
         "@jpp-toolkit/utils": "workspace:*"
     },
     "devDependencies": {
-        "lint-staged": "17.6.2"
+        "lint-staged": "17.6.3"
     },
     "peerDependencies": {
         "lint-staged": "17"
